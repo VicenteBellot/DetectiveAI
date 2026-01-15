@@ -303,7 +303,7 @@ void C_Detective::Interrogate(C_Suspect* sus, Statement s)
     memory[sus->ID].timeline.push_back(report);
     //Remember(*sus, report);
     if (report.location == "None") {
-        printf("Thorne Notes: %s claims they were never in the %s\n", sus->name.c_str(), roomName.c_str());
+        printf("Thorne Notes: %s claims they were never in the %s\n", sus->name.c_str(), s.location.c_str());
     }
 
 }

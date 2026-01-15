@@ -113,6 +113,7 @@ void C_GameManager::DrawInterface()
 
                 Thorne->Interrogate(target, currentScenario.alibiLibrary[activeSuspectIndex][0]);
                 activeSuspectIndex++;
+                if (activeSuspectIndex >= quantitySustec) activeSuspectIndex = 0;
                 //Thorne->ApplyPressure(*target); // Spikes stress based on bias
             }
         }
@@ -230,7 +231,7 @@ void C_GameManager::InitializeGame()
     printf("Alibis: %d\n", Alibis);
     LoadAlibisFromCSV("./data/Gala/Alibis/" + std::to_string(Alibis) + ".csv");
 
-    for (int i = 1; i < 11; i++) {
+    for (int i = 1; i < quantitySustec + 1; i++) {
         C_BasePawn::CharacterOrigin susOrigin = C_BasePawn::GenerateRandomOrigin(false);
         C_Suspect* s = new C_Suspect(susOrigin.country, susOrigin.cluster, true, true, false, "Suspect_" + std::to_string(i), 0.7f);
         s->ID = 100 + i;

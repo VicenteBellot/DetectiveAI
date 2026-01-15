@@ -17,6 +17,7 @@ public:
     // UI State
     int activeSuspectIndex = 0;
     bool showEvidenceBoard = false;
+    int quantitySustec = 10;
 
     void LoadScenarioFromCSV(std::string filePath);
     void LoadAlibisFromCSV(std::string filePath);
