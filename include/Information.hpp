@@ -4,29 +4,40 @@
 #include <robinmap/robin_hood.h>
 #include <vector>
 #include <string>
+#include <map>
 
 
 class C_Suspect;
 
 enum Category {
-    Safe, Suspicious, Other, Alibi, Location, Witness
+    Safe, Suspicious, Other, Alibi, Location, AskFor, TimeLine
+};
+
+struct ScenarioQuestion {
+    int hour;
+    std::string topic;
+    std::string text;
+};
+
+struct Statement {
+    Category cat;
+    std::string location = "None";
+    int arriveWithID = -1;
+    int seenWithID = -1;
+    int vouchID = -1;
+    int seenIDLeave = -1;
+    int leaveWithID = -1;
+    int duration = 0;
 };
 
 struct Scenario {
     int mapID;
     std::string mapName;
     std::vector<std::string> worldLocations = {};
+    std::vector<ScenarioQuestion> timelineQuestions;
+    robin_hood::unordered_map<int, std::vector<Statement>> alibiLibrary;
 };
 
-struct Statement {
-    Category cat;         // Current state (Safe/Suspicious)
-    Category type;
-    std::string location;
-    int startTime;    // e.g., 1400 (2:00 PM)
-    int duration;     // e.g., 60 (minutes)
-    int seenWithID;   // ID of the other bot mentioned (-1 if alone)
-    bool isPlayer;    // Was this statement about the player?
-};
 
 struct SuspectInfo
 {
@@ -35,10 +46,9 @@ struct SuspectInfo
     C_Suspect* suspectRef = nullptr;
 
     std::vector<std::pair<std::string, std::string>> generalNotes;
-    std::vector<Statement> timeline;;
+    std::vector<Statement> timeline;
 
-    void AddEntry(const std::string& question, const std::string& answer, Statement cat) {
-        generalNotes.emplace_back(question, answer);
+    void AddEntry(Statement cat) {
         timeline.push_back(cat);
     }
 };

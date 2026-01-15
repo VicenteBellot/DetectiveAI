@@ -2,6 +2,7 @@ conan = {}
 
 configs = {'Debug','Release','RelWithDebInfo'}
 for i = 1,3 do
+    include("build/deps/"..configs[i].."/conanbuildinfo.premake.lua")
     conan[configs[i]] = {}
     local cfg = conan[configs[i]]
 
@@ -48,14 +49,12 @@ function conan_config_lib()
     end
 end
 
-workspace "Detective"
-
-    configurations { "Debug","Release","RelWithDebInfo" }
+workspace "DetectiveAI"
+    configurations { "Debug", "Release" }
     architecture "x64"
+    cppdialect "C++20"
     location "build"
-    cppdialect "c++20"
     startproject "Window"
-
     filter "configurations:Debug"
         defines { "DEBUG" }
         symbols "On"
@@ -73,18 +72,39 @@ workspace "Detective"
         symbols "On"
     filter {}
 
-    project "MainDetective"
-        kind "ConsoleApp"
-        language "C++"
-        targetdir "build/%{prj.name}/%{cfg.buildcfg}"
-        includedirs {"include", "deps"}
-        conan_config_exec("Debug")
-        conan_config_exec("Release")
-        conan_config_exec("RelWithDebInfo")
-        debugargs { _MAIN_SCRIPT_DIR .. "/data" }
-        files {
-            "src/*.cpp",
-            "include/*.hpp"
-        }
+project "EliasThorne"
+    kind "StaticLib"
+    language "C++"
+    targetdir "build/%{cfg.buildcfg}"
+    includedirs { "include", "deps" }
     
-   
+    files {
+        "premake5.lua",
+        "src/build/conanfile.txt",
+        "src/build/conan.lua",
+        "include/*.hpp", 
+        "src/*.cpp", 
+    }
+
+project "MainDetective"
+    kind "ConsoleApp"
+    language "C++"
+    targetdir "build/%{prj.name}/%{cfg.buildcfg}"
+    
+    -- IMPORTANT: This app needs the headers to see the classes
+    includedirs { "include", "deps", "deps/imgui" }
+
+    links { "EliasThorne" } 
+    conan_config_exec() -- Ensure your Conan libs link here
+
+    files {
+        "example/main.cpp",
+        "include/*.hpp", "src/*.cpp",
+        "deps/imgui/imgui*.cpp",
+    }
+
+    -- Your data copy command
+    postbuildcommands {
+        '{MKDIR} "%{cfg.targetdir}/data"',
+        'xcopy /E /Y /I "%{_MAIN_SCRIPT_DIR}\\example\\data" "%{cfg.targetdir}\\data\\"'
+    }

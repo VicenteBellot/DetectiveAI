@@ -1,0 +1,30 @@
+#ifndef GAMEMANAGER_HPP
+#define GAMEMANAGER_HPP
+
+#include "Detective.hpp"
+
+#include "imgui/imgui.h"
+
+class C_GameManager {
+public:
+    C_GameManager() {
+    }
+
+    C_Detective* Thorne;
+    std::vector<C_Suspect*> suspects;
+    Scenario currentScenario;
+
+    // UI State
+    int activeSuspectIndex = 0;
+    bool showEvidenceBoard = false;
+
+    void LoadScenarioFromCSV(std::string filePath);
+    void LoadAlibisFromCSV(std::string filePath);
+    void LoadRoomsFromCSV(std::string filePath);
+    void Docking();
+    void DrawInterface();
+    void InitializeGame();
+
+};
+
+#endif // !GAMEMANAGER_HPP

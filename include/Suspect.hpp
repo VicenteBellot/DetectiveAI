@@ -22,9 +22,10 @@ public:
     std::vector<Statement> realTimeline;
 
 
-    void UpdateStress(float detectiveAggression, float detectiveTrust);
-    bool ShouldLie(float detectiveIQ) const;
-    Statement ProvideStatement(int hour, const std::vector<std::string>& worldLocations);
+    void AddAlibi(std::vector<Statement>& alibi);
+
+
+    Statement ProvideStatement(std::string roomName);
 };
 
 #endif // !SUSPECT_PAWN_HPP
