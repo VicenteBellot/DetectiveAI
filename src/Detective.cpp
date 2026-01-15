@@ -1,12 +1,184 @@
 #include "Detective.hpp"
 #include "Suspect.hpp"
+#include <filesystem>
+#include <fstream>
 
 C_Detective::C_Detective(Country c, Cluster cl, bool g, bool s, int iq, float trust)
     : C_BasePawn(c, cl, g, s), IQ(iq), trust(trust) {
-    sexism = 10;
-    classism = 10;
-    homophobia = 10;
-    racism = 10;
+    //switch (c) {
+    //case UK:
+    //    if (cl == V1) {
+    //        classism = 2;
+    //        sexism = 2;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    else {
+    //        classism = 1;
+    //        sexism = 1;
+    //        homophobia = 1;
+    //        racism = 0;
+    //    }
+    //    break;
+    //case FR:
+    //    if (cl == V2) {
+    //        classism = 1;
+    //        sexism = 1;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    else {
+    //        classism = 2;
+    //        sexism = 1;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    break;
+    //case DE:
+    //    if (cl == V1) {
+    //        classism = 1;
+    //        sexism = 1;
+    //        homophobia = 0;
+    //        racism = 0;
+    //    }
+    //    else {
+    //        classism = 1;
+    //        sexism = 1;
+    //        homophobia = 0;
+    //        racism = 0;
+    //    }
+    //    break;
+    //case JP:
+    //    if (cl == V4) {
+    //        classism = 2;
+    //        sexism = 3;
+    //        homophobia = 2;
+    //        racism = 2;
+    //    }
+    //    else {
+    //        classism = 2;
+    //        sexism = 2;
+    //        homophobia = 2;
+    //        racism = 1;
+    //    }
+    //    break;
+    //case IT:
+    //    if (cl == V2) {
+    //        classism = 1;
+    //        sexism = 3;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    else {
+    //        classism = 1;
+    //        sexism = 2;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    break;
+    //case ES:
+    //    if (cl == V7) {
+    //        classism = 1;
+    //        sexism = 2;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    else {
+    //        classism = 0;
+    //        sexism = 1;
+    //        homophobia = 0;
+    //        racism = 0;
+    //    }
+    //    break;
+    //case RU:
+    //    if (cl == V1) {
+    //        classism = 2;
+    //        sexism = 3;
+    //        homophobia = 3;
+    //        racism = 2;
+    //    }
+    //    else {
+    //        classism = 2;
+    //        sexism = 2;
+    //        homophobia = 3;
+    //        racism = 2;
+    //    }
+    //    break;
+    //case AU:
+    //    if (cl == V8) {
+    //        classism = 0;
+    //        sexism = 1;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    else {
+    //        classism = 1;
+    //        sexism = 2;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    break;
+    //case SE:
+    //    if (cl == V2) {
+    //        classism = 0;
+    //        sexism = 0;
+    //        homophobia = 0;
+    //        racism = 0;
+    //    }
+    //    else {
+    //        classism = 0;
+    //        sexism = 0;
+    //        homophobia = 0;
+    //        racism = 0;
+    //    }
+    //    break;
+    //case EU:
+    //    if (cl == V8) {
+    //        classism = 1;
+    //        sexism = 1;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    else {
+    //        classism = 1;
+    //        sexism = 2;
+    //        homophobia = 1;
+    //        racism = 1;
+    //    }
+    //    break;
+    ////}
+    SetBias("./data/Bias.csv");
+}
+
+void C_Detective::SetBias(std::string filePath)
+{
+    std::ifstream file(filePath);
+    std::string line;
+
+    int num = 0;
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+        std::string cluster,classism, sex, homo, race ;
+
+        std::getline(ss, cluster, ',');
+        std::getline(ss, classism, ',');
+        std::getline(ss, sex, ',');
+        std::getline(ss, homo, ',');
+        std::getline(ss, race);
+        num++;
+        //printf("%d\n", (int)(num * 0.49f));
+        if (this->country == (int)(num * 0.49f)) {
+            if (this->cluster == std::stoi(cluster)) {
+                this->racism = std::stof(race);
+                this->sexism = std::stof(sex);
+                this->homophobia = std::stof(homo);
+                this->classism = std::stof(classism);
+            }
+            
+        }
+
+
+    }
 }
 
 void C_Detective::Remember(C_Suspect& sus, Statement cat)
@@ -98,7 +270,6 @@ void C_Detective::AnalyzeAlibis(int idA, int idB, std::string room)
             mismatchFound = true;
         }
 
-        // 4. DURATION CHECK: Only relevant if they claim to have been together
         if (sA->vouchID == idB && sB->vouchID == idA) {
             if (std::abs(sA->duration - sB->duration) > 10) { // Tighter margin
                 printf("DURATION DISCREPANCY: They claim to have been together, but times don't match.\n");
@@ -116,9 +287,9 @@ void C_Detective::AnalyzeAlibis(int idA, int idB, std::string room)
     }
 }
 
-void C_Detective::Interrogate(C_Suspect* sus, std::string roomName)
+void C_Detective::Interrogate(C_Suspect* sus, Statement s)
 {
-    Statement report = sus->ProvideStatement(roomName);
+    Statement report = sus->ProvideStatement(s);
 
     if (memory.find(sus->ID) == memory.end()) {
         SuspectInfo newInfo;

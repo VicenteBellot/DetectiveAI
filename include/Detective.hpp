@@ -18,14 +18,14 @@ struct InvestigationQuestion {
 
 class C_Detective : public C_BasePawn{
 
-/// SE LLAMA Inspector Elias Thorne
+/// SE LLAMA Inspector Gustav ArandAI
 
 public:
     C_Detective(Country c, Cluster cl, bool g, bool s,
         int iq, float trust);
         
     
-
+    void SetBias(std::string filePath);
 
     enum InterrogationStyle { Casual, Formal, Aggressive };
 
@@ -52,7 +52,7 @@ public:
 
     InterrogationStyle DecideStyle(const C_Suspect& sus) const;
     void AnalyzeAlibis(int idA, int idB, std::string room);
-    void Interrogate(C_Suspect* sus, std::string roomName);
+    void Interrogate(C_Suspect* sus, Statement roomName);
     
     float GetAggreivityBias(const C_Suspect& sus) const;
     float GetDishonestyBias(const C_Suspect& sus) const;

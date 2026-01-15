@@ -10,18 +10,17 @@ void C_Suspect::AddAlibi(std::vector<Statement>& alibi)
     realTimeline = alibi;
 }
 
-Statement C_Suspect::ProvideStatement(std::string roomName)
+Statement C_Suspect::ProvideStatement(Statement roomName)
 {
+    Statement emptyStatement;
     for (const auto& statement : realTimeline)
     {
-        if (statement.location == roomName)
+        if (statement.location == roomName.location)
         {
-            printf("a");
             return statement;
         }
     }
 
-    Statement emptyStatement;
     emptyStatement.location = "None";
     emptyStatement.arriveWithID = -1;
     emptyStatement.seenWithID = -1;
