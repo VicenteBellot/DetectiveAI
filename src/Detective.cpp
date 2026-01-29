@@ -5,149 +5,7 @@
 
 C_Detective::C_Detective(Country c, Cluster cl, bool g, bool s, int iq, float trust)
     : C_BasePawn(c, cl, g, s), IQ(iq), trust(trust) {
-    //switch (c) {
-    //case UK:
-    //    if (cl == V1) {
-    //        classism = 2;
-    //        sexism = 2;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    else {
-    //        classism = 1;
-    //        sexism = 1;
-    //        homophobia = 1;
-    //        racism = 0;
-    //    }
-    //    break;
-    //case FR:
-    //    if (cl == V2) {
-    //        classism = 1;
-    //        sexism = 1;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    else {
-    //        classism = 2;
-    //        sexism = 1;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    break;
-    //case DE:
-    //    if (cl == V1) {
-    //        classism = 1;
-    //        sexism = 1;
-    //        homophobia = 0;
-    //        racism = 0;
-    //    }
-    //    else {
-    //        classism = 1;
-    //        sexism = 1;
-    //        homophobia = 0;
-    //        racism = 0;
-    //    }
-    //    break;
-    //case JP:
-    //    if (cl == V4) {
-    //        classism = 2;
-    //        sexism = 3;
-    //        homophobia = 2;
-    //        racism = 2;
-    //    }
-    //    else {
-    //        classism = 2;
-    //        sexism = 2;
-    //        homophobia = 2;
-    //        racism = 1;
-    //    }
-    //    break;
-    //case IT:
-    //    if (cl == V2) {
-    //        classism = 1;
-    //        sexism = 3;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    else {
-    //        classism = 1;
-    //        sexism = 2;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    break;
-    //case ES:
-    //    if (cl == V7) {
-    //        classism = 1;
-    //        sexism = 2;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    else {
-    //        classism = 0;
-    //        sexism = 1;
-    //        homophobia = 0;
-    //        racism = 0;
-    //    }
-    //    break;
-    //case RU:
-    //    if (cl == V1) {
-    //        classism = 2;
-    //        sexism = 3;
-    //        homophobia = 3;
-    //        racism = 2;
-    //    }
-    //    else {
-    //        classism = 2;
-    //        sexism = 2;
-    //        homophobia = 3;
-    //        racism = 2;
-    //    }
-    //    break;
-    //case AU:
-    //    if (cl == V8) {
-    //        classism = 0;
-    //        sexism = 1;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    else {
-    //        classism = 1;
-    //        sexism = 2;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    break;
-    //case SE:
-    //    if (cl == V2) {
-    //        classism = 0;
-    //        sexism = 0;
-    //        homophobia = 0;
-    //        racism = 0;
-    //    }
-    //    else {
-    //        classism = 0;
-    //        sexism = 0;
-    //        homophobia = 0;
-    //        racism = 0;
-    //    }
-    //    break;
-    //case EU:
-    //    if (cl == V8) {
-    //        classism = 1;
-    //        sexism = 1;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    else {
-    //        classism = 1;
-    //        sexism = 2;
-    //        homophobia = 1;
-    //        racism = 1;
-    //    }
-    //    break;
-    ////}
-    SetBias("./data/Bias.csv");
+   SetBias("./data/Bias.csv");
 }
 
 void C_Detective::SetBias(std::string filePath)
@@ -174,10 +32,7 @@ void C_Detective::SetBias(std::string filePath)
                 this->homophobia = std::stof(homo);
                 this->classism = std::stof(classism);
             }
-            
         }
-
-
     }
 }
 
@@ -287,9 +142,18 @@ void C_Detective::AnalyzeAlibis(int idA, int idB, std::string room)
     }
 }
 
-void C_Detective::Interrogate(C_Suspect* sus, Statement s)
+void C_Detective::Interrogate(C_Suspect* sus, int Question)
 {
-    Statement report = sus->ProvideStatement(s);
+    Statement report = sus->ProvideStatement(Question);
+
+    printf("Statement\n");
+    printf("arrived with: %d\n", report.arriveWithID);
+    printf("duration: %d\n", report.duration);
+    printf("Leave With: %d\n", report.leaveWithID);
+    printf("Location: %s\n", report.location.c_str());
+    printf("seen Leave: %d\n", report.seenIDLeave);
+    printf("Seen With: %d\n", report.seenWithID);
+    printf("vouch: %d\n", report.vouchID);
 
     if (memory.find(sus->ID) == memory.end()) {
         SuspectInfo newInfo;
@@ -301,11 +165,6 @@ void C_Detective::Interrogate(C_Suspect* sus, Statement s)
 
     // We store the statement in the suspect's known timeline in Thorne's head
     memory[sus->ID].timeline.push_back(report);
-    //Remember(*sus, report);
-    if (report.location == "None") {
-        printf("Thorne Notes: %s claims they were never in the %s\n", sus->name.c_str(), s.location.c_str());
-    }
-
 }
 
 

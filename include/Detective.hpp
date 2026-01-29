@@ -52,7 +52,7 @@ public:
 
     InterrogationStyle DecideStyle(const C_Suspect& sus) const;
     void AnalyzeAlibis(int idA, int idB, std::string room);
-    void Interrogate(C_Suspect* sus, Statement roomName);
+    void Interrogate(C_Suspect* sus, int Question);
     
     float GetAggreivityBias(const C_Suspect& sus) const;
     float GetDishonestyBias(const C_Suspect& sus) const;

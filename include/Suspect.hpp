@@ -25,7 +25,7 @@ public:
     void AddAlibi(std::vector<Statement>& alibi);
 
 
-    Statement ProvideStatement(Statement roomName);
+    Statement ProvideStatement(int Question);
 };
 
 #endif // !SUSPECT_PAWN_HPP

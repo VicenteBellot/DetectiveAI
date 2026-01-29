@@ -10,24 +10,32 @@ void C_Suspect::AddAlibi(std::vector<Statement>& alibi)
     realTimeline = alibi;
 }
 
-Statement C_Suspect::ProvideStatement(Statement roomName)
+Statement C_Suspect::ProvideStatement(int Question)
 {
-    Statement emptyStatement;
-    for (const auto& statement : realTimeline)
-    {
-        if (statement.location == roomName.location)
-        {
-            return statement;
-        }
-    }
-
-    emptyStatement.location = "None";
-    emptyStatement.arriveWithID = -1;
-    emptyStatement.seenWithID = -1;
-    emptyStatement.vouchID = -1;
-    emptyStatement.seenIDLeave = -1;
-    emptyStatement.leaveWithID = -1;
-    emptyStatement.duration = 0;
-
+	Statement emptyStatement{ {}, "UNDEFINED", -2, -2, -2, -2, -2, -2};
+	printf("INT QUESTION: %d\n", Question);
+	switch (Question)
+	{
+	case 1: // asking for arriveWithID
+		emptyStatement.arriveWithID = realTimeline.begin()->arriveWithID;
+		break;
+	case 2: // asking for seenWithID
+		emptyStatement.seenWithID = realTimeline.begin()->seenWithID;
+		break;
+	case 3: // asking for vouchID
+		emptyStatement.vouchID = realTimeline.begin()->vouchID;
+		break;
+	case 4: // asking for seenIDLeave
+		emptyStatement.seenIDLeave = realTimeline.begin()->seenIDLeave;
+		break;
+	case 5: // asking for leaveWithID
+		emptyStatement.seenWithID = realTimeline.begin()->seenWithID;
+		break;
+	case 6: // asking for duration
+		emptyStatement.duration = realTimeline.begin()->duration;
+		break;
+	default:
+		break;
+	}
     return emptyStatement;
 }

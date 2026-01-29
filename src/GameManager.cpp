@@ -106,17 +106,21 @@ void C_GameManager::DrawInterface()
 
         // Show questions from the Spreadsheet
         ImGui::Text("Investigation Topics:");
+        int question = 0;
         for (auto& q : currentScenario.timelineQuestions) {
+            question++;
             if (ImGui::Button(q.text.c_str())) {
                 // THE LOGIC ENGINE TRIGGERS HERE
 
 
-                Thorne->Interrogate(target, currentScenario.alibiLibrary[activeSuspectIndex][0]);
+                Thorne->Interrogate(target, question);
+
                 activeSuspectIndex++;
                 if (activeSuspectIndex >= quantitySustec) activeSuspectIndex = 0;
                 //Thorne->ApplyPressure(*target); // Spikes stress based on bias
             }
         }
+        
 
         if (!Thorne->questionPool.empty()) {
             ImGui::Separator();
