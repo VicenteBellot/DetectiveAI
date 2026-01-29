@@ -11,6 +11,7 @@
 #include <GLFW/glfw3.h>
 
 #include <stdio.h>
+#include <chrono>
 
 int main() {
     if (!glfwInit()) return 1;
@@ -26,16 +27,27 @@ int main() {
 
 
 	C_GameManager game;
+
+    auto start = std::chrono::high_resolution_clock::now();
+    auto currentTime = std::chrono::high_resolution_clock::now();
+
 	game.InitializeGame(); //
     while (!glfwWindowShouldClose(window)) {
+
+        auto newTime = std::chrono::high_resolution_clock::now();
+        float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count(); //DeltaTime
+        currentTime = newTime;
+
         glfwPollEvents();
         // 1. Input/New Frame
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
+        //printf("%f\n", frameTime);
+
         // 2. The "Functional" Game Logic & UI
-        game.DrawInterface();
+        game.DrawInterface(frameTime);
 
         ImGui::Render();
         int display_w, display_h;

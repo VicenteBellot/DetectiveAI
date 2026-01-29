@@ -2,12 +2,16 @@
 #define BASE_PAWN_HPP
 
 #include <stdlib.h>
+#include <robinmap/robin_hood.h>
 
 class C_BasePawn {
 public:
 	enum Cluster { V1, V2, V3, V4, V5, V6, V7, V8 };
 	enum Country { UK, FR, DE, JP, IT, ES, RU, AU, SE, EU };
-	
+	robin_hood::unordered_map<Country, std::string> CountryName = { {UK, "United Kingdom"}, {FR, "France"}, {DE, "Germany"},{JP, "Japan"}, {IT, "Italy"},
+																	{ES, "Spain"}, {RU, "Rusia"}, {AU, "Australia"}, {SE, "Sweden"}, {EU, "United States"} };
+
+
 	struct CharacterOrigin {
 		C_BasePawn::Country country;
 		C_BasePawn::Cluster cluster;

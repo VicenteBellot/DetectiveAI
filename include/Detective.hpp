@@ -30,6 +30,8 @@ public:
     enum InterrogationStyle { Casual, Formal, Aggressive };
 
     std::vector<InvestigationQuestion> questionPool;
+
+
     robin_hood::unordered_map<int, SuspectInfo> memory;
 
     void Remember(C_Suspect& sus, Statement cat);
@@ -46,7 +48,10 @@ public:
     float frustration = 0;
     std::vector<int> suspectedIDs;
 
+    int FirstSuspectedInterrogates = -2;
 
+    int LastSuspectedInterrogates = -2;
+    int LastQuestionAsked = -2;
 
     C_Suspect* GetSuspectByID(int targetID) const;
 

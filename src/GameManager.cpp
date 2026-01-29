@@ -57,7 +57,7 @@ void C_GameManager::LoadAlibisFromCSV(std::string filePath) {
         s.seenWithID = std::stoi(stayedwith);
         s.vouchID = std::stoi(vouch);
         s.seenIDLeave = std::stoi(sawleaving);
-        s.leaveWithID = std::stoi(sawleaving);
+        s.leaveWithID = std::stoi(leftwith);
         s.duration = std::stoi(hr);
         s.cat = Safe; // It's the "Truth"
 
@@ -83,10 +83,13 @@ void C_GameManager::LoadRoomsFromCSV(std::string filePath)
             currentScenario.worldLocations.push_back(hourStr.c_str());
         }
     }
+
 }
 
-void C_GameManager::DrawInterface()
+void C_GameManager::DrawInterface(float DeltaTime)
 {
+    tick += DeltaTime;
+
     ImGui::Begin("Suspect Files");
     for (int i = 0; i < suspects.size(); i++) {
         if (ImGui::Selectable(suspects[i]->name.c_str(), activeSuspectIndex == i)) {
@@ -94,54 +97,7 @@ void C_GameManager::DrawInterface()
         }
     }
     ImGui::End();
-    //activeSuspectIndex = 0;
-    // 2. Interrogation Desk
-    if (activeSuspectIndex != -1) {
-        C_Suspect* target = suspects[activeSuspectIndex];
-
-        ImGui::Begin("Interrogation Room");
-        ImGui::Text("Subject: %s", target->name.c_str());
-        ImGui::ProgressBar(target->stress, ImVec2(0, 0), "Suspect Stress");
-        ImGui::Separator();
-
-        // Show questions from the Spreadsheet
-        ImGui::Text("Investigation Topics:");
-        int question = 0;
-        for (auto& q : currentScenario.timelineQuestions) {
-            question++;
-            if (ImGui::Button(q.text.c_str())) {
-                // THE LOGIC ENGINE TRIGGERS HERE
-
-
-                Thorne->Interrogate(target, question);
-
-                activeSuspectIndex++;
-                if (activeSuspectIndex >= quantitySustec) activeSuspectIndex = 0;
-                //Thorne->ApplyPressure(*target); // Spikes stress based on bias
-            }
-        }
-        
-
-        if (!Thorne->questionPool.empty()) {
-            ImGui::Separator();
-            ImGui::TextColored(ImVec4(1, 0.5f, 0, 1), "Pressure Points:");
-            for (auto& followUp : Thorne->questionPool) {
-                if (followUp.targetSuspectID == target->ID) {
-                    if (ImGui::Button(followUp.text.c_str())) {
-                        // Handle confrontation logic...
-                    }
-                }
-            }
-        }
-        ImGui::End();
-    }
-    ImGui::Begin("Inspector Thorne's Questions");
-    for (auto i : currentScenario.timelineQuestions) {
-        ImGui::Text(i.text.c_str());
-
-    }
-    ImGui::End();
-
+    
     ImGui::Begin("Locations");
     for (auto i : currentScenario.worldLocations) {
         ImGui::Text(i.c_str());
@@ -174,7 +130,7 @@ void C_GameManager::DrawInterface()
                     ImGui::TableSetBgColor(ImGuiTableBgTarget_RowBg0, IM_COL32(255, 0, 0, 100)); // Transparent Red
                 }
                 ImGui::TableNextColumn();
-                ImGui::Text("%d", suspectID);
+                ImGui::Text("%d", suspectID+101);
 
                 ImGui::TableNextColumn();
                 ImGui::TextUnformatted(alibi.location.c_str());
@@ -214,12 +170,90 @@ void C_GameManager::DrawInterface()
     ImGui::Text("Sexism: %.2f", Thorne->sexism);
     ImGui::Text("Current Style: %s", (Thorne->frustration > 0.6f ? "Aggressive" : "Professional"));
 
-    if (ImGui::CollapsingHeader("Memory Log")) {
+    /*if (ImGui::CollapsingHeader("Memory Log")) {
         for (auto const& [id, info] : Thorne->memory) {
             ImGui::BulletText("Suspect %s: %d notes", info.name.c_str(), (int)info.timeline.size());
         }
-    }
+    }*/
     ImGui::End();
+
+    if (activeSuspectIndex != -1) {
+        C_Suspect* target = suspects[activeSuspectIndex];
+
+        ImGui::Begin("Interrogation Room");
+        ImGui::Text("Subject: %s", target->name.c_str());
+        ImGui::Text("Race: V%d", target->cluster);
+        ImGui::Text("Country of Origin: %s", target->CountryName[target->country].c_str());
+        if (target->gender) ImGui::Text("Gender: Male");
+        else ImGui::Text("Gender: Female");
+
+        if(target->sexualOrientation) ImGui::Text("Orientation: Heterosexual");
+        else ImGui::Text("Orientation: Other");
+
+
+        ImGui::ProgressBar(target->stress, ImVec2(0, 0), "Suspect Stress");
+
+        ImGui::Separator();
+
+        // Show questions from the Spreadsheet
+        ImGui::Text("Investigation Topics:");
+        //Ask Questions
+        if (tick > Cooldown) {
+            tick = 0;
+
+            if (Thorne->FirstSuspectedInterrogates == -2) Thorne->FirstSuspectedInterrogates = activeSuspectIndex;
+
+            if (Thorne->LastSuspectedInterrogates == -2) {
+                Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
+            }
+            else {
+
+                auto memoryID = Thorne->memory[Thorne->LastSuspectedInterrogates];
+                int answertolastquestion = memoryID.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked))->second;
+
+                if (answertolastquestion >= 0 && SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked) != 5) {// estaba con alguien y no es el tiempo 
+                    activeSuspectIndex = answertolastquestion;
+                    printf("TO QUESTION %d\n", activeSuspectIndex);
+                    Thorne->LastQuestionAsked = SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked);
+                }
+                //AskedQuestion = 
+            }
+            printf("%d\n", Thorne->LastQuestionAsked);
+
+            Thorne->Interrogate(target, Thorne->LastQuestionAsked);
+
+            Thorne->LastSuspectedInterrogates = activeSuspectIndex;
+            activeSuspectIndex++;
+            if (activeSuspectIndex >= quantitySustec) activeSuspectIndex = 0;
+        }
+        float question = 0;
+        for (auto& q : currentScenario.timelineQuestions) {
+            if (question == Thorne->LastQuestionAsked)
+            {
+                ImGui::TextColored(ImVec4(0, 255, 0, 100), ("Asked " + q.text).c_str()); 
+                question++;
+                continue;
+            }
+            ImGui::Text(q.text.c_str());
+            question++;
+        }
+        
+
+        if (!Thorne->questionPool.empty()) {
+            ImGui::Separator();
+            ImGui::TextColored(ImVec4(1, 0.5f, 0, 1), "Pressure Points:");
+            for (auto& followUp : Thorne->questionPool) {
+                if (followUp.targetSuspectID == target->ID) {
+
+
+                    if (ImGui::Button(followUp.text.c_str())) {
+                        // Handle confrontation logic...
+                    }
+                }
+            }
+        }
+        ImGui::End();
+    }
 }
 
 void C_GameManager::InitializeGame()
@@ -234,10 +268,9 @@ void C_GameManager::InitializeGame()
 
     printf("Alibis: %d\n", Alibis);
     LoadAlibisFromCSV("./data/Gala/Alibis/" + std::to_string(Alibis) + ".csv");
-
     for (int i = 1; i < quantitySustec + 1; i++) {
         C_BasePawn::CharacterOrigin susOrigin = C_BasePawn::GenerateRandomOrigin(false);
-        C_Suspect* s = new C_Suspect(susOrigin.country, susOrigin.cluster, true, true, false, "Suspect_" + std::to_string(i), 0.7f);
+        C_Suspect* s = new C_Suspect(susOrigin.country, susOrigin.cluster, rand()%2, rand() % 2, false, "Suspect_" + std::to_string(i), 0.7f);
         s->ID = 100 + i;
 
         // Assign a random Alibi Path from the library
@@ -246,6 +279,7 @@ void C_GameManager::InitializeGame()
         suspects.push_back(s);
 
     }
+
     switch (Alibis) {
     case(1):
         suspects.at(4)->guilty = true;

@@ -12,26 +12,26 @@ void C_Suspect::AddAlibi(std::vector<Statement>& alibi)
 
 Statement C_Suspect::ProvideStatement(int Question)
 {
-	Statement emptyStatement{ {}, "UNDEFINED", -2, -2, -2, -2, -2, -2};
+	Statement emptyStatement{ -2, -2, -2, -2, -2, -2,{}, "UNDEFINED"};
 	printf("INT QUESTION: %d\n", Question);
 	switch (Question)
 	{
-	case 1: // asking for arriveWithID
+	case 0: // asking for arriveWithID
 		emptyStatement.arriveWithID = realTimeline.begin()->arriveWithID;
 		break;
-	case 2: // asking for seenWithID
+	case 1: // asking for seenWithID
 		emptyStatement.seenWithID = realTimeline.begin()->seenWithID;
 		break;
-	case 3: // asking for vouchID
+	case 2: // asking for vouchID
 		emptyStatement.vouchID = realTimeline.begin()->vouchID;
 		break;
-	case 4: // asking for seenIDLeave
+	case 3: // asking for seenIDLeave
 		emptyStatement.seenIDLeave = realTimeline.begin()->seenIDLeave;
 		break;
-	case 5: // asking for leaveWithID
+	case 4: // asking for leaveWithID
 		emptyStatement.seenWithID = realTimeline.begin()->seenWithID;
 		break;
-	case 6: // asking for duration
+	case 5: // asking for duration
 		emptyStatement.duration = realTimeline.begin()->duration;
 		break;
 	default:

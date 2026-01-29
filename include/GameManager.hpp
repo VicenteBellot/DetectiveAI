@@ -22,10 +22,13 @@ public:
     void LoadScenarioFromCSV(std::string filePath);
     void LoadAlibisFromCSV(std::string filePath);
     void LoadRoomsFromCSV(std::string filePath);
-    void Docking();
-    void DrawInterface();
+    void DrawInterface(float DeltaTime);
     void InitializeGame();
 
+    float Cooldown = 5.0f;
+    float tick = 0.0f;
+
+    unsigned int AskedQuestion = -1;
 };
 
 #endif // !GAMEMANAGER_HPP

@@ -46,7 +46,7 @@ void C_Detective::Remember(C_Suspect& sus, Statement cat)
         memory.emplace(sus.ID, newInfo);
     }
 
-    memory[sus.ID].AddEntry(cat);
+    //memory[sus.ID].AddEntry(cat);
 }
 
 const SuspectInfo* C_Detective::GetInfo(const int& suspectID) const
@@ -81,65 +81,65 @@ C_Detective::InterrogationStyle C_Detective::DecideStyle(const C_Suspect& sus) c
 
 void C_Detective::AnalyzeAlibis(int idA, int idB, std::string room)
 {
-    // Get the statements Thorne remembers
-    auto itA = memory.find(idA);
-    auto itB = memory.find(idB);
-    if (itA == memory.end() || itB == memory.end()) return;
-    // (Logic to find the statement for 'room' in memory for both IDs...)
+    //// Get the statements Thorne remembers
+    //auto itA = memory.find(idA);
+    //auto itB = memory.find(idB);
+    //if (itA == memory.end() || itB == memory.end()) return;
+    //// (Logic to find the statement for 'room' in memory for both IDs...)
 
-    Statement* sA = nullptr;
-    Statement* sB = nullptr;
+    //Statement* sA = nullptr;
+    //Statement* sB = nullptr;
 
-    for (auto& stmt : itA->second.timeline) {
-        if (stmt.location == room) {
-            sA = &stmt;
-            break;
-        }
-    }
+    //for (auto& stmt : itA->second.timeline) {
+    //    if (stmt.location == room) {
+    //        sA = &stmt;
+    //        break;
+    //    }
+    //}
 
-    for (auto& stmt : itB->second.timeline) {
-        if (stmt.location == room) {
-            sB = &stmt;
-            break;
-        }
-    }
+    //for (auto& stmt : itB->second.timeline) {
+    //    if (stmt.location == room) {
+    //        sB = &stmt;
+    //        break;
+    //    }
+    //}
 
-    if (sA && sB) {
-        bool mismatchFound = false;
-        if ((sA->arriveWithID == idB && sB->arriveWithID != idA) ||
-            (sB->arriveWithID == idA && sA->arriveWithID != idB)) {
-            printf("ENTRY CONTRADICTION: One claims they entered together, the other denies it.\n");
-            mismatchFound = true;
-        }
+    //if (sA && sB) {
+    //    bool mismatchFound = false;
+    //    if ((sA->arriveWithID == idB && sB->arriveWithID != idA) ||
+    //        (sB->arriveWithID == idA && sA->arriveWithID != idB)) {
+    //        printf("ENTRY CONTRADICTION: One claims they entered together, the other denies it.\n");
+    //        mismatchFound = true;
+    //    }
 
-        // They were together, but their stories about how long they stayed differ significantly
-        if ((sA->vouchID == idB && sB->vouchID != idA) ||
-            (sB->vouchID == idA && sA->vouchID != idB)) {
-            printf("VOUCH CONTRADICTION: One-way alibi detected in %s.\n", room.c_str());
-            mismatchFound = true;
-        }
+    //    // They were together, but their stories about how long they stayed differ significantly
+    //    if ((sA->vouchID == idB && sB->vouchID != idA) ||
+    //        (sB->vouchID == idA && sA->vouchID != idB)) {
+    //        printf("VOUCH CONTRADICTION: One-way alibi detected in %s.\n", room.c_str());
+    //        mismatchFound = true;
+    //    }
 
-        if ((sA->leaveWithID == idB && sB->leaveWithID != idA) ||
-            (sB->leaveWithID == idA && sA->leaveWithID != idB)) {
-            printf("EXIT CONTRADICTION: Disagreement on whether they left %s together.\n", room.c_str());
-            mismatchFound = true;
-        }
+    //    if ((sA->leaveWithID == idB && sB->leaveWithID != idA) ||
+    //        (sB->leaveWithID == idA && sA->leaveWithID != idB)) {
+    //        printf("EXIT CONTRADICTION: Disagreement on whether they left %s together.\n", room.c_str());
+    //        mismatchFound = true;
+    //    }
 
-        if (sA->vouchID == idB && sB->vouchID == idA) {
-            if (std::abs(sA->duration - sB->duration) > 10) { // Tighter margin
-                printf("DURATION DISCREPANCY: They claim to have been together, but times don't match.\n");
-                mismatchFound = true;
-            }
-        }
-        if (mismatchFound) {
-            sA->cat = Suspicious;
-            sB->cat = Suspicious;
-        }
-        else {
-            sA->cat = Safe;
-            sB->cat = Safe;
-        }
-    }
+    //    if (sA->vouchID == idB && sB->vouchID == idA) {
+    //        if (std::abs(sA->duration - sB->duration) > 10) { // Tighter margin
+    //            printf("DURATION DISCREPANCY: They claim to have been together, but times don't match.\n");
+    //            mismatchFound = true;
+    //        }
+    //    }
+    //    if (mismatchFound) {
+    //        sA->cat = Suspicious;
+    //        sB->cat = Suspicious;
+    //    }
+    //    else {
+    //        sA->cat = Safe;
+    //        sB->cat = Safe;
+    //    }
+    //}
 }
 
 void C_Detective::Interrogate(C_Suspect* sus, int Question)
@@ -164,7 +164,17 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question)
     }
 
     // We store the statement in the suspect's known timeline in Thorne's head
-    memory[sus->ID].timeline.push_back(report);
+    int* ptr = (int*)(&report);
+    for (int i = 0; i < 6; i++) {
+        if ((ptr[i]) != -2) {
+            memory[sus->ID].AddEntry(SuspectInfo::KQuestionAsked(Question), ptr[i]);
+            printf("[Question asked INDICE: %d]\n", Question);
+            printf("[Answer to store: %d]\n", ptr[i]);
+            return;
+        }
+    }
+
+    //memory[sus->ID].AddEntry(SuspectInfo::KQuestionAsked(Question),);
 }
 
 

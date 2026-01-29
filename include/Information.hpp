@@ -20,14 +20,14 @@ struct ScenarioQuestion {
 };
 
 struct Statement {
-    Category cat;
-    std::string location = "None";
     int arriveWithID = -1;
     int seenWithID = -1;
     int vouchID = -1;
     int seenIDLeave = -1;
     int leaveWithID = -1;
-    int duration = 0;
+    int duration = -1;
+    Category cat;
+    std::string location = "None";
 };
 
 struct Scenario {
@@ -35,21 +35,34 @@ struct Scenario {
     std::string mapName;
     std::vector<std::string> worldLocations = {};
     std::vector<ScenarioQuestion> timelineQuestions;
-    robin_hood::unordered_map<int, std::vector<Statement>> alibiLibrary;
+    std::map<int, std::vector<Statement>> alibiLibrary;
 };
 
 
 struct SuspectInfo
 {
+    enum KQuestionAsked {
+        ArriveWith,
+        StayedWith,
+        VouchPresence,
+        WatchLeave,
+        LeaveWith,
+        TimeStayed
+    };
+
     std::string name;
     int ID;
     C_Suspect* suspectRef = nullptr;
 
-    std::vector<std::pair<std::string, std::string>> generalNotes;
-    std::vector<Statement> timeline;
+    std::vector<std::pair<std::string, std::string>> generalNotes; //Not in use yet
 
-    void AddEntry(Statement cat) {
-        timeline.push_back(cat);
+    robin_hood::unordered_map<KQuestionAsked, int> timeline;
+    //std::vector<Statement> timeline;
+
+
+
+    void AddEntry(SuspectInfo::KQuestionAsked quest, int cat) {
+        timeline.emplace(quest, cat);
     }
 };
 #endif // !INFORMATION_DATA_HPP
