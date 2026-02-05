@@ -79,81 +79,21 @@ C_Detective::InterrogationStyle C_Detective::DecideStyle(const C_Suspect& sus) c
     return InterrogationStyle::Casual;
 }
 
-void C_Detective::AnalyzeAlibis(int idA, int idB, std::string room)
+void C_Detective::AnalyzeAlibis(int idA, int idB)
 {
-    //// Get the statements Thorne remembers
-    //auto itA = memory.find(idA);
-    //auto itB = memory.find(idB);
-    //if (itA == memory.end() || itB == memory.end()) return;
-    //// (Logic to find the statement for 'room' in memory for both IDs...)
+    auto& memIdA = memory[idA];
+    auto itA = memIdA.timeline.find(SuspectInfo::KQuestionAsked(LastQuestionAsked));
 
-    //Statement* sA = nullptr;
-    //Statement* sB = nullptr;
+    auto& memIdB = memory[idB];
+    auto itB = memIdB.timeline.find(SuspectInfo::KQuestionAsked(LastQuestionAsked));
 
-    //for (auto& stmt : itA->second.timeline) {
-    //    if (stmt.location == room) {
-    //        sA = &stmt;
-    //        break;
-    //    }
-    //}
 
-    //for (auto& stmt : itB->second.timeline) {
-    //    if (stmt.location == room) {
-    //        sB = &stmt;
-    //        break;
-    //    }
-    //}
-
-    //if (sA && sB) {
-    //    bool mismatchFound = false;
-    //    if ((sA->arriveWithID == idB && sB->arriveWithID != idA) ||
-    //        (sB->arriveWithID == idA && sA->arriveWithID != idB)) {
-    //        printf("ENTRY CONTRADICTION: One claims they entered together, the other denies it.\n");
-    //        mismatchFound = true;
-    //    }
-
-    //    // They were together, but their stories about how long they stayed differ significantly
-    //    if ((sA->vouchID == idB && sB->vouchID != idA) ||
-    //        (sB->vouchID == idA && sA->vouchID != idB)) {
-    //        printf("VOUCH CONTRADICTION: One-way alibi detected in %s.\n", room.c_str());
-    //        mismatchFound = true;
-    //    }
-
-    //    if ((sA->leaveWithID == idB && sB->leaveWithID != idA) ||
-    //        (sB->leaveWithID == idA && sA->leaveWithID != idB)) {
-    //        printf("EXIT CONTRADICTION: Disagreement on whether they left %s together.\n", room.c_str());
-    //        mismatchFound = true;
-    //    }
-
-    //    if (sA->vouchID == idB && sB->vouchID == idA) {
-    //        if (std::abs(sA->duration - sB->duration) > 10) { // Tighter margin
-    //            printf("DURATION DISCREPANCY: They claim to have been together, but times don't match.\n");
-    //            mismatchFound = true;
-    //        }
-    //    }
-    //    if (mismatchFound) {
-    //        sA->cat = Suspicious;
-    //        sB->cat = Suspicious;
-    //    }
-    //    else {
-    //        sA->cat = Safe;
-    //        sB->cat = Safe;
-    //    }
-    //}
 }
 
-void C_Detective::Interrogate(C_Suspect* sus, int Question)
+void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
 {
     Statement report = sus->ProvideStatement(Question);
 
-    printf("Statement\n");
-    printf("arrived with: %d\n", report.arriveWithID);
-    printf("duration: %d\n", report.duration);
-    printf("Leave With: %d\n", report.leaveWithID);
-    printf("Location: %s\n", report.location.c_str());
-    printf("seen Leave: %d\n", report.seenIDLeave);
-    printf("Seen With: %d\n", report.seenWithID);
-    printf("vouch: %d\n", report.vouchID);
 
     if (memory.find(sus->ID) == memory.end()) {
         SuspectInfo newInfo;
@@ -161,17 +101,27 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question)
         newInfo.name = sus->name;
         newInfo.suspectRef = sus;
         memory[sus->ID] = newInfo;
+        
     }
 
     // We store the statement in the suspect's known timeline in Thorne's head
     int* ptr = (int*)(&report);
-    for (int i = 0; i < 6; i++) {
-        if ((ptr[i]) != -2) {
-            memory[sus->ID].AddEntry(SuspectInfo::KQuestionAsked(Question), ptr[i]);
+    bool breakloop = false;
+    for (int i = 0; i < 6 && !breakloop; i++) {
+        if ((ptr[i]) > -2) {
+            
+            if ((ptr[i] > -1)) memory[sus->ID].cat = Category::ToAsk;
+            else memory[sus->ID].cat = Category::Safe;
+
+            memory[sus->ID].AddEntry((SuspectInfo::KQuestionAsked(Question)), ptr[i] - 101);
             printf("[Question asked INDICE: %d]\n", Question);
             printf("[Answer to store: %d]\n", ptr[i]);
-            return;
+            breakloop = true;
         }
+    }
+    
+    if (cat == Category::ToAsk) {
+        AnalyzeAlibis(LastSuspectedInterrogates, sus->ID);
     }
 
     //memory[sus->ID].AddEntry(SuspectInfo::KQuestionAsked(Question),);

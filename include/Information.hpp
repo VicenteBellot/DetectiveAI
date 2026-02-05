@@ -10,7 +10,7 @@
 class C_Suspect;
 
 enum Category {
-    Safe, Suspicious, Other, Alibi, Location, AskFor, TimeLine
+    Safe, Suspicious, ToAsk
 };
 
 struct ScenarioQuestion {
@@ -59,7 +59,7 @@ struct SuspectInfo
     robin_hood::unordered_map<KQuestionAsked, int> timeline;
     //std::vector<Statement> timeline;
 
-
+    Category cat;
 
     void AddEntry(SuspectInfo::KQuestionAsked quest, int cat) {
         timeline.emplace(quest, cat);

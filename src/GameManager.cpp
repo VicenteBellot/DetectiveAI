@@ -90,14 +90,6 @@ void C_GameManager::DrawInterface(float DeltaTime)
 {
     tick += DeltaTime;
 
-    ImGui::Begin("Suspect Files");
-    for (int i = 0; i < suspects.size(); i++) {
-        if (ImGui::Selectable(suspects[i]->name.c_str(), activeSuspectIndex == i)) {
-            activeSuspectIndex = i;
-        }
-    }
-    ImGui::End();
-    
     ImGui::Begin("Locations");
     for (auto i : currentScenario.worldLocations) {
         ImGui::Text(i.c_str());
@@ -201,28 +193,60 @@ void C_GameManager::DrawInterface(float DeltaTime)
         if (tick > Cooldown) {
             tick = 0;
 
-            if (Thorne->FirstSuspectedInterrogates == -2) Thorne->FirstSuspectedInterrogates = activeSuspectIndex;
+            if (Thorne->FirstSuspectedInterrogates == -2) {
+                Thorne->FirstSuspectedInterrogates = activeSuspectIndex;
+
+            }
+
+            bool AskFor = false;
 
             if (Thorne->LastSuspectedInterrogates == -2) {
                 Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
             }
             else {
 
-                auto memoryID = Thorne->memory[Thorne->LastSuspectedInterrogates];
-                int answertolastquestion = memoryID.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked))->second;
+                auto& memoryID = Thorne->memory[Thorne->LastSuspectedInterrogates];
 
-                if (answertolastquestion >= 0 && SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked) != 5) {// estaba con alguien y no es el tiempo 
-                    activeSuspectIndex = answertolastquestion;
-                    printf("TO QUESTION %d\n", activeSuspectIndex);
-                    Thorne->LastQuestionAsked = SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked);
+                auto it = memoryID.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked));
+                if (it != memoryID.timeline.end()) {
+                    //printf("\n\nLast Question Asked: %d\n", it->first);
+                    //printf("Person Said: %d\n\n", it->second);
+
+                    int answertolastquestion = it->second;
+
+                    auto& memoryIDsecond = Thorne->memory[answertolastquestion];
+                    auto itsecond = memoryIDsecond.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked));
+
+                    if (memoryID.cat == Category::ToAsk && it == memoryIDsecond.timeline.end()){ // tenemos el testimonio del primero pero no del segundo
+                        printf("Testimonio de uno de ellos");
+                        AskFor = true;
+                    }
+                    else if (it != memoryIDsecond.timeline.end() && memoryID.cat == Category::ToAsk && memoryIDsecond.cat == Category::ToAsk) { //Tenemos el testimonio de los dos romper el bucle
+                        printf("Testimonio de los dos");
+                        Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
+
+                    }
+                    else if (answertolastquestion >= 0 && SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked) != 5) {
+                        activeSuspectIndex = answertolastquestion;
+                        target = suspects[activeSuspectIndex];
+                        printf("ID TO QUESTION %d\n", activeSuspectIndex);
+                        Thorne->LastQuestionAsked = SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked);
+                    }
+                    else {
+                        Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
+                    }
+                }
+                else {
+                    printf("No answer recorded for the last question.\n");
                 }
                 //AskedQuestion = 
             }
-            printf("%d\n", Thorne->LastQuestionAsked);
+            //printf("%d\n", Thorne->LastQuestionAsked);
+            //printf("ID ASKED: %d\n\n", target->ID);
+            if(AskFor) Thorne->Interrogate(target, Thorne->LastQuestionAsked, Category::Safe);
+            else Thorne->Interrogate(target, Thorne->LastQuestionAsked, Category::ToAsk);
 
-            Thorne->Interrogate(target, Thorne->LastQuestionAsked);
-
-            Thorne->LastSuspectedInterrogates = activeSuspectIndex;
+            Thorne->LastSuspectedInterrogates = target->ID;
             activeSuspectIndex++;
             if (activeSuspectIndex >= quantitySustec) activeSuspectIndex = 0;
         }
@@ -254,6 +278,21 @@ void C_GameManager::DrawInterface(float DeltaTime)
         }
         ImGui::End();
     }
+
+    ImGui::Begin("Suspect Files");
+    for (int i = 0; i < suspects.size(); i++) {
+        if (i == activeSuspectIndex) {
+            ImGui::TextColored(ImVec4(0, 255, 0, 100), ("Asking: " + suspects[i]->name).c_str());
+        }
+        else if (i == Thorne->LastSuspectedInterrogates - 101){
+            ImGui::TextColored(ImVec4(0, 255, 255, 100), ("Last Asked: " + suspects[i]->name).c_str());
+        }
+        else {
+
+            ImGui::Text((suspects[i]->name).c_str());
+        }
+    }
+    ImGui::End();
 }
 
 void C_GameManager::InitializeGame()

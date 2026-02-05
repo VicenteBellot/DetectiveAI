@@ -56,8 +56,8 @@ public:
     C_Suspect* GetSuspectByID(int targetID) const;
 
     InterrogationStyle DecideStyle(const C_Suspect& sus) const;
-    void AnalyzeAlibis(int idA, int idB, std::string room);
-    void Interrogate(C_Suspect* sus, int Question);
+    void AnalyzeAlibis(int idA, int idB);
+    void Interrogate(C_Suspect* sus, int Question, Category cat);
     
     float GetAggreivityBias(const C_Suspect& sus) const;
     float GetDishonestyBias(const C_Suspect& sus) const;
