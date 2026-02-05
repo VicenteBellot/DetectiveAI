@@ -209,30 +209,35 @@ void C_GameManager::DrawInterface(float DeltaTime)
 
                 auto it = memoryID.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked));
                 if (it != memoryID.timeline.end()) {
-                    //printf("\n\nLast Question Asked: %d\n", it->first);
-                    //printf("Person Said: %d\n\n", it->second);
-
                     int answertolastquestion = it->second;
 
                     auto& memoryIDsecond = Thorne->memory[answertolastquestion];
                     auto itsecond = memoryIDsecond.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked));
 
-                    if (memoryID.cat == Category::ToAsk && it == memoryIDsecond.timeline.end()){ // tenemos el testimonio del primero pero no del segundo
-                        printf("Testimonio de uno de ellos");
+                    //if(it == memoryIDsecond.timeline.end())
+                    if (memoryID.cat == Category::ToAsk && itsecond == memoryIDsecond.timeline.end()){ // tenemos el testimonio del primero pero no del segundo
+                        printf("[Testimonio de uno de ellos]\n");
                         AskFor = true;
+                        if (answertolastquestion >= 0 && SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked) <= suspects.size()) {
+                            activeSuspectIndex = answertolastquestion;
+                            target = suspects[activeSuspectIndex];
+                            printf("ID TO QUESTION %d\n", activeSuspectIndex);
+                            Thorne->LastQuestionAsked = SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked);
+                        }
                     }
-                    else if (it != memoryIDsecond.timeline.end() && memoryID.cat == Category::ToAsk && memoryIDsecond.cat == Category::ToAsk) { //Tenemos el testimonio de los dos romper el bucle
-                        printf("Testimonio de los dos");
+                    else if (itsecond != memoryIDsecond.timeline.end() && memoryID.cat == Category::ToAsk && memoryIDsecond.cat == Category::ToAsk) { //Tenemos el testimonio de los dos romper el bucle
+                        printf("[Testimonio de los dos]\n");
                         Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
 
                     }
-                    else if (answertolastquestion >= 0 && SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked) != 5) {
+                   /* else if (answertolastquestion >= 0 && SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked) != 5) {
                         activeSuspectIndex = answertolastquestion;
                         target = suspects[activeSuspectIndex];
                         printf("ID TO QUESTION %d\n", activeSuspectIndex);
                         Thorne->LastQuestionAsked = SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked);
-                    }
+                    }*/
                     else {
+                        printf("Nothing to ask");
                         Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
                     }
                 }
@@ -243,8 +248,8 @@ void C_GameManager::DrawInterface(float DeltaTime)
             }
             //printf("%d\n", Thorne->LastQuestionAsked);
             //printf("ID ASKED: %d\n\n", target->ID);
-            if(AskFor) Thorne->Interrogate(target, Thorne->LastQuestionAsked, Category::Safe);
-            else Thorne->Interrogate(target, Thorne->LastQuestionAsked, Category::ToAsk);
+            if(AskFor) Thorne->Interrogate(target, Thorne->LastQuestionAsked, Category::ToAsk);
+            else Thorne->Interrogate(target, Thorne->LastQuestionAsked, Category::Safe);
 
             Thorne->LastSuspectedInterrogates = target->ID;
             activeSuspectIndex++;

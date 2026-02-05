@@ -110,12 +110,17 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
     for (int i = 0; i < 6 && !breakloop; i++) {
         if ((ptr[i]) > -2) {
             
-            if ((ptr[i] > -1)) memory[sus->ID].cat = Category::ToAsk;
-            else memory[sus->ID].cat = Category::Safe;
-
+            if ((ptr[i] > -1)) {
+                printf("[Category Stored: TO ASK]\n");
+                memory[sus->ID].cat = Category::ToAsk;
+            }
+            else {
+                printf("[Category Stored: Safe]\n");
+                memory[sus->ID].cat = Category::Safe;
+            }
             memory[sus->ID].AddEntry((SuspectInfo::KQuestionAsked(Question)), ptr[i] - 101);
-            printf("[Question asked INDICE: %d]\n", Question);
-            printf("[Answer to store: %d]\n", ptr[i]);
+            //printf("[Question asked INDICE: %d]\n", Question);
+            printf("[Answer to store: %d]\n", ptr[i] - 101);
             breakloop = true;
         }
     }
