@@ -193,7 +193,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
             tick = 0;
             printf("START OF INTERROGATION\n");
             printf("---------------------\n");
-            const int Q_SAW_LEAVE = 5;
+            const int Q_SAW_LEAVE = 3;
             bool AskFor = false;
             C_Suspect* nextTarget = nullptr;
 

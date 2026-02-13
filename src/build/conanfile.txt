@@ -1,9 +1,0 @@
-[requires]
-glfw/3.3.8
-glew/2.2.0
-glm/1.0.1
-
-[generators]
-premake
-
-[options]
