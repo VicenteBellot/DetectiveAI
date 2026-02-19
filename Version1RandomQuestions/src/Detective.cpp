@@ -149,7 +149,7 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
             printf("[Answer Stored: Suspect %d answered %d]\n", sus->ID, answerID);
 
             // Determine Status
-            if (answerID > -1) {
+            if (answerID > -1 && Question != SuspectInfo::KQuestionAsked::TimeStayed && Question != SuspectInfo::KQuestionAsked::WatchLeave) {
                 // He gave a valid ID (a person). 
                 printf("[Category: TO ASK] - Points to another suspect.\n");
                 memory[sus->ID].cat = Category::ToAsk;
