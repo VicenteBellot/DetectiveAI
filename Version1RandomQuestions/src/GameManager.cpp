@@ -159,11 +159,15 @@ void C_GameManager::DrawInterface(float DeltaTime)
 
     // 3. Thorne's Internal State (Mental Dashboard)
     ImGui::Begin("Inspector Thorne's Notes");
+    ImGui::Text("Origin Country: %s", Thorne->CountryName[Thorne->country].c_str());
+    ImGui::Text("Detectives Cluster: V%d", Thorne->cluster);
+    ImGui::Separator();
     ImGui::Text("Frustration: %.2f", Thorne->frustration);
     ImGui::Text("Racism: %.2f", Thorne->racism);
     ImGui::Text("Homophobia: %.2f", Thorne->homophobia);
     ImGui::Text("Classism: %.2f", Thorne->classism);
     ImGui::Text("Sexism: %.2f", Thorne->sexism);
+    ImGui::Separator();
     ImGui::Text("Current Style: %s", (Thorne->frustration > 0.6f ? "Aggressive" : "Professional"));
 
     ImGui::End();
@@ -193,7 +197,6 @@ void C_GameManager::DrawInterface(float DeltaTime)
             tick = 0;
             printf("START OF INTERROGATION\n");
             printf("---------------------\n");
-            const int Q_SAW_LEAVE = 3;
             bool AskFor = false;
             C_Suspect* nextTarget = nullptr;
 
@@ -205,7 +208,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
                     int answertolastquestion = it->second;
 
                     // Check if we need to follow up (And it's NOT the one-way question)
-                    if (memoryID.cat == Category::ToAsk && Thorne->LastQuestionAsked != Q_SAW_LEAVE) {
+                    if (memoryID.cat == Category::ToAsk && Thorne->LastQuestionAsked != SuspectInfo::KQuestionAsked::WatchLeave) {
                         auto& memoryIDsecond = Thorne->memory[answertolastquestion];
                         auto itsecond = memoryIDsecond.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked));
 
@@ -220,7 +223,9 @@ void C_GameManager::DrawInterface(float DeltaTime)
 
             if (!AskFor) {
                 nextTarget = suspects[activeSuspectIndex];
-                Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
+                do {
+                    Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
+                } while (Thorne->QuestionAskedSuspect(nextTarget, Thorne->LastQuestionAsked));
 
                 // Advance index for the NEXT exploration turn
                 activeSuspectIndex = (activeSuspectIndex + 1) % quantitySustec;
@@ -246,21 +251,6 @@ void C_GameManager::DrawInterface(float DeltaTime)
             ImGui::Text(q.text.c_str());
             question++;
         }
-        
-
-        //if (!Thorne->questionPool.empty()) {
-        //    ImGui::Separator();
-        //    ImGui::TextColored(ImVec4(1, 0.5f, 0, 1), "Pressure Points:");
-        //    for (auto& followUp : Thorne->questionPool) {
-        //        if (followUp.targetSuspectID == target->ID) {
-
-
-        //            if (ImGui::Button(followUp.text.c_str())) {
-        //                // Handle confrontation logic...
-        //            }
-        //        }
-        //    }
-        //}
         ImGui::End();
     }
 

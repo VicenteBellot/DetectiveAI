@@ -23,6 +23,7 @@ void C_Detective::SetBias(std::string filePath)
         std::getline(ss, sex, ',');
         std::getline(ss, homo, ',');
         std::getline(ss, race);
+        
         num++;
         //printf("%d\n", (int)(num * 0.49f));
         if (this->country == (int)(num * 0.49f)) {
@@ -33,6 +34,23 @@ void C_Detective::SetBias(std::string filePath)
                 this->classism = std::stof(classism);
             }
         }
+    }
+    this->cluster = (C_BasePawn::Cluster)((int) this->cluster + 1);
+}
+
+struct THate {
+    float hate;
+    int id;
+};
+
+void C_Detective::GenerateSuspectOrder(std::vector<C_Suspect*>* suspects)
+{
+    if (suspects->size() == 0) return;
+    std::vector<THate>hatefullness;
+    auto pointer = suspects->begin();
+    while (pointer != suspects->end()) {
+        THate hatetoAdd;
+        (*pointer)->cluster;
     }
 }
 
@@ -121,6 +139,14 @@ void C_Detective::AnalyzeAlibis(int idA, int idB)
     }
 }
 
+bool C_Detective::QuestionAskedSuspect(C_Suspect* sus, int Question) {
+    if (memory.find(sus->ID) == memory.end()) return false;
+
+    if (memory[sus->ID].timeline.find(SuspectInfo::KQuestionAsked(Question)) == memory[sus->ID].timeline.end()) return false;
+
+    return true;
+}
+
 void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
 {
     Statement report = sus->ProvideStatement(Question);
@@ -141,7 +167,7 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
     int answerID = -2;
     for (int i = 0; i < 6 && !breakloop; i++) {
         if ((ptr[i]) > -2) {
-            answerID = ptr[i] - 101; // Adjusting based on your logic
+            answerID = ptr[i] - 101;
             breakloop = true;
 
             // Store the answer
@@ -150,7 +176,6 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
 
             // Determine Status
             if (answerID > -1 && Question != SuspectInfo::KQuestionAsked::TimeStayed && Question != SuspectInfo::KQuestionAsked::WatchLeave) {
-                // He gave a valid ID (a person). 
                 printf("[Category: TO ASK] - Points to another suspect.\n");
                 memory[sus->ID].cat = Category::ToAsk;
             }
@@ -166,7 +191,6 @@ void C_Detective::Interrogate(C_Suspect* sus, int Question, Category cat)
     }
     printf("---------------------\n");
     printf("END OF INTERROGATION\n\n");
-    //memory[sus->ID].AddEntry(SuspectInfo::KQuestionAsked(Question),);
 }
 
 

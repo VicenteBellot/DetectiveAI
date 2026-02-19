@@ -8,13 +8,6 @@
 
 class C_Suspect;
 
-struct InvestigationQuestion {
-    std::string text;
-    Category targetCategory;
-    int targetSuspectID;
-    int relatedStatementIndex; // Index in timeline that caused the question
-    bool isPressure;            // High bias/aggression might toggle this
-};
 
 class C_Detective : public C_BasePawn{
 
@@ -29,12 +22,16 @@ public:
 
     enum InterrogationStyle { Casual, Formal, Aggressive };
 
-    std::vector<InvestigationQuestion> questionPool;
-
 
     robin_hood::unordered_map<int, SuspectInfo> memory;
 
+    std::vector<int> SuspectOrder;
+
+    void GenerateSuspectOrder(std::vector<C_Suspect*> *suspects);
+
     void Remember(C_Suspect& sus, Statement cat);
+
+    bool QuestionAskedSuspect(C_Suspect* sus, int Question);
 
     const SuspectInfo* GetInfo(const int& suspectID) const;
 
@@ -49,7 +46,6 @@ public:
     int Culprit = -2;
 
     float frustration = 0;
-    std::vector<int> suspectedIDs;
 
     int FirstSuspectedInterrogates = -2;
 

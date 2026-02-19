@@ -43,8 +43,6 @@ int main() {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        //printf("%f\n", frameTime);
-
         // 2. The "Functional" Game Logic & UI
         game.DrawInterface(frameTime);
 
@@ -63,7 +61,22 @@ int main() {
         printf("ID: %d ", i + 101);
         game.suspects[i]->guilty ? printf("Was Guilty\n") : printf("Was NOT Guilty\n");
     }
-    printf("------------------------\nEND INGAME TABLE");
+    printf("------------------------\nEND INGAME TABLE\n\n");
+
+    printf("------------------------\QUESTION TABLE\n");
+    for (int i = 0; i < game.quantitySustec; i++) {
+        printf("Questions asked to ID: %d \n", i + 101);
+        auto p = game.Thorne->memory[i+101].timeline.begin();
+        while (p != game.Thorne->memory[i+101].timeline.end()) {
+            printf("Question: %d\n", p->first);
+            p++;
+        }
+        printf("\n");
+    }
+    printf("------------------------\nEND QUESTION TABLE\n\n");
+
+
+
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
