@@ -13,6 +13,101 @@ C_Detective::~C_Detective()
 
 }
 
+void C_Detective::Talk(int ID_Talk, int extra_info)
+{
+    if (IQ > 100){
+        switch (ID_Talk) {
+        case 0:
+            printf("START OF INTERROGATION\n");
+            printf("---------------------\n");
+            break;
+        case 1:
+            printf("[FOLLOW UP] Corroborating with Suspect %d\n", extra_info);
+            break;
+        case 2:
+            printf("[Answer Stored: Suspect %d ", extra_info);
+            break;
+        case 3:
+            printf("answered % d]\n", extra_info);
+            break;
+        case 4:
+            printf("[Category: TO ASK] - Points to another suspect.\n");
+            break;
+        case 5:
+            printf("[Category: Safe]\n");
+            break;
+        case 6:
+            printf("-- THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM --\n");
+            break;
+        case 7:
+            printf("Suspect: %d has been asked all questions posible\n", extra_info);
+            break;
+        case 8:
+            printf("---------------------\n");
+            printf("END OF INTERROGATION\n\n");
+            break;
+        case 9:
+            printf("Ah, end of the day at last, I can go home now and read one of my favorite book \n Romeo and Juliet\n");
+            printf("Let me read aloud a line of the book:\n");
+            //read random
+
+            printf("||Tomorrow will be a better day...||\n");
+            break;
+        case 10:
+            switch (dementia)
+            {
+            printf("The Next Morning\n");
+            case 0:
+                printf("The Detective waked up, took a nice shower and head over to work after having a healty breakfast.\n");
+                break;
+            case 1: 
+                printf("The Detective waked up, stumbled with the desk, took a nice shower and head over to work after having a healty breakfast.\n");
+                break;
+            case 2: 
+                printf("The Detective waked up,stumbled with the desk, took a nice shower and head over to work after having some cereal for breakfast.\n");
+                break;
+            default:
+                printf("The Detective waked up,stumbled with the desk, took a shower that was burning hot and head over to work after having some cereal for breakfast.\n");
+                break;
+            }
+            dementia++;
+            break;
+        case 11:
+            break;
+        case 12:
+            break;
+
+        }
+    }
+    else {
+        int numofword;
+        if (ID_Talk == 9) {
+            numofword = (rand() % 25) + 10;
+            for (int i = 1; i < numofword; i++) {
+                int randomword = rand() % RandomLowIQWords.size();
+                printf("%s ", RandomLowIQWords[randomword].c_str());
+            }
+            printf("Humpty Dumpty\n");
+
+            //Imprimir Quote
+
+            for (int i = 1; i < numofword; i++) {
+                int randomword = rand() % RandomLowIQWords.size();
+                printf("%s ", RandomLowIQWords[randomword].c_str());
+            }
+            printf("\n");
+
+        }
+        else {
+            numofword = (rand() % 5) + 1;
+            for (int i = 1; i < numofword; i++) {
+                int randomword = rand() % RandomLowIQWords.size();
+                printf("%s ", RandomLowIQWords[randomword].c_str());
+            }
+        }
+    }
+}
+
 void C_Detective::SetBias(std::string filePath)
 {
     std::ifstream file(filePath);
@@ -164,8 +259,7 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
     //sus->ID - 101; va de 0 al numero de sospechoso
     bool CanIgnore = false;
 
-    int limit = std::min((int)hatefullness.size(), 4);
-
+    int limit = hatefullness.size() * 0.4f;
     for (int i = 0; i < limit && !CanIgnore; i++) {
         if (sus->ID - 101 == hatefullness[i].id) {
             CanIgnore = true;
@@ -189,15 +283,16 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
 
                 // Store the answer
                 memory[sus->ID].AddEntry((SuspectInfo::KQuestionAsked(Question)), answerID);
-                printf("[Answer Stored: Suspect %d answered %d]\n", sus->ID, answerID);
+                Talk(2, sus->ID);
+                Talk(3, answerID);
 
                 // Determine Status
                 if (answerID > -1 && Question != SuspectInfo::KQuestionAsked::TimeStayed && Question != SuspectInfo::KQuestionAsked::WatchLeave) {
-                    printf("[Category: TO ASK] - Points to another suspect.\n");
+                    Talk(4);
                     memory[sus->ID].cat = Category::ToAsk;
                 }
                 else {
-                    printf("[Category: Safe]\n");
+                    Talk(5);
                     memory[sus->ID].cat = Category::Safe;
                 }
             }
@@ -208,13 +303,15 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
         }
     }
     else {
-        printf("-- THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM --\n");
+        Talk(6);
+
+        if (rand() % 100 < DrinkingChance) GramoPorLitro += 0.15f;
+
     }
 
     WillIgnore = false;
 
-    printf("---------------------\n");
-    printf("END OF INTERROGATION\n\n");
+   
 }
 
 

@@ -13,6 +13,21 @@ C_GameManager::~C_GameManager()
 {
 }
 
+void C_GameManager::MainLoop(float deltaTime)
+{
+    DrawInterface(deltaTime);
+    if (rounds > maxroundsPerDay) {
+        EndOfDayCycle();
+        rounds = 0;
+    }
+    if (Thorne->GramoPorLitro > MaxComaEtilico) Thorne->dead = true;
+}
+
+void C_GameManager::EndOfDayCycle()
+{
+    Thorne->Talk(9);
+}
+
 void C_GameManager::LoadScenarioFromCSV(std::string filePath)
 {
     std::ifstream file(filePath);
@@ -102,7 +117,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
     ImGui::End();
 
     ImGui::Begin("TickSpeed");
-    ImGui::SliderFloat("Tick Speed", &Speed, 0.1f, 5.0f);
+    ImGui::SliderFloat("Tick Speed", &Speed, 0.1f, 20.0f);
     ImGui::End();
 
     ImGui::Begin("Alibis");
@@ -174,6 +189,10 @@ void C_GameManager::DrawInterface(float DeltaTime)
     ImGui::Separator();
     ImGui::Text("Current Style: %s", (Thorne->frustration > 0.6f ? "Aggressive" : "Professional"));
 
+    ImGui::Separator();
+    ImGui::ProgressBar(Thorne->GramoPorLitro / MaxComaEtilico, ImVec2(0, 0), "Alcohol Rate");
+    ImGui::Separator();
+
     ImGui::End();
 
     if (activeSuspectIndex != -1) {
@@ -197,10 +216,9 @@ void C_GameManager::DrawInterface(float DeltaTime)
         // Show questions from the Spreadsheet
         ImGui::Text("Investigation Topics:");
         //Ask Questions
-        if (tick > Cooldown) {
+        if (tick > Cooldown && rounds < maxroundsPerDay) {
             tick = 0;
-            printf("START OF INTERROGATION\n");
-            printf("---------------------\n");
+            Thorne->Talk(0);
             bool AskFor = false;
             std::shared_ptr<C_Suspect> nextTarget = nullptr;
 
@@ -217,7 +235,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
                         auto itsecond = memoryIDsecond.timeline.find(SuspectInfo::KQuestionAsked(Thorne->LastQuestionAsked));
 
                         if (itsecond == memoryIDsecond.timeline.end()) {
-                            printf("[FOLLOW UP] Corroborating with Suspect %d\n", answertolastquestion);
+                            Thorne->Talk(1, answertolastquestion);
                             AskFor = true;
                             nextTarget = suspects[answertolastquestion];
                         }
@@ -225,34 +243,51 @@ void C_GameManager::DrawInterface(float DeltaTime)
                 }
             }
 
+            int maxQuestions = SuspectInfo::KQuestionAsked::TimeStayed + 1;
+            int i = 0;
             if (!AskFor) {
                 nextTarget = suspects[Thorne->hatefullness[activeSuspectIndex].id];
+
                 do {
+                    i++;
                     Thorne->LastQuestionAsked = rand() % currentScenario.timelineQuestions.size();
-                } while (Thorne->QuestionAskedSuspect(nextTarget, Thorne->LastQuestionAsked));
+                } while (Thorne->QuestionAskedSuspect(nextTarget, Thorne->LastQuestionAsked) && i < maxQuestions);
+
 
                 // Advance index for the NEXT exploration turn
-                activeSuspectIndex = (activeSuspectIndex + 1) % quantitySustec;
+                activeSuspectIndex = (activeSuspectIndex + 1);
+                if (activeSuspectIndex >= quantitySustec) {
+                    printf("round passed\n");
+                    activeSuspectIndex = 0;
+                    rounds++;
+                }
             }
 
             if (nextTarget) {
                 Category catParam = AskFor ? Category::ToAsk : Category::Safe;
-                Thorne->Interrogate(nextTarget, Thorne->LastQuestionAsked, catParam);
-
-                // Update state for next tick
-                Thorne->LastSuspectedInterrogates = nextTarget->ID;
+                if (i < maxQuestions) {
+                    Thorne->Interrogate(nextTarget, Thorne->LastQuestionAsked, catParam);
+                    Thorne->LastSuspectedInterrogates = nextTarget->ID;
+                }
+                else {
+                    Thorne->Talk(7, nextTarget->ID);
+                }
+                Thorne->Talk(8);
                 target = nextTarget; // Update the global target for rendering
             }
         }
         float question = 0;
         for (auto& q : currentScenario.timelineQuestions) {
-            if (question == Thorne->LastQuestionAsked)
-            {
-                ImGui::TextColored(ImVec4(0, 255, 0, 100), ("Asked " + q.text).c_str()); 
-                question++;
-                continue;
+            if (question == Thorne->LastQuestionAsked){
+                ImGui::TextColored(ImVec4(0, 255, 0, 100), ("Last Question Asked " + q.text).c_str());
             }
-            ImGui::Text(q.text.c_str());
+            else if (Thorne->QuestionAskedSuspect(target, question)) {
+                ImGui::TextColored(ImVec4(255, 255, 0, 100), ("Already Stored " + q.text).c_str());
+            }
+            else {
+                ImGui::Text(q.text.c_str());
+
+            }
             question++;
         }
         ImGui::End();
@@ -266,7 +301,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
         else if (i == Thorne->LastSuspectedInterrogates - 101){
             ImGui::TextColored(ImVec4(0, 255, 255, 100), ("Last Asked: " + suspects[i]->name).c_str());
         }
-        else {
+        else{
 
             ImGui::Text((suspects[i]->name).c_str());
         }
@@ -274,17 +309,33 @@ void C_GameManager::DrawInterface(float DeltaTime)
     ImGui::End();
 }
 
+void C_GameManager::LoadLowIQWords(std::string filepath)
+{
+    std::ifstream file(filepath);
+    std::string line;
+
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+        std::string tostore;
+        std::getline(ss, tostore, '\n');
+
+        Thorne->RandomLowIQWords.push_back(tostore);
+    }
+
+}
+
 void C_GameManager::InitializeGame()
 {
     srand(static_cast<unsigned int>(time(NULL)));
     C_BasePawn::CharacterOrigin CharacterOrigin = C_BasePawn::GenerateRandomOrigin(true);
-    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,0,0);
+    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,101,0);
     LoadScenarioFromCSV("./data/Gala/Questions.csv");
     LoadRoomsFromCSV("./data/Gala/Locations.csv");
+    LoadLowIQWords("./data/Words.txt");
 
     int Alibis = rand() % 5 + 1;
 
-    printf("Alibis: %d\n", Alibis);
+    //printf("Alibis: %d\n", Alibis);
     LoadAlibisFromCSV("./data/Gala/Alibis/" + std::to_string(Alibis) + ".csv");
     for (int i = 1; i < quantitySustec + 1; i++) {
         C_BasePawn::CharacterOrigin susOrigin = C_BasePawn::GenerateRandomOrigin(false);

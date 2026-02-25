@@ -23,10 +23,11 @@ public:
     
     ~C_Detective();
     
+    void Talk(int ID_Talk, int extra_info = 0);
+
     void SetBias(std::string filePath);
 
     enum InterrogationStyle { Casual, Formal, Aggressive };
-
 
     robin_hood::unordered_map<int, SuspectInfo> memory;
 
@@ -40,18 +41,26 @@ public:
 
     std::vector<THate>hatefullness;
 
-    float IgnoreChange = 99; //over 100
+    float IgnoreChange = 90; //over 100
+    float DrinkingChance = 80; //over 100
     bool WillIgnore = false;
 
     float classism;
     float racism;
     float homophobia;
     float sexism;
-    int IQ;
+    int IQ = 101;
+
+    int dementia = 0;
+
+    //Cerveza +0.15;
+    float GramoPorLitro = 0.0f;
+
     float trust; // 0.0–1.0
 
     bool FoundCulprit = false;
     int Culprit = -2;
+    bool dead = false;
 
     float frustration = 0;
 
@@ -59,6 +68,8 @@ public:
 
     int LastSuspectedInterrogates = -2;
     int LastQuestionAsked = -2;
+    
+    std::vector<std::string> RandomLowIQWords;
 
     std::shared_ptr<C_Suspect> GetSuspectByID(int targetID) const;
 

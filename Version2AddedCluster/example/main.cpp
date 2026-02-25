@@ -32,7 +32,7 @@ int main() {
     auto currentTime = std::chrono::high_resolution_clock::now();
 
 	game.InitializeGame(); //
-    while (!glfwWindowShouldClose(window) && !game.Thorne->FoundCulprit) {
+    while (!glfwWindowShouldClose(window) && !game.Thorne->FoundCulprit && !game.Thorne->dead) {
 
         auto newTime = std::chrono::high_resolution_clock::now();
         float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count(); //DeltaTime
@@ -44,7 +44,8 @@ int main() {
         ImGui::NewFrame();
 
         // 2. The "Functional" Game Logic & UI
-        game.DrawInterface(frameTime);
+        game.MainLoop(frameTime);
+        
 
         ImGui::Render();
         int display_w, display_h;
