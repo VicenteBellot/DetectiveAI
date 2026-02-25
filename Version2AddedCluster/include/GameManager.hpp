@@ -21,7 +21,7 @@ public:
     bool showEvidenceBoard = false;
     int quantitySustec = 10;
 
-    float MaxComaEtilico = 6.26;
+    float MaxComaEtilico = 6.26f;
 
     int rounds = 0;
     int maxroundsPerDay = 2;

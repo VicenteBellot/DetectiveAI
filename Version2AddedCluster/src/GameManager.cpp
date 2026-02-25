@@ -16,16 +16,21 @@ C_GameManager::~C_GameManager()
 void C_GameManager::MainLoop(float deltaTime)
 {
     DrawInterface(deltaTime);
-    if (rounds > maxroundsPerDay) {
+    if (rounds >= maxroundsPerDay) {
         EndOfDayCycle();
         rounds = 0;
+        printf("night night\n");
     }
-    if (Thorne->GramoPorLitro > MaxComaEtilico) Thorne->dead = true;
+    if (Thorne->GramoPorLitro > MaxComaEtilico) {
+        Thorne->dead = true;
+        Thorne->Talk(11);
+    }
 }
 
 void C_GameManager::EndOfDayCycle()
 {
     Thorne->Talk(9);
+    Thorne->Talk(10);
 }
 
 void C_GameManager::LoadScenarioFromCSV(std::string filePath)
@@ -276,7 +281,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
                 target = nextTarget; // Update the global target for rendering
             }
         }
-        float question = 0;
+        int question = 0;
         for (auto& q : currentScenario.timelineQuestions) {
             if (question == Thorne->LastQuestionAsked){
                 ImGui::TextColored(ImVec4(0, 255, 0, 100), ("Last Question Asked " + q.text).c_str());

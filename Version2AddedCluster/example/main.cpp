@@ -64,7 +64,7 @@ int main() {
     }
     printf("------------------------\nEND INGAME TABLE\n\n");
 
-    printf("------------------------\QUESTION TABLE\n");
+    printf("------------------------\nQUESTION TABLE\n");
     for (int i = 0; i < game.quantitySustec; i++) {
         printf("Questions asked to ID: %d \n", i + 101);
         auto p = game.Thorne->memory[i+101].timeline.begin();

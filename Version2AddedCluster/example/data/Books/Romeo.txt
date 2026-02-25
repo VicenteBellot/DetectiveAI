@@ -49,8 +49,7 @@ Prologo
 En la hermosa Verona, donde colocamos nuestra escena, dos familias 
 de igual nobleza, arrastradas por antiguos odios, se entregan a nuevas 
 turbulencias, en que la sangre patricia mancha las patricias manos. 
-De la raza fatal de estos dos enemigos vino al mundo, con hado fu- 
-nesto, una pareja amante, cuya infeliz, lastimosa raina llevara tambien 
+De la raza fatal de estos dos enemigos vino al mundo, con hado funesto, una pareja amante, cuya infeliz, lastimosa raina llevara tambien 
 a la tumba las disensiones de sus parientes. El terrible episodio de su 
 fatidico amor, la persistencia del encono de sus allegados al que solo 
 es capaz de poner termino la extincion de su descendencia, va a ser 
@@ -58,310 +57,149 @@ durante las siguientes dos horas el asunto de nuestra representacion.
 Si nos prestais atento oido, lo que falte aqui tratara de suplirlo nuestro 
 esfuerzo. 
 6 
-
-
 Acto primero 
-
-
 Escena I 
-
-
 (Verona. Una plaza publica) 
-
-(Entran SANSON y GREGORIO, armados de espadas y bro- 
-
-queles) 
-
+(Entran SANSON y GREGORIO, armados de espadas y broqueles) 
 SANSON 
-
 Bajo mi palabra, Gregorio, no sufriremos que nos carguen. 
-
-
-GREGORIO 
-
+GREGORIO
 No, porque entonces seriamos cargadores. 
-
-
 SANSON 
-
 Quiero decir que si nos molestan echaremos fuera la tizona. 
-
-
 GREGORIO 
-
 Si, mientras vivais echad el pescuezo fuera de la collera. 
-
-
 SANSON 
-
 Yo soy ligero de manos cuando se me provoca. 
-
-
 GREGORIO 
-
 Pero no se te provoca facilmente a sentar la mano. 
-
-
 7 
-
-
 SANSON 
-
-
-La vista de uno de esos perros de la casa de Montague me trans- 
-porta. 
-
+La vista de uno de esos perros de la casa de Montague me transporta. 
 GREGORIO 
-
 Trasportarse es huir, ser valiente es aguardar a pie firme por 
 eso es que el trasportarte tu es ponerte en salvo. 
-
 SANSON 
-
 Un perro de la casa esa me provocara a mantenerme en el 
 puesto. Yo siempre tomare la acera a todo individuo de ella, sea 
 hombre o mujer. 
-
 GREGORIO 
-
 Eso prueba que eres un debil tuno, pues a la acera se arriman 
 los debiles. 
-
 SANSON 
-
 Verdad; y por eso, siendo las mujeres las mas febles vasijas, se 
 las pega siempre a la acera. Asi, pues, cuando en la acera me 
 tropiece con algun Montague, le echo fuera, y si es mujer, la 
 pego en ella. 
-
 GREGORIO 
-
-La contienda es entre nuestros amos, entre nosotros sus servi- 
-dores. 
-
-
+La contienda es entre nuestros amos, entre nosotros sus servidores. 
 8 
-
-
 SANSON 
-
-
 Es igual, quiero mostrarme tirano. Cuando me haya batido con 
 los criados, sere cruel con las doncellas. Les quitare la vida. 
-
-GREGORIO 
-
+GREGORIO
 ^La vida de las doncellas 
-
 SANSON 
-
 Si, la vida de las doncellas, o su... Tomalo en el sentido que 
 quieras. 
-
 GREGORIO 
-
 En conciencia lo tomaran las que sientan el dano. 
-
 SANSON 
-
-Se lo hare sentir mientras tenga aliento y sabido es que soy hom- 
-bre de gran nervio. 
-
+Se lo hare sentir mientras tenga aliento y sabido es que soy hombre de gran nervio. 
 GREGORIO 
-
 Fortuna es que no seas pez; si lo fiieras, serias un pobre arenque. 
 Echa fuera el estoque; alii vienen dos de los Montagues. 
-
 (Entran ABRAHAM y BALTASAR) 
-
 SANSON 
-
 Desnuda tengo la espada. Busca querella, detras de ti ire yo. 
-
-
 9 
-
-
 GREGORIO 
-
-
 jComo! ^irte detras y huir 
-
-
 SANSON 
-
 No temas nada de mi. 
-
-
 GREGORIO 
-
 jTemerte yo! No, por cierto. 
-
-
 SANSON 
-
 Pongamos la razon de nuestro lado; dejemosles comenzar. 
-
-
 GREGORIO 
-
-A1 pasar por su lado fruncire el ceno y que lo tomen como quie- 
-ran. 
-
-
+A1 pasar por su lado fruncire el ceno y que lo tomen como quieran. 
 SANSON 
-
 Di mas bien como se atrevan. Voy a morderme el dedo pulgar 
 al enfrentarme con ellos y un baldon les sera si lo soportan. 
-
-
 ABRAHAM 
-
 jEh! ^Os mordeis el pulgar para afrentamos 
-
-
 SANSON 
-
 Me muerdo el pulgar, senor. 
-
-
 10 
-
-
 ABRAHAM 
-
 ^Os lo mordeis, senor, para causamos afrenta 
-
 SANSON (aparte a GREGORIO) 
-
 ^Estara la justicia de nuestra parte si respondo si 
-
 GREGORIO 
-
 No. 
-
 SANSON 
-
 No, senor, no me muerdo el pulgar para afrentaros; me lo 
 muerdo, si. 
-
 GREGORIO 
-
 ^Buscais querella, senor 
-
 ABRAHAM 
-
 ^Querella decis No, senor. 
-
 SANSON 
-
 Pues si la buscais, igual os soy Sirvo a tan buen amo como vos. 
-
 ABRAHAM 
 No, mejor. 
-
 SANSON 
-
 En buen hora, senor. 
-
-
 it 
-
-
 (Aparece a lo lejos BENVOLIO) 
-
-
 GREGORIO (aparte a SANSON) 
-
 Di mejor. Ahi viene uno de los parientes de mi amo. 
-
 SANSON 
-
 Si, mejor. 
-
 ABRAHAM 
-
 Mentis. 
-
 SANSON 
-
 Desenvainad, si sois hombres. Gregorio, no olvides tu estocada 
 maestra . 
-
 (Pelean) 
-
 BENVOLIO (abatiendo sus aceros) 
-
 jTened, insensatos! Envainad las espadas; no sabeis lo que ha- 
 ceis. 
-
 (Entra TYBAL) 
-
 TYBAL 
-
 jComo! ^Espada en mano entre esos gallinas Vuelvete, Ben- 
 volio, mira por tu vida. 
-
 BENVOLIO 
-
 Lo que hago es apaciguar; toma tu espada a la vaina, o sirvete 
-
-
 12 
-
-
 de ella para ayudarme a separar a esta gente. 
-
-
 TYBAL 
-
 jQue! jDesnudo el acero y hablas de paz! Odio esa palabra 
 como odio al infiemo, a todos los Montagues y a ti Defiendete, 
 cobarde! 
-
 (Se baten) 
-
 (Entran partidarios de las dos casas, que toman parte en la con- 
 tienda; enseguida algunos ciudadanos armados de garrotes) 
-
 PRIMER CIUDAD ANO 
-
 j Garrotes, picas, partesanas! jArrimad, derribadlos! jAtierra 
 con los Capuletos! jA tierra con los Montagues! 
-
 (Entran, CAPULETO en traje de casa, y su esposa) 
 CAPULETO 
-
 jQue mi do es este! jHola! Dadme mi espada de combate. 
 LADY CAPULETO 
-
 jUn palo, un palo! ^Por que pedis una espada 
-
 CAPULETO 
-
 jMi espada digo! Ahi llega el viejo Montague que esgrime la 
 suya desafiandome. 
-
 {Entran el vicio MONTAGUE y LADY MONTAGUE) 
-
-
 13 
-
-
 MONTAGUE 
-
-
 jTu, miserable Capuleto! No me contengais, dejadme en liber- 
 tad. 
-
 LADY MONTAGUE 
-
 No daras un solo paso para buscar un contrario. 
-
 (Entran el PRINCIPE y sus acompanantes) 
-
 PRINCIPE 
-
 Subditos rebeldes, enemigos de la paz, profanadores de ese 
 acero que manchais de sangre conciudadana. ^No quieren oir 
 ;Eh, basta! hombres, bestias feroces que saciais la sed de vuestra 
@@ -369,7 +207,6 @@ pemiciosa rabia en rojos manantiales que brotan de vuestras
 venas, bajo pena de tortura, arrojad de las ensangrentadas manos 
 esas inadecuadas armas y escuchad la sentencia de vuestro irri- 
 tado Principe. 
-
 Tres discordias civiles, nacidas de una vana palabra, han, por 
 tu causa, viejo Capuleto, por la tuya, Montague, turbado por 
 tres veces el reposo de la ciudad y hecho que los antiguos habi- 
@@ -383,21 +220,13 @@ Montague, id esta tarde a la antigua residencia de Villafranca,
 ordinario asiento de nuestro Tribunal, para conocer nuestra ul- 
 terior decision sobre el caso actual. Lo digo de nuevo, bajo pena 
 de muerte, que todos se retiren. 
-
-
 14 
-
-
 (i Vanse todos menos MONTAGUE, LADY MONTAGUE y 
 BENVOLIO) 
-
 MONTAGUE 
-
 ^Quien ha vuelto a despertar esta antigua querella Habla, so- 
 brino, ^estabas presente cuando comenzo 
-
 BENVOLIO 
-
 Los satelites de Capuleto y los vuestros estaban aqui batiendose 
 encamizadamente antes de mi llegada yo desenvaine para apar- 
 tarlos en tal momento se presenta el violento Tybal, espada en 
@@ -407,14 +236,10 @@ cibir el menor dano, lo befaba silbando. Mientras nos devolvi-
 amos golpes y estocadas, iban llegando y entraban en contienda 
 partidarios de uno y otro bando, hasta que vino el Principe y los 
 separo. 
-
 LADY MONTAGUE 
-
 jOh! ^donde esta Romeo ^Le habeis visto hoy Muy satisfecha 
 estoy de que no se haya encontrado en esta refriega. 
-
 BENVOLIO 
-
 Senora, una hora antes que el bendecido sol comenzara a entre- 
 ver las doradas puertas del Oriente, la inquietud de mi alma me 
 llevo a discurrir por las cercanias, en las que, bajo la arboleda 
@@ -422,16 +247,10 @@ de sicomoros que se extiende al Oeste de la ciudad, apercibi, ya
 paseandose, a vuestro hijo. Dirigime hacia el; pero descubriome 
 y se deslizo en la espesura del bosque yo, juzgando de sus sen- 
 timientos por los mios, que nunca me absorben mas que cuando 
-
-
 15 
-
-
 mas solo me hallo, di rienda a mi inclinacion no contrariando 
 la suya, y evite gustoso al que gustoso me evitaba a mi. 
-
 MONTAGUE 
-
 Muchas albas se le ha visto en ese lugar aumentando con sus 
 lagrimas el matinal rocio y haciendo las sombras mas sombrias 
 con sus ayes profundos. Mas, tan pronto como el sol, que todo 
@@ -442,129 +261,72 @@ su aposento, cierra las ventanas, intercepta todo acceso al grato
 resplandor del dia y se forma el propio una noche artificial. Esta 
 disposicion de animo le sera luctuosa y fatal si un buen consejo 
 no hace, cesar la causa. 
-
 BENVOLIO 
-
 Mi noble tio, ^conoceis vos esa causa 
-
 MONTAGUE 
-
 Ni la conozco ni he alcanzado que me la diga. 
-
 BENVOLIO 
-
 ^Habeis insistido de algun modo con el 
-
 MONTAGUE 
-
 Personalmente y por otros muchos amigos; pero el, solo confi- 
 dente de sus pasiones, en su contra — no dire cuan veraz — es 
 tan reservado, tan recogido en si mismo, tan insondable y dificil 
 de escudrinar como el capullo roido por un destructor gusano 
-
-
 16 
-
-
 antes de poder desplegar al aire sus tiemos petalos y ofrecer sus 
 encantos al sol. Si nos fuera posible penetrar la causa de su me- 
 lancolia, lo mismo que por conocerla nos afanariamos por re- 
 mediarla. 
-
 ( Aparece ROMEO, a cierta distancia)B EN VO L 10 
-
 Mirad, alii viene tened a bien alejaros. Conocere su pesar o a 
 mucho desaire me expondre. 
-
 MONTAGUE 
-
 Ojala que tu permanencia aqui te proporcione la gran dicha de 
 oirle una confesion sincera. Vamos, senora, retiremonos. 
-
 (MONTAGUE y su esposa se retiran) 
-
 BENVOLIO 
-
 Buenos dias, primo. 
-
 ROMEO 
-
 ^Tan poco adelantado esta el dia 
-
 BENVOLIO 
-
 Acaban de dar las nueve. 
-
 ROMEO 
-
-jlnfeliz de mi! Largas parecen las horas tristes. No era mi padre 
-el que tan deprisa se alejo de aqui 
-
-
-17 
-
-
+jlnfeliz de mi! Largas parecen las horas tristes. No era mi padre el que tan deprisa se alejo de aqui 
+17
 BENVOLIO 
-
 Si. ^Que pesar es el que alarga las horas de Romeo 
-
 ROMEO 
-
 El de carecer de aquello cuya posesion las abreviaria. 
-
 BENVOLIO 
-
 ^Carencia de amor 
-
 ROMEO 
-
 Sobra. 
-
 BENVOLIO 
 ^De amor 
-
 ROMEO 
-
 De desdenes de la que amo. 
-
 BENVOLIO 
-
 jAy! jQue el amor, al parecer tan dulce, sea en la prueba tan ti- 
 rano y tan cruel! 
-
 ROMEO 
-
 jAy! jque el amor, cuyos ojos estan siempre vendados, halle sin 
 ver la direccion de su bianco! ^Donde comeremos jOh, Dios! 
 ^que refriega era esta Mas no me lo digais, pues todo lo he 
 oido. Mucho hay que luchar aqui con el odio, pero mas con el 
 amor, j Si, amante odio! jAmor quimerista! jTodo, emanacion 
-
-
 18 
-
-
 deunanadapreexistente! jfutilezaimportante! j grave frusleria! 
-
 ; informe caos de ilusiones resplandecientes! jleve abruma- 
 miento, diafana intransparencia, fria lava, extenuante sanidad! 
 jsueno siempre guardian, asunto en la esencia! Tal cual eres yo 
 te siento; yo, que en cuanto siento no hallo amor! ^No te ries 
-
 BENVOLIO 
-
 No, primo, lloro mas bien. 
-
 ROMEO 
-
 ^Por que, buen corazon 
-
 BENVOLIO 
-
 De ver la pena que oprime tu alma. 
-
 ROMEO 
-
 jBah! El yerro de amor trae eso consigo. Mis propios dolores 
 ya eran carga excesiva en mi pecho; para oprimirlo mas, quieres 
 aumentar mis pesares con los tuyos. La afeccion que me has 
@@ -574,55 +336,31 @@ fuego que brilla en los ojos de los amantes; comprimido, un mar
 que alimentan sus lagrimas. ^Que mas es Una locura razonable 
 al extremo, una hiel que sofoca, una dulzura que conserva. 
 Adios, primo. 
-
 BENVOLIO 
-
 Aguardad, quiero acompanaros; me ofendeis si me dejais asi. 
-
-
 19 
-
-
 ROMEO 
-
 jBah! Yo no doy razon de mi propio, no estoy aqui; este no es 
 Romeo; el esta en otra parte. 
-
 BENVOLIO 
-
 Decidme seriamente, ^quien es la persona a quien amais 
 ROMEO 
-
 jQue! ^habre de llorar para decirtelo 
-
 BENVOLIO 
-
 ^Llorar jOh! no; pero decidme en seriedad quien es. 
-
 ROMEO 
-
 Pide a un enfermo que haga gravemente su testamento. jAh! 
 jTan cruel decir a uno que se halla en tan cruel estado! Seria- 
 mente, primo, amo a una mujer. 
-
 BENVOLIO 
-
 Di exactamente en el punto cuando supuse que amabais. 
 ROMEO 
-
 jExcelente tirador! Y la que amo es hermosa. 
-
 BENVOLIO 
-
 A un hermoso, excelente bianco, bello primo, se alcanza mas 
 facilmente. 
-
-
 20 
-
-
 ROMEO 
-
 Bien, en este logro te equivocas ella esta fuera del alcance de las 
 flechas de Cupido, tiene el esplritu de Diana y bien armada de una 
 castidad a toda prueba, vive sin lesion del feble, infantil arco del 
@@ -630,39 +368,24 @@ amor. La que adoro no se deja importunar con amorosas propues-
 tas, no consiente el encuentro de provocantes miradas ni abre su 
 regazo al oro, seductor de los santos. jOh! Ella es rica en belleza, 
 pobre unicamente porque al morir mueren con ella sus encantos 
-
 BENVOLIO 
-
 ^Ha jurado, pues, permanecer virgen 
-
 ROMEO 
-
 Lo ha jurado y con esa reserva ocasiona un dano inmenso; pues, 
 con sus rigores, matando de inanicion la belleza, priva de esta 
 a toda la posteridad. Bella y discreta a lo sumo, es a lo sumo 
 discretamente bella para merecer el cielo, haciendo mi deses- 
 peracion. Ha jurado no amar nunca y este juramento da la 
 muerte, manteniendo la vida, al mortal que te habla ahora. 
-
 BENVOLIO 
-
 Sigue mi consejo, desechala de tu pensamiento. 
-
 ROMEO 
-
 jOh! Dime de que modo puedo cesar de pensar. 
-
 BENVOLIO 
-
 Devolviendo la libertad a tus ojos, deteniendolos en otras bel- 
 dades. 
-
-
 21 
-
-
 ROMEO 
-
 Ese seria el medio de que encomiara mas sus gracias exquisitas. 
 Esas dichosas mascaras que acarician las frentes de las bellas, 
 aunque negras, nos traen a la mente la blancura que ocultan. El 
@@ -671,51 +394,29 @@ de su ver perdido. Pon ante mi una mujer encantadora al ex-
 tremo, ^que sera su belleza sino una pagina en que podre leer 
 el nombre de otra beldad mas encantadora aun Adios, tu no 
 puedes ensenarme a olvidar. 
-
 BENVOLIO 
-
 Yo adquirire esa ciencia o morire sin un ochavo. 
-
 (Vanse) 
-
-
 Escena II 
-
-
 (Una calle) 
-
 ( Entran CAPULETO, PARIS y un CRIADO) 
-
 CAPULETO 
-
 Y Montague esta sujeto a lo mismo que yo, bajo pena igual; y 
 no sera dificil, en mi concepto, a dos personas de nuestros anos 
 el vivir en paz. 
-
-
 22 
-
-
 PARIS 
-
-
 Ambos gozais de una honrosa reputation y es cosa deplorable 
 que hayais vivido enemistados tan largo tiempo. Pero tratando 
 de lo presente, senor, ^que respondeis a mi demanda 
-
 CAPULETO 
-
 Repetire solo lo que antes dije. Mi hija es aun extranjera en el 
 mundo, todavia no ha pasado los catorce anos; dejemos palide- 
 cer el orgullo de otros dos estios antes de juzgarla a proposito 
 para el matrimonio. 
-
 PARIS 
-
 Algunas mas jovenes que ella son ya madres felices. 
-
 CAPULETO 
-
 Y esas madres prematuras se marchitan demasiado pronto La 
 tierra ha engullido todas mis esperanzas, solo me queda Julieta 
 ella es la afortunada heredera de mis bienes. Hacedla empero 
@@ -731,22 +432,15 @@ roso joven cuando abril, lleno de galas, avanza en pos del
 vacilante inviemo, lo alcanzareisesta noche en mi fiesta, al ha- 
 llaros rodeado de esas frescas y tiemas virgenes. Examinadlas 
 todas, oidlas y dad la preferencia a la que tenga mas merito. Una 
-
-
 23 
-
-
 de las que entre tantas vereis sera mi hija, que aunque puede 
 contarse entre ellas, no puede competir en estima. Vaya, se- 
 guidme. Anda, muchacho, echate a andar por la bella Verona, 
 da con las personas cuyos nombres se hallan inscritos en esa 
 lista (Le da un papel) y diles que la casa y el dueno estan dis- 
 puestos para obsequiarlos. 
-
 (Vanse CAPULETO y PARIS) 
-
 CRIADO 
-
 ^Dar con las personas cuyos nombres se hallan inscritos aqui 
 Escrito esta que el zapatero se sirva de su vara, el sastre de su 
 horma, el pescador de su pincel y el pintor de sus redes; pero a 
@@ -754,223 +448,38 @@ mi se me envia en busca de las personas cuyos nombres se ha-
 llan escritos aqui, cuando yo no puedo hallar los nombres que 
 aqui ha escrito el escritor. Tengo que dirigirme, a los que saben. 
 A proposito. 
-
 {Entran BENVOLIO y ROMEO) 
-
 BENVOLIO 
-
 jBah! querido, un fuego sofoca a otro fuego, un dolor se ami- 
 nora por la angustia de otro dolor hazte mudable y busca re- 
 medio en la contraria mudanza; cura una desesperacion con otra 
 desesperacion, haz que absorban tus ojos un nuevo veneno y el 
 antiguo perdera su ponzonosa acritud. 
-
 ROMEO 
-
 La hoja de llanten es excelente para eso. 
-
-
 24 
-
-
-BENVOLIO 
-
-^Quieres decirme para que 
-
-ROMEO 
-
-Para vuestra piema rota. 
-
-BENVOLIO 
-
-jQue, Romeo! ^estas loco 
-
-ROMEO 
-
-No, pero mas atado que un demente; sumido en prision, privado 
-de alimento, vapuleado y atormentado y... Buenas tardes, amigo. 
-
-CRIADO 
-
-Dios os la de buena. Con perdon, senor, ^sabeis leer 
-
-ROMEO 
-
-Si, mi propia fortuna en mi desgracia. 
-
-CRIADO 
-
-Quizas lo habeis aprendido sin libro; mas decidme, ^podeis leer 
-todo lo que os viene a mano 
-
-ROMEO 
-
-Cierto; si conozco los caracteres y la lengua. 
-
-
-25 
-
-
-CRIADO 
-
-Hablais honradamente que os dure el buen humor. 
-
-ROMEO 
-
-Esperad, amigo; se leer. 
-
-(Lee) «El senor Martino, su esposa y sus hijas; el conde An- 
-selmo y sus preciosas hermanas; la sehora viuda de Vitrubio; 
-el senor Placencio y sus amables sobrinas; Mercucio y su her- 
-mano Valentin; mi tlo Capuleto, su mujer y sus hijas; mi bella 
-sobrina Rosalina; Livia; el senor Valentio y su primo Tybal; 
-Lucioy la despierta Elena. » 
-
-Bella asamblea; (devolviendo la lista) ^donde deben reunirse 
-
-CRIADO 
-
-Alla arriba. 
-
-ROMEO 
-
-^Donde 
-
-CRIADO 
-
-Para cenar; en nuestra casa. 
-
-ROMEO 
-
-^La casa de quien 
-
-CRIADO 
-
-De mi amo. 
-
-
-26 
-
-
-ROMEO 
-
-
-En verdad, debi haber comenzado por esa pregunta. 
-
-CRIADO 
-
-Voy a responderos ahora sin que pregunteis. Mi amo es el rica- 
-chon Capuleto y si no perteneceis a la casa de Montague, id, os 
-lo recomiendo, a apurar una copa de vino. Pasadlo bien. 
-
-(Vase) 
-
-BENVOLIO 
-
-En esa antigua fiesta de los Capuletos, en compania de todas 
-las admiradas bellezas de Verona, cenara la encantadora Rosa- 
-lina, a quien tanto amas. Asiste al convite; con imparcial mirada 
-compara su rostro con el de otras que te ensenare y te hare ver 
-que tu cisne es un cuervo. 
-
-ROMEO 
-
-jCuando la fervorosa religion de mis ojos apoye tal mentira que 
-en llamas se truequen mis lagrimas! ;Que estos diafanos here- 
-ticos, que a menudo se anegan sin poder morir, se abrasen por 
-impostores! jUna mas bella que mi amada! El sol, que ve cuanto 
-hay, nunca ha visto otra que se le parezca desde que el mundo 
-es mundo. 
-
-BENVOLIO 
-
-jCallad! La habeis encontrado bella no teniendo otra al lado, su 
-imagen con su imagen se equilibraba en vuestros ojos; pero en 
-esas cristalinas balanzas contrapesad a vuestra adorada con al- 
-guna otra j oven que os ensenare brillando en la proxima fiesta 
-
-
-27 
-
-
-y en mucho amenguara el parecido de esa que hoy se os muestra 
-por encima de todas. 
-
-ROMEO 
-
-Ire contigo, no para ver esa supuesta belleza, sino para gozar en 
-el esplendor de la mla. 
-
-(Se marchan) 
-
-
-Escena III 
-
-
-(Un cuarto en la casa de Capuleto) 
-
-( Entran LADY CAPULETO y la NODRIZA) 
-
-LADY CAPULETO 
-
-Nodriza, ^donde esta mi hija Decidla que venga aqui. 
 NODRIZA 
-
-Si, a fe de doncella a los doce anos.Le he dicho que venga. jEh! 
-; Cordero mio! [Eh! jTiema palomilla! jDios me ampare! ^Por 
-donde anda esta muchacha jEh, Julieta! 
-
-(Entra JULIETA) 
-
-JULIETA 
-
-^Que hay, quien me llama 
-
-
-28 
-
-
-NODRIZA 
-
 Vuestra madre. 
-
 JULIETA 
-
 Aqui me teneis, senora. ^,Que mandais 
-
 LADY CAPULETO 
-
 Se trata de lo siguiente Nodriza, dejanos un momento, tenemos 
 que hablar en privado. Vuelve aca, nodriza, he cambiado de opi- 
 nion; presenciaras nuestro coloquio. Ves que mi hija es de una 
 bonita edad. 
-
 NODRIZA 
-
 Ciertamente; puedo deciros su edad con diferencia de una hora. 
-
 LADY CAPULETO 
-
 No ha cumplido catorce. 
-
 NODRIZA 
-
 Apostaria catorce de mis dientes (y, dicho sea con dolor, cuento 
 solo cuatro) a que no tiene catorce. ^Cuanto va de hoy al pri- 
 mero de agosto 
-
 LADY CAPULETO 
-
 Una quincena larga. 
-
 NODRIZA 
-
 Larga o corta, el dia primero de agosto, al caer la tarde, cumplira 
-
-
 29 
-
-
 catorce anos. Susana y ella — Dios tenga en paz — las almas 
 eran de una edad. Dios se ha llevado a Susana; era demasiado 
 buena para mi. Como decia, pues, la tarde del primero de 
@@ -996,2410 +505,70 @@ de llorar y contesto «Si».  Ved, pues, como una chanza viene a
 ser verdad! Pongo mi cabeza que nunca lo olvidaria si viviese 
 mil anos. «^No es cierto, Julia» Le dijo, y la locuela se apaci- 
 guo y contesto «Si». 
-
 LADY CAPULETO 
-
 Basta de esto, por favor; callate. 
-
 NODRIZA 
-
 Si, senora; y sin embargo, no puedo hacer otra cosa que reir 
-
-
 30 
-
-
 cuando recuerdo que ceso de llorar y dijo «Si». Y eso, os lo 
 aseguro, que tenia en la frente un bulto tan grande como el cas- 
 caron de un polio; un golpe terrible; y que lloraba amargamente. 
 «Si — dijo mi marido — , ^te caes hacia adelante cuando seas 
 mas grande daras de espalda. ^No es cierto, Julia» Ella con- 
-cluyo el llanto y contesto «Si». 
-
+cluyo el llanto y contesto «Si».
 JULIETA 
-
 Concluye, concluye tu tambien, nodriza, te lo suplico. 
 NODRIZA 
-
 Callo, he acabado. ;La gracia de Dios te proteja! Eras la criatura 
 mas linda de cuantas crie Si vivo lo bastante para verte un dia 
 casada, quedare satisfecha. 
-
 LADY CAPULETO 
-
 A punto; el matrimonio es precisamente el particular de que 
 venia a tratar. Dime, Julieta, hija mia, ^en que disposicion te 
 sientes para el matrimonio 
-
 JULIETA 
-
 Es un honor en el que no he pensado. 
-
 NODRIZA 
-
 jUn honor! Si no hubiera sido tu unica nodriza diria que con el 
 jugo de mi seno chupaste la inteligencia. 
-
-
 31 
-
-
 LADY CAPULETO 
-
-
 Bien, piensa de presente en el matrimonio muchas mas jovenes 
 que tu, personas de gran estima en Verona, son madres ya yo 
 por mi cuenta lo era tuya antes de la edad que, aun soltera, tienes 
 hoy. En dos palabras, por ultimo, el valiente Paris te pretende. 
-
 NODRIZA 
-
 jEs un hombre, senorita! Un hombre como en el mundo entero. 
 jOh! es un hombre hecho a molde. 
-
 LADY CAPULETO 
-
 La primavera de Verona no presenta una flor parecida. 
 NODRIZA 
-
 Si, por mi vida, es una flor, una verdadera flor. 
-
-LADY CAPULETO 
-
-^Que decis ^Podreis amar a ese hidalgo Esta noche le vereis 
-en nuestra fiesta. Leed en la fisonomia del j oven Paris, leed en 
-ese libro y en el hallareis retratado el placer con la pluma de la 
-belleza. Examinad uno a uno los combinados lineamientos, ve- 
-reis como se prestan mutuo encanto; y si algo de oscuro aparece 
-en ese bello volumen, lo hallareis escrito al margen de sus ojos. 
-Este precioso libro de amor, este amante sin sujeciones, para re- 
-alzarse, solo necesita una cubierta. El pez vive en el mar y es 
-un grande orgullo para la belleza el dar asilo a la belleza. El 
-libro que con broches de oro encierra la dorada Leyenda, gana 
-esplendor a los ojos de muchos poseyendole, pues, participareis 
-de todo lo que es suyo, sin disminuir nada de lo que vuestro es. 
-
-
-32 
-
-
-NODRIZA 
-
-jDisminuir! No, engrandecera; de los hombres reciben incre- 
-mento las mujeres. 
-
-LADY CAPULETO 
-
-Sed breve, ^aceptareis el amor de Paris 
-
-JULIETA 
-
-Vere de amarle si para amar vale el ver; pero no dejare tomar 
-mas vuelo a mi inclinacion que el que le preste vuestra volun- 
-tad. 
-
-( Entra un CRIADO)CRIADO 
-
-Senora, los convidados estan ya ahi, la cena se halla servida, se 
-os espera, preguntan por la senorita, en la despensa echan votos 
-contra el ama y todo se halla a punto. Tengo que irme a servir; 
-os suplico que vengais sin demora. 
-
-LADY CAPULETO 
-
-Te seguimos. Julieta, el conde nos aguarda. 
-
-NODRIZA 
-
-Id, nina; anadid dichosas noches a dichosos dias. 
-
-(Vanse) 
-
-
-33 
-
-
-Escena IV 
-
-
-(Una calle) 
-
-(Entran ROMEO, MERCUCIO, BENVOLIO, acompanados 
-de cinco o seis enmascarados, hacheros y otros) 
-
-ROMEO 
-
-Y bien, ^alegaremos eso como excusa, o entraremos sin presen- 
-tar disculpa alguna 
-
-BENVOLIO 
-
-Esas largas arengas no estan ya en moda. No tendremos un Cu- 
-pido de vendados ojos, llevando un arco a la tartara de pintada 
-varilla que amedrente a las damas cual un espanta-cuervos; ni 
-tampoco, al entrar, aprendidos prologos, debilmente recitados 
-con auxilio del apuntador. Que formen juicio de nosotros a la 
-medida de su deseo; por nuestra parte, les mediremos algunos 
-compases y tocaremos retirada. 
-
-ROMEO 
-
-Dadme un hachon; no estoy para hacer piruetas. Pues que me 
-hallo triste, llevare la antorcha. 
-
-MERCUCIO 
-
-En verdad, querido Romeo, queremos que bailes. 
-
-
-34 
-
-
-ROMEO 
-
-
-No bailare, creedme vosotros teneis tan ligero el espiritu como 
-el calzado yo tengo una alma de plomo que me enclava en la 
-tierra, no puedo moverme. 
-
-MERCUCIO 
-
-Amante sois; pedid prestadas las alas de Cupido y volad con 
-ellas a extraordinarias regiones. 
-
-ROMEO 
-
-Sus flechas me han herido muy profundamente para que yo me 
-remonte, con sus alas ligeras, y puesto en tal barra, no puedo 
-trasponer el llmite de mi sombria tristeza. Me hundo bajo el 
-agobiante peso del amor. 
-
-MERCUCIO 
-
-Y si os hundis en el, le abrumareis; para el delicado nino sois 
-un peso terrible. 
-
-ROMEO, 
-
-^E1 amor delicado nino Es crudo, es aspero, indomito en de- 
-masia; punza como la espina. 
-
-MERCUCIO 
-
-Si con vos es crudo, sed crudo con el; devolvedle herida por he- 
-rida y le vencereis. Dadme una careta para ocultar el rostro. (En- 
-mascarandose) jSobre una mascara otra! ^Que me importa que 
-la curiosa vista de cualquiera anote deformidades Las pobladas 
-cejas que hay aqui afrontaran el bochomo. 
-
-
-35 
-
-
-BENVOLIO 
-
-Vamos, llamemos y entremos y asi que estemos dentro, que 
-cada cual recurra a sus piemas. 
-
-ROMEO 
-
-Un hachon para mi. Que los aturdidos, de corazon voluble, aca- 
-ricien con sus pies los insensibles juncos; por lo que a mi toca, 
-me ajusto a un refran de nuestros abuelos. Tendre la luz y mi- 
-rare. Nunca ha sido tan bella la fiesta, pero soy hombre per- 
-
-dido. 
-
-MERCUCIO 
-
-jBah! De noche todos los gatos son pardos era el dicho del 
-Condestable Si estas perdido, te sacaremos (salvo respeto) de 
-la cava de este amor en que estas metido hasta los ojos. Ea, 
-venid, quemamos el dia. 
-
-ROMEO 
-
-No, no es asi. 
-
-MERCUCIO 
-
-Quiero decir, senor, que demorando, nuestras luces se consu- 
-men, cual las que alumbran el dia, sin provecho. Fijaos en nues- 
-tra buena intencion; pues el juicio nuestro antes estara cinco 
-veces al lado de ella que una al de nuestros cinco sentidos. 
-
-ROMEO 
-
-Si, buena es la intencion que nos lleva a esta mascarada; pero 
-no es prudente ir a ella. 
-
-
-36 
-
-
-MERCUCIO 
-
-^Se puede preguntar la razon 
-
-ROMEO 
-
-He tenido un sueno esta noche. 
-
-MERCUCIO 
-
-Y yo tambien. 
-
-ROMEO 
-
-Vaya, ^que habeis sonado 
-
-MERCUCIO 
-
-Que los que suenan mienten a menudo. 
-
-ROMEO 
-
-Cuando, dormidos en sus lechos, suenan realidades. 
-MERCUCIO 
-
-jOh! Veo por lo dicho que la reina Mab os ha visitado. Es la co- 
-madrona entre las hadas; y no mayor en su forma que el agata 
-que luce en el indice de un aderman, viene arrastrada por un tiro 
-de pequenos atomos a discurrir por las narices de los dormidos 
-mortales. Los rayos de la rueda de su carro son hechos de largas 
-patas de arana zancuda, el fuelle de alas de cigarra, el correaje 
-de la mas fina telarana, las colleras de humedos rayos de un 
-claro de luna. Su latigo, formado de un hueso de grillo, tiene 
-por mecha una pelicula. Le sirve de conductor un diminuto ci- 
-
-
-37 
-
-
-nife, vestido de gris, de menos bulto que la mitad de un pe- 
-queno, redondo arador, extraldo con una aguja del perezoso 
-dedo de una j oven. Su vehlculo es un cascaroncillo de avellana 
-labrado por la carpinteadora ardilla, o el viejo gorgojo, inme- 
-morial carruajista de las hadas. En semejante tren, galopa ella 
-por las noches al traves del cerebro de los amantes, que en el 
-acto se entregan a suenos de amor; sobre las rodillas de los cor- 
-tesanos, que al instante suenan con reverencias; sobre los dedos 
-de los abogados, que al punto suenan con honorarios; sobre los 
-labios de las damas, que con besos suenan sin demora estos la- 
-bios, empero, irritan a Mab con frecuencia, porque exhalan ar- 
-tificiales perfumes y los acribilla de ampollas. A veces el hada 
-se pasea por las narices de un palaciego, que al golpe olfatea en 
-suenos un puesto elevado; a veces viene, con el rabo de un co- 
-chino de diezmo, a cosquillear la nariz de un dormido preben- 
-dado, que a sonar comienza con otra prebenda mas; a veces pasa 
-en su coche por el cuello de un soldado, que se pone a sonar 
-con enemigos a quienes deguella, con brechas, con emboscadas, 
-con hojas toledanas, con tragos de cinco brazas de cabida Bate 
-luego el tambor a sus oidos, despierta al sentirlo sobresaltado, 
-y en su espanto, despues de una o dos invocaciones, se da a dor- 
-mir otra vez. Esta misma Mab es la que durante la noche entre- 
-teje la crin de los caballos y enreda en asquerosa plica las 
-erizadas cerdas, que, llegadas a desenmaranar, presagian des- 
-gracia extrema. Esta es la hechicera que visita en su lecho a las 
-virgenes, las somete a presion y, primera maestra, las habitua a 
-ser mujeres resistentes y sufridas. Ella, ella es la que... 
-
-ROMEO 
-
-Basta, basta, Mercucio, basta; patrana es lo que hablas. 
-
-
-38 
-
-
-MERCUCIO 
-
-Tienes razon, hablo de suenos, hijos de un cerebro ocioso, solo 
-engendro de la vana fantasia; sustancia tan ligera como el aire 
-y mas mudable que el viento, que ora acaricia el helado seno 
-del Norte, ora, irritado, vuelve la faz y sopla en direccion con- 
-traria hacia el vaporoso mediodla. 
-
-BENVOLIO 
-
-Ese viento de que hablas nos lleva a nosotros. Se ha acabado la 
-cena y llegaremos demasiado tarde. 
-
-ROMEO 
-
-Temo que demasiado temprano. Mi alma presiente que algun 
-suceso, pendiente aun del sino, va a inaugurar cruelmente en 
-esta fiesta noctuma su curso terrible y a concluir, por el golpe 
-traidor de una muerte prematura, el plazo de esta vida odiosa 
-que se encierra en mi pecho. El que gobiema, empero, mi des- 
-tino, que arrumbe mi bajel. Adelante, bravos amigos. 
-
-BENVOLIO 
-
-Batid, tambores. 
-
-(Vanse) 
-
-
-39 
-
-
-Escena V 
-
-
-(Salon de la casa de Capuleto) 
-
-(MUSICOS esperando. Entran CRIADOS) 
-
-CRIADO PRIMERO 
-
-^Donde esta Potpan, que no ayuda a levantar los postres 
-jAndar el con un plato! jEl, raspar una mesa! 
-
-CRIADO SEGUNDO 
-
-Cuando el buen porte de una casa se confia exclusivamente a 
-uno o dos hombres y estos no son pulcros, es cosa que da asco. 
-
-CRIADO PRIMERO 
-
-Llevate los asientos, quita el aparador, ojo con la vajilla Buen 
-muchacho, reservame un pedazo de mazapan y, puesto que, me 
-aprecias, di al portero que deje entrar a Susana Grindstone y a 
-Nell, j Antonio! j Potpan! 
-
-( Entra otro CRIADO) 
-
-CRIADO TERCERO 
-
-jEh! aqui estoy, hombre. 
-
-CRIADO PRIMERO 
-
-Os necesitan, os llaman, preguntan por vosotros, se os busca en 
-el gran salon. 
-
-
-40 
-
-
-CRIADO TERCERO 
-
-
-No podemos estar aqui y alia al propio tiempo. Alegrla, cama- 
-radas; hay a un rato de holgura y que cargue con todo el que atras 
-venga. 
-
-(Se retiran al fondo de la escena) 
-
-(Entran CAPULETO, seguido de JULIETA v otros de la casa, 
-mezclados con los convidados y los mascaras) 
-
-CAPULETO 
-
-jBienvenidos, senores! Las damas que libres de callos tengan 
-los pies, os tomaran un rato por su cuenta. jAh, ah, senoras 
-mias! ^Quien de todas vosotras se negara en este instante a bai- 
-lar La que se haga la desdenosa, jurare que tiene callos. ^Toco 
-en lo sensible jBienvenidos, Caballeros! Tiempo recuerdo en 
-que tambien me enmascaraba y en que podia cuchichear al oido 
-de una bella dama esas historias que agradan. Ya esa epoca paso, 
-ya paso, ya paso. jSalud, senores! Ea, musicos, tocad.jAbrid, 
-abrid, haced espacio! Lanzaos en el, muchachas. 
-
-(Tocan los musicos y se baila) Eh, tunantes, mas luces; doblad 
-esas hojas y apagad el fuego la pieza se calienta demasiado. 
-Ah, querido, esta imprevista diversion viene oportunamente. Si, 
-si, sentaos, sentaos, buen primo Capuleto; pues vos y yo hemos 
-pasado nuestro tiempo de baile. ^Cuanto hace de la ultima vez 
-que nos enmascaramos 
-
-SEGUNDO CAPULETO 
-
-Por la Virgen, hace treinta arios. 
-
-
-41 
-
-
-PRIMER CAPULETO 
-
-jQue, hombre! No hace tanto, no hace tanto fue en las bodas 
-de Lucencio. Venga cuando quiera la fiesta de Pentecostes, el 
-dia que llegue hara sobre veinte y cinco anos que nos disfraza- 
-mos. 
-
-SEGUNDO CAPULETO 
-
-Hace mas, hace mas Su hijo es mas viejo, tiene treinta anos. 
-PRIMER CAPULETO 
-
-^Me decis eso a mi Ahora dos era, el menor de edad. 
-ROMEO 
-
-^Que dama es esa que honra la mano de aquel caballero 
-
-CRIADO 
-
-No se, senor. 
-
-ROMEO 
-
-jOh! Para brillar, las antorchas toman ejemplo de su belleza se 
-destaca de la frente de la noche, cual el brillante de la negra 
-oreja de un etiope. j Belleza demasiado valiosa para ser adqui- 
-rida, demasiado exquisita para la tierra! Como blanca paloma 
-en medio de una bandada de cuervos, asi aparece esa joven entre 
-sus companeras. Cuando pare la orquesta estare al tanto del 
-asiento que toma y dare a mi ruda mano la dicha de tocar la 
-suya. ^Ha amado antes de ahora mi corazon No, juradlo, ojos 
-mios; pues nunca, hasta esta noche, visteis la belleza verdadera. 
-
-
-42 
-
-
-TYBAL 
-
-
-Este, por la voz, debe ser un Montague. Muchacho, traeme aca 
-mi espada. jComo! ^Osa el miserable venir a esta fiesta, cu- 
-bierto con un grosero antifaz, para hacer mofa y escamio en 
-ella Por la nobleza y renombre de mi estirpe no tomo a crimen 
-el matarle. 
-
-PRIMER CAPULETO 
-
-jEh! ^Que hay, sobrino ^Por que, estallais asi 
-
-TYBAL 
-
-Tio, ese hombre es un Montague, un enemigo nuestro, un vil 
-que se ha entrometido esta noche aqui para escamecer nuestra 
-fiesta. 
-
-PRIMER CAPULETO 
-^Es el joven Romeo 
-
-TYBAL 
-
-El mismo, ese miserable Romeo. 
-
-PRIMER CAPULETO 
-
-Moderate, buen sobrino, dejale en paz; se conduce como un cor- 
-tes hidalgo y, a decir verdad, Verona le pondera como un joven 
-virtuoso y de excelente educacion. Por todos los tesoros de esta 
-ciudad no quisiera que aqui, en mi casa, se le infiriese insulto. 
-Calmate pues, no hagas en el reparo, esta es mi voluntad; si la 
-respetas, muestra un semblante amigo, depon ese aire feroz, que 
-sienta mal en una fiesta. 
-
-
-43 
-
-
-TYBAL 
-
-
-Bien viene cuando un miserable semejante se tiene por huesped. 
-No le aguantare. 
-
-PRIMER CAPULETO 
-
-Le aguantareis, digo que si. jQue! jSenor chiquillo! Idos a pa- 
-sear. ^Quien de los dos manda aqui Idos a pasear. ^No le 
-aguantareis Dios me perdone. jQuereis armar bullanga entre 
-mis convidados! jHacer de gallo en tonel! jHacer el hombre! 
-
-TYBAL 
-
-Pero, tio, es una verguenza. 
-
-PRIMER CAPULETO 
-
-A paseo, a paseo, sois un joven impertinente. ^Pensais eso de 
-veras Tal desproposito podria saliros mal. Se lo que digo. 
-Tomar a empeno el contrariarme! Si, a tiempo llega. (A los que 
-bailan) Muy bien, queridos mios. Andad, sois un presumido. 
-Manteneos quieto, si no... Mas luces, mas luces; jda verguenza! 
-Os forzare a estar tranquilo.jVaya! Animacion, queridos. 
-
-TYBAL 
-
-La paciencia que me imponen y la porfiada colera que siento, 
-en su encontrada lucha, hacen temblar mi cuerpo. Me retirare, 
-pero esta intrusion que ahora grata parece, se trocara en hiel 
-amarga. 
-
-(Vase) 
-
-
-44 
-
-
-ROMEO ( a JULIETA) 
-
-Si mi indigna mano profana con su contacto este divino relica- 
-rio, he aqui la dulce expiacion ruborosos peregrinos, mis labios 
-se hallan prontos a borrar con un tiemo beso la ruda impresion 
-causada. 
-
-JULIETA 
-
-Buen peregrino, sois harto injusto con vuestra mano, que en lo 
-hecho muestra respetuosa devocion; pues las santas tienen 
-manos que tocan las del piadoso viajero y esta union de palma 
-con palma constituye un palmario y sacrosanto beso. 
-
-ROMEO 
-
-^No tienen labios las santas y los peregrinos tambien 
-JULIETA 
-
-Si, peregrino, labios que deben consagrar a la oracion. 
-ROMEO 
-
-jOh! Entonces, santa querida, permite que los labios hagan lo 
-que las manos. Pues ruegan, otorgales gracia para que la fe no 
-se trueque en desesperacion. 
-
-JULIETA 
-
-Las santas permanecen inmoviles cuando otorgan su merced. 
-ROMEO 
-
-Pues no os movais mientras recojo el fruto de mi oracion. Por 
-
-
-45 
-
-
-la intercesion de vuestros labios, asi, se ha borrado el pecado 
-de los mlos. 
-
-(La da un beso) 
-
-JULIETA 
-
-Mis labios, en este caso, tienen el pecado que os quitaron. 
-ROMEO 
-
-^Pecado de mis labios jOh, dulce reproche! Volvedme el pe- 
-cado otra vez. 
-
-JULIETA 
-
-Sois docto en besar. 
-
-NODRIZA 
-
-Senora, vuestra madre quiere deciros una palabra. 
-
-ROMEO 
-
-^Cual es su madre 
-
-NODRIZA 
-
-Sabedlo, joven, su madre es la duena de la casa; una buena, dis- 
-creta y virtuosa senora. Su hija, con quien hablabais, ha sido 
-criada por mi y os aseguro que el que le ponga la mano encima, 
-tendra los talegos. 
-
-
-46 
-
-
-ROMEO 
-
-^Es una Capuleto jOh, cara acreencia! Mi vida es propiedad 
-de mi enemiga. 
-
-BENVOLIO 
-
-Vamos, salgamos; harta fiesta hemos tenido. 
-
-ROMEO 
-
-Si, tal temo yo; mi tormento esta en su colmo. 
-
-PRIMER CAPULETO 
-
-Eh, senores, no penseis en marcharos; va a servirse una hu- 
-milde, ligera colacion. ^Estais en iros aun Bien, entonces doy 
-gracias a todos gracias, nobles hidalgos, buenas noches. [Mas 
-luces aqui! Ea, vamos pues, a acostamos. Ah, querido, (al Se- 
-gundo Capuleto) por mi honor, se hace tarde; voy a descansar. 
-
-( Vanse todos, menos JULIETA y la NODRIZA)JULIETA 
-Llegate aca, nodriza ^Quien es aquel caballero 
-
-NODRIZA 
-
-El hijo y heredero del viejo Tiberio. 
-
-JULIETA 
-
-^Quien, el que pasa ahora el dintel de la puerta 
-
-NODRIZA 
-
-Si, ese es, me parece, el joven Petruchio. 
-
-
-47 
-
-
-JULIETA 
-
-El que le sigue, que no quiso bailar, ^quien es 
-
-NODRIZA 
-No se. 
-
-JULIETA 
-
-Anda, pregunta su nombre. Si esta casado, es probable que mi 
-sepulcro sea mi lecho nupcial. 
-
-NODRIZA 
-
-Se llama Romeo; es un Montague, el hijo unico de vuestro gran 
-enemigo. 
-
-JULIETA 
-
-jMi unico amor emanacion de mi unico odio! jDemasiado 
-pronto lo he visto sin conocerle y le he conocido demasiado 
-tarde! Extrano destino de amor es, tener que amar a un detestado 
-enemigo. 
-
-NODRIZA 
-
-^Que decis, que decis 
-
-JULIETA 
-
-Un verso que ahora mismo me enseno uno con quien bade. 
-(Llaman desde dentro a JULIETA) 
-
-
-48 
-
-
-NODRIZA 
-
-A1 instante, al instante. Venid, salgamos los desconocidos... 
-todos se han marchado. 
-
-( Entra EL CORO) Una antigua pasion yace ahora en su lecho 
-de muertey un joven afecto aspira a su herencia. La beldad por 
-quien el amor gemla y anhelaba morir, comparada con la tierna 
-Julieta, aparece sin encantos. Romeo ama al presente de nuevo 
-y es correspondido uno y otro amante se han hechizado igual- 
-mente con su mirar; pero el tiene que dolerse con su enemiga 
-supuesta y ella que robar de un anzuelo peligroso el dulce cebo 
-de la pasion. El, mirado como adversario, carecera de entrada 
-para pronunciar esos juramentos que acostumbran los apasio- 
-nados; y ella, como el amorosa, tendra muchos menos recursos 
-para verse doquier con su bien querido. Pero la pasion les 
-presta podery la ocasion les ofrecera los medios de acercarse, 
-compensando sus angustias con dulzuras extremas. 
-
-(Vanse) 
-
-
-49 
-
-
-Acto segundo 
-
-
-Escena I 
-
-
-(Plaza abierta, contigua al jardln de CAPULETO) 
-
-( Entra ROMEO) 
-
-ROMEO 
-
-^Puedo alejarme, cuando mi corazon esta aqui Atras, estupida 
-arcilla, busca tu centra. 
-
-(Escala el muro y salta al jardln)(Entran BENVOLIO y MER- 
-CUCIO) 
-
-BENVOLIO 
-
-i Romeo! ; Mi primo Romeo! 
-
-MERCUCIO 
-
-No es tonto Por mi vida, se ha escabullido de su casa para bus- 
-car su lecho. 
-
-BENVOLIO 
-
-Se ha corrido por este lado y saltado el muro del jardin. Llamale, 
-amigo Mercucio. 
-
-
-50 
-
-
-MERCUCIO 
-
-Hare mas, voy a mezclar su nombre con sortilegios.  Romeo! 
-jCapricho, locura, pasion, amor! Aparece bajo la forma de un 
-suspiro, recita un verso y me basta. Haz olr un solo. [Ay! Pon 
-siquiera en rima, pasion y pichon dirige a mi comadre Venus 
-una dulce palabra, un apodo a su ciego hijo, a su heredero el 
-tiemo Adam Cupido, el que tan bien disparo cuando el rey Co- 
-phetua se enamoro de la joven mendiga. No oye, esta sin accion, 
-no se mueve. El pobrecillo esta muerto y tengo a la fuerza que 
-evocarle. Yo te conjuro por los brillantes ojos de Rosalina, por 
-su frente elevada, por sus purpureos labios, por su lindo pie, su 
-esbelta piema, su regazo provocador, por cuanto mas este 
-guarda, que te nos aparezcas en tu forma propia. 
-
-BENVOLIO 
-
-Si te oye, se enfadara. 
-
-MERCUCIO 
-
-Lo que digo no puede enfadarle. Enfado le causaria el que se 
-hiciera surgir algun espiritu de extrana naturaleza en el circulo 
-de su adorada y que alii se le mantuviera hasta que ella, por 
-medio de exorcismos, le volviese a la profundidad. Esto seria 
-una ofensa; pero mi invocacion es razonable y honrosa yo solo 
-conjuro en nombre de su dama o para que el mismo aparezca. 
-
-BENVOLIO 
-
-Ven, se ha hecho invisible entre esos arboles, para unificarse 
-con la humeda noche. Su amor es ciego y se halla mas a gusto 
-en las tinieblas. 
-
-
-51 
-
-
-MERCUCIO 
-
-
-Si el amor es ciego, no puede dar en el bianco. Nuestro hombre 
-se sentara ahora al pie de algun nispero y deseara que su amada 
-sea esa especie de fruta que llaman manzana las jovenes, cuando 
-a solas se rien. j Romeo, buenas noches! Voy en busca de mi 
-colchon esta cama de campana es, para dormir, harto fria. Ea, 
-^nos vamos 
-
-BENVOLIO 
-
-Si, marchemonos; pues es inutil buscar aqui al que no quiere 
-ser hallado. 
-
-(Vanse) 
-
-
-Escena II 
-
-
-(Jardln de la casa de Capuleto) 
-
-( Entra ROMEO) 
-
-ROMEO 
-
-Se rie de cicatrices el que jamas recibio una herida. 
-
-( Aparece JULIETA en la ventana) 
-
-jPero calla! ^Que luz brota de aquella ventana ;Es el Oriente, 
-Julieta es el sol! Alza, bella lumbrera y mata a la envidiosa luna, 
-
-
-52 
-
-
-ya enferma y palida de dolor, porque tu, su sacerdotisa, la ex- 
-cedes mucho en belleza. No la sirvas, pues que esta celosa. Su 
-verde, descolorida librea de vestal, la cargan solo los tontos; 
-despojate de ella. Es mi diosa; jah, es mi amor! jOh! jQue no 
-lo supiese ella! Algo dice, no, nada. jQue importa! Su mirada 
-habla, voy a contestarle. Bien temerario soy, no es a mi a quien 
-se dirige. Dos de las mas brillantes estrellas del cielo, teniendo 
-para algo que ausentarse, piden encarecidamente a sus ojos que 
-rutilen en sus esferas hasta que ellas retomen. j Ah! ^Si sus ojos 
-se hallaran en el cielo y en su rostro las estrellas! El brillo de 
-sus mejillas haria palidecer a estas ultimas, como la luz del sol 
-a una lampara. Sus ojos, desde la boveda celeste, a traves de las 
-aereas regiones, tal resplandor arrojarian, que los pajaros se 
-pondrian a cantar, creyendo dia la noche. jVed como apoya la 
-mejilla en la mano! jOh! iQue no fuera yo un guante de esa 
-mano, para poder tocar esa mejilla! 
-
-JULIETA 
-
-jAy de mi! 
-
-ROMEO 
-
-i Habla! jOh! jProsigue hablando, angel resplandeciente! Pues 
-al alzar, para verte, la mirada, tan radiosa me apareces, como 
-un celeste y alado mensajero a la atonita vista de los mortales, 
-que, con ojos elevados al Cielo, se inclinan hacia atras para con- 
-templarme, cuando a trechos franquea el curso de las perezosas 
-nubes y boga en el seno del ambiente. 
-
-JULIETA 
-
-jOh, Romeo, Romeo! ^Por que eres Romeo Renuncia a tu 
-
-
-53 
-
-
-padre, abjura tu nombre; o, si no quieres esto, jura solamente 
-amarme y ceso de ser una Capuleto. 
-
-ROMEO (aparte) 
-
-^Debo oir mas o contestar a lo dicho 
-
-JULIETA 
-
-Solo tu nombre es mi enemigo. Tu eres tu propio, no un Mon- 
-tague pues. ^Un Montague ^Que es esto Ni es piano, ni pie, 
-ni brazo, ni rostro, ni otro algun varonil componente.jOh! jSe 
-otro nombre cualquiera! ^Que hay en un nombre Eso que 11a- 
-mamos rosa, lo mismo perfumaria con otra designacion. Del 
-mismo modo, Romeo, aunque no se llamase Romeo, conserva- 
-ria, al perder este nombre, las caras perfecciones que tiene. Mi 
-bien, abandona este nombre, que no forma parte de ti mismo y 
-toma todo lo mio en cambio de el. 
-
-ROMEO 
-
-Te cojo por la palabra. Llamame tan solo tu amante y recibire 
-un segundo bautismo De aqui en adelante no sere mas Romeo. 
-
-JULIETA 
-
-^Quien eres tu, que asi, encubierto por la noche, de tal modo 
-vienes a dar con mi secreto 
-
-ROMEO 
-
-No se que nombre darme para decirte quien soy. Mi nombre, 
-santa querida, me es odioso, porque es un contrario tuyo. Si es- 
-crito lo tuviera, haria pedazos lo escrito. 
-
-
-54 
-
-
-JULIETA 
-
-
-Mis oidos no han escuchado aun cien palabras pronunciadas por 
-esta voz y, sin embargo, reconozco el metal de ella. ^No eres tu 
-Romeo ^Un Montague 
-
-ROMEO. 
-
-Ni uno ni otro, santa encantadora, si ambos te son odiosos. 
-JULIETA 
-
-^Como has entrado aqui ^Con que objeto Responde. Los 
-muros del jardin son altos y dificiles de escalar considera quien 
-eres; este lugar es tu muerte si alguno de mis parientes te halla 
-en el. 
-
-ROMEO 
-
-Con las ligeras alas de Cupido he franqueado estos muros; pues 
-las barreras de piedra no son capaces de detener al amor Todo 
-lo que este puede hacer lo osa. Tus parientes, en tal virtud, no 
-son obstaculo para mi. 
-
-JULIETA 
-
-Si te encuentran acabaran contigo. 
-
-ROMEO 
-
-jAy! Tus ojos son para mi mas peligrosos que veinte espadas 
-suyas. Dulcifica solo tu mirada y estoy a prueba de su encono. 
-
-
-55 
-
-
-JULIETA 
-
-No quisiera, por cuanto hay, que ellos te vieran aqui. 
-
-ROMEO 
-
-En mi favor esta el manto de la noche, que me sustrae de su 
-vista; y con tal que me ames, poco me importa que me hallen 
-en este sitio. Vale mas que mi vida sea victima de su odio que 
-el que se retarde la muerte sin tu amor. 
-
-JULIETA 
-
-^Quien te ha guiado para llegar hasta aqui 
-
-ROMEO 
-
-El amor, que a inquirir me impulso el primero; el me presto su 
-inteligencia y yo le preste mis ojos. No entiendo de rumbos, 
-pero, aunque estuvieses tan distante como esa extensa playa que 
-bana el mas remoto Oceano, me aventuraria en pos de semejante 
-joya. 
-
-JULIETA 
-
-El velo de la noche se extiende sobre mi rostro, tu lo sabes; si 
-asi no fuera, el virginal pudor coloraria mis mejillas al recuerdo 
-de lo que me has oido decir esta noche. Con el alma quisiera 
-guardar aun las apariencias; ansiosa, ansiosa negar lo que he 
-dicho; jpero fuera ceremonias! ^Me amas tu Se que vas a res- 
-ponder si; y creere en tu palabra. Mas no jures; podrias traicio- 
-nar tu juramento de los perjuros de los amantes, es voz que 
-Jupiter se rie. jOh caro Romeo! Si me amas, declaralo leal- 
-mente; y si es que en tu sentir me he rendido con harta ligereza, 
-
-
-56 
-
-
-pondre un rostro severo, mostrara crueldad y te dire no, para 
-que me hagas la corte. En caso distinto, ni por el universo obra- 
-ria asi. Creeme, bello Montague, mi pasion es extrema y por 
-esta razon te puedo aparecer de ligera conducta; pero fia en mi, 
-hidalgo mas fiel me mostrare yo que esas que saben mejor afec- 
-tar el disimulo. Yo hubiera sido mas reservada, debo confesarlo, 
-si tu no hubieras sorprendido, antes de que pudiera apercibirme, 
-la apasionada confesion de mi amor. Perdoname, pues, y no im- 
-putes a ligereza de inclinacion esta debilidad que asi te ha des- 
-cubierto la oscura noche. 
-
-ROMEO 
-
-Senora, juro por esa luna sagrada, que platea sin distincion las 
-copas de estos frutales. 
-
-JULIETA 
-
-jOh! No jures por la luna, por la inconstante luna, cuyo disco 
-cambia cada mes, no sea que tu amor se vuelva tan variable. 
-
-ROMEO 
-
-^Por que debo jurar 
-
-JULIETA 
-
-No hagas juramento alguno; o si te empenas, jura por ti, el gra- 
-cioso ser, dios de mi idolatria, y te creere. 
-
-ROMEO 
-
-Si el caro amor de mi alma. 
-
-
-57 
-
-
-JULIETA 
-
-Bien, no jures aunque eres mi contento, no me contenta sellar 
-el compromiso esta noche. Es muy precipitado, muy imprevisto, 
-subito en extremo; igual exactamente al relampago, que antes 
-de decirse brilla, desaparece. jMi bien, buenas noches! Desen- 
-vuelto por el halito de estio, este boton de amor, sera quizas flor 
-bella en nuestra proxima entrevista. jAdios, adios! ;Que un re- 
-poso, una calma tan dulce cual la que reina en mi pecho se es- 
-parza en el tuyo! 
-
-ROMEO 
-
-jOh! ^Quieres dejarme tan poco satisfecho 
-
-JULIETA 
-
-^Que satisfaccion puedes alcanzar esta noche 
-
-ROMEO 
-
-El mutuo cambio de nuestro fiel juramento de amor. 
-
-JULIETA 
-
-^Mi amor Te lo di antes de que lo hubieses pedido. Y sin em- 
-bargo. quisiera que se pudiese dar otra vez. 
-
-ROMEO 
-
-Quern as privarme de el i,A que fin, amor mio 
-
-JULIETA 
-
-Solamente para ser generosa y dartelo segunda ocasion. Mas 
-
-
-58 
-
-
-deseo una dicha que ya tengo. Mi liberalidad es tan ilimitada 
-como el mar; mi amor, inagotable como el; mientras mas te doy, 
-mas me, queda; la una y el otro son infinitos. 
-
-(La NODRIZA llama desde dentro) Oigo ruido alia dentro. 
-jCaro amor, adios! A1 instante, buena nodriza. Dulce Montague, 
-se fiel. Aguarda un minuto mas, voy a volver. 
-
-( Se retira) 
-
-ROMEO 
-
-jOh, dichosa, dichosa noche! Como es de noche, tengo miedo 
-que todo esto no sea sino un sueno, dulce, halagador a lo sumo 
-para ser real. 
-
-( Vuelve JULIETA a la ventana) 
-
-JULIETA 
-
-Dos palabras, querido Romeo, y me despido de veras. Si las ten- 
-dencias de tu amor son honradas, si el matrimonio es tu fin, 
-hazme saber manana por la persona que hara llegar hasta ti, en 
-que lugar y hora quieres realizar la ceremonia; e ire a poner mi 
-todo a tus pies, a seguirte, dueno mio, por todo el universo. 
-
-
-NODRIZA (desde dentro) 
-jSenora! 
-
-JULIETA 
-
-Voy al momento. Pero si no es buena tu intention, te ruego... 
-
-
-59 
-
-
-NODRIZA (desde dentro) 
-jSenora! 
-
-JULIETA 
-
-A1 instante, alia voy que ceses en tus instancias y me abandones 
-a mi dolor, j Manana enviare! 
-
-ROMEO 
-
-Por la salud de mi alma. 
-
-JULIETA 
-
-jMil veces feliz noche! 
-
-(Vase) 
-
-ROMEO 
-
-Mas que infeliz mil veces por faltarme tu luz. Como el escolar, 
-lejos de sus libros, corre el amor hacia el amor; pero el amor 
-del amor se aleja, como el nino que vuelve a la escuela, con 
-semblante contrito. 
-
-(Retirandose pausadamente) 
-
-(Reaparece JULIETA en la ventana) JULIETA 
-
-jChist! j Romeo, chist! jOh! jQue no tenga yo la voz del halco- 
-nero, para atraer aqui otra vez a ese docil azor! La esclavitud 
-tiene el habla tomada y nopuede alzarla; de no ser asi, volaria 
-la cavema en que habita Eco y pondria su voz aerea mas ronca 
-que la mia haciendole repetir el nombre de mi Romeo. 
-
-
-60 
-
-
-ROMEO 
-
-Es mi alma la que llama por mi nombre. jCuan dulces y argen- 
-tine^ son en medio de la noche los acentos de un amante, de 
-que musica deliciosa llenan los oidos! 
-
-JULIETA 
-
-j Romeo! 
-
-ROMEO 
-
-^Mi bien 
-
-JULIETA 
-
-[A que hora enviare a encontrarte manana 
-
-ROMEO 
-
-A las nueve. 
-
-JULIETA 
-
-No caere en falta. De aqui alia van veinte anos. He olvidado 
-para que te llame. 
-
-ROMEO 
-
-Dejame permanecer aqui hasta que lo recuerdes. 
-
-JULIETA 
-
-Lo olvidare para tenerte ahi siempre, recordando cuanto me 
-place tu presencia. 
-
-
-61 
-
-
-ROMEO 
-
-Y yo de continuo estare ante ti, para hacerte olvidar sin inte- 
-rrupcion, olvidandome de todo otro hogar que este. 
-
-JULIETA 
-
-Casi es de dia. Quisiera que te hubieses ido; pero no mas lejos 
-de lo poco que una nina traviesa deja volar al pajarillo que tiene 
-en la mano; infeliz cautivo de trenzadas ligaduras, al que asi 
-atrae de nuevo, recogiendo de golpe su hilo de seda. j Tan to es 
-su amor enemigo de la libertad del prisionero! 
-
-ROMEO 
-
-Yo quisiera ser tu pajarillo. 
-
-JULIETA 
-
-Yo tambien lo quisiera, dulce bien; pero te haria morir a fuerza 
-de caricias. [Adios! despedirse es un pesar tan dulce, que adios, 
-adios, diria hasta que apareciese la aurora. 
-
-(Se retira) 
-
-ROMEO 
-
-jQue el sueno se aposente en tus ojos y la paz en tu corazon! 
-j Quisiera ser el sueno y la paz para tener tan dulce lecho! Me 
-voy de aqui a la celda de mi padre espiritual, para implorar su 
-asistencia y noticiarle mi dichosa fortuna. 
-
-
-62 
-
-
-Escena III 
-
-
-(Celda del hermano Lorenzo) 
-
-(Entra este con una cesta) 
-
-FRAY LORENZO 
-
-La manana, de grises ojos, sonrie sobre la tenebrosa frente de 
-la noche, incrustando de rayas luminosas las nubes del Oriente. 
-Las languidas tinieblas, tambaleando como un ebrio, huyen de 
-la ruta del dla y de las inflamadas ruedas del carro de Titan. 
-Antes, pues, que la roja faz del sol traspase el horizonte para vi- 
-gorizar la luz y seque el humedo rocio de la noche, fuerza es 
-que llenemos esta cesta de mimbres de nocivas plantas y de flo- 
-res de un jugo saludable. La tierra es la madre y la tumba de la 
-naturaleza ; su antro sepulcral es su seno creador, del cual 
-vemos surgir toda clase de engendros, que de ella, de sus ma- 
-temales entranas, se nutren, la mayor parte dotados de virtudes 
-numerosas, todos con alguna particular, ninguno semejante a 
-otro. jOh! i Grande es la eficaz accion que reside en las yerbas, 
-las plantas y las piedras, en sus intimas propiedades! Porque 
-nada existe, tan despreciable en la tierra, que a la tierra no pro- 
-porcione algun especial beneficio; nada tan bueno, que si es des- 
-viado de su uso legitimo, no degenere de su primitiva esencia y 
-no se trueque en abuso. Mai aplicada, la propia virtud se toma 
-en vicio y el vicio, a ocasiones, se ennoblece por el buen obrar. 
-En el tiemo caliz de esta flor pequena tiene su albergue el ve- 
-neno y su poder la medicina si se la huele, estimula el olfato y 
-los sentidos todos; si se la gusta, con los sentidos acaba, ma- 
-tando el corazon. Asi, del propio modo que en las plantas, cam- 
-
-
-63 
-
-
-pean siempre en el pecho humano dos contrarios en lucha, la 
-gracia y la voluntad rebelde, siendo pasto instantaneo del cancer 
-de la muerte la creacion en que predomina el rival perverso. 
-
-( Entra ROMEO) 
-
-ROMEO 
-
-Buenos dias, padre. 
-
-FRAY LORENZO 
-
-jBenedicite! ^Que voz matinal me saluda tan dulcementeJoven 
-hijo mio, signo es de alguna mental inquietud el despedirte tan 
-temprano del lecho. El cuidado establece su vigilancia en los 
-ojos del anciano; y donde el cuidado se aloja, jamas viene a fi- 
-jarse el sueno por el contrario, alii, donde se extiende y reposa 
-la juventud, exenta de fisicos y morales padecimientos, el do- 
-rado sueno establece sus reales. Asi, pues, tu madrugar me con- 
-vence que alguna agitacion de espiritu te ha puesto en pie; de 
-no ser esto, doy ahora en lo veraz. Nuestro Romeo no se ha 
-acostado esta noche. 
-
-ROMEO 
-
-Esa conclusion es la verdadera; pero ningun reposo ha sido mas 
-dulce que el mio. 
-
-FRAY LORENZO 
-
-jPerdone Dios el pecado! ^Estuviste con Rosalina 
-
-ROMEO 
-
-^Con Rosalina No, mi padre espiritual. He olvidado ese nom- 
-
-
-64 
-
-
-bre y los pesares que trae consigo. 
-
-
-FRAY LORENZO 
-
-jBuen hijo mio! Pero al fin, ^ donde has estado 
-
-ROMEO 
-
-Voy a decirtelo antes que me lo preguntes de nuevo. En union 
-de mi enemiga, me la he pasado en un festejo, donde improvi- 
-samente me ha herido una a quien heri a mi vez. Nuestra comun 
-salud depende de tu socorro y de tu santa medicina. Viendolo 
-estas, pio varon, n ingun odio alimento cuando al igual que por 
-mi intercedo por mi contrario. 
-
-FRAY LORENZO 
-
-Se claro, hijo mio; llano en tu verbosidad. Una confesion enig- 
-matica solo alcanza una ambigua absolucion. 
-
-ROMEO 
-
-Sabe, pues, en dos palabras, que la encantadora hija del rico Ca- 
-puleto es objeto de la profunda pasion de mi alma; que mi amor 
-se ha fijado en ella como el suyo en mi y que, todo ajustado, 
-resta solo lo que debes ajustar por el santo matrimonio. Cuando, 
-donde y como nos hemos visto, hablado de amor y trocado ju- 
-ramentos, te lo dire por el camino; lo unico que demando es que 
-consientas en casamos hoy mismo. 
-
-FRAY LORENZO 
-
-jBendito San Francisco! jQue cambio este! Rosalina, a quien 
-tan tiemamente amabas, ^abandonada tan pronto El amor de 
-
-
-65 
-
-
-los jovenes no existe, pues, realmente en el corazon, sino en los 
-ojos. jJesus, Maria! jCuantas lagrimas, por causa de Rosalina, 
-han banado tus palidas mejillas! jCuanto salino fluido prodi- 
-gado inutilmente para sazonar un amor que no debe gustarse! 
-El sol no ha borrado todavla tus suspiros de la boveda celeste, 
-tus etemos lamentos resuenan aun en mis caducos oidos. El seco 
-rastro de una lagrima, no llegada a enjugar, existe en tu mejilla, 
-helo ahi. Si fuiste siempre tu mismo, si esos dolores eran los 
-tuyos, tus dolores y tu a Rosalina solo pertenecian. te mues- 
-tras cambiado Pronuncia, pues, este fallo. Dable es flaquear a 
-las mujeres, toda vez que no existe fortaleza en los hombres. 
-
-ROMEO 
-
-Me has reprobado a menudo mi amor por Rosalina. 
-
-FRAY LORENZO 
-
-Tu idolatria, no tu amor, hijo mio. 
-
-ROMEO 
-
-Me dijiste que le sepultara. 
-
-FRAY LORENZO 
-
-No que sepultaras uno para sacar otro a luz. 
-
-ROMEO 
-
-No amonestes, te lo suplico la que amo ahora me devuelve mer- 
-ced por merced, amor por amor; la otra no obraba de este modo. 
-
-
-66 
-
-
-FRAY LORENZO 
-
-jOh! jBien sabia ella que tu amor decoraba su lection sin co- 
-nocer el silabario! Mas ven, joven inconstante, ven conmigo 
-una razon me determina a prestarte mi ayuda. Quizas esta 
-alianza produzca la gran dicha de trocar en verdadera afeccion 
-el odio de vuestras familias. 
-
-ROMEO 
-
-jOh! Partamos; me hallo en urgencia extrema. 
-
-FRAY LORENZO 
-
-Tiento y pausa. El que apresurado corre, da tropezones. 
-
-( Se marchan) 
-
-
-Escena IV 
-
-
-(Una calle) 
-
-(Entran BENVOLIOv MERCUCIO) 
-
-MERCUCIO 
-
-^Donde diablos puede estar ese Romeo ^No ha entrado en su 
-casa esta noche 
-
-
-67 
-
-
-BENVOLIO 
-
-No ha estado en la de su padre; yo hable con su criado. 
-MERCUCIO 
-
-; Ah! Esa criatura sin corazon, esa palida Rosalina, le atormenta 
-de tal modo, que, de seguro, perdera la razon. 
-
-BENVOLIO 
-
-Tybal, el sobrino del viejo Capuleto, ha enviado una carta a casa 
-de su padre. 
-
-MERCUCIO 
-
-Un cartel de desafio, pongo mi vida. 
-
-BENVOLIO 
-
-Romeo contestant a el. 
-
-MERCUCIO 
-
-Todo el que sabe escribir puede, contestar una carta. 
-BENVOLIO 
-
-Cierto, respondent al autor de ella, desafio por desafio. 
-MERCUCIO 
-
-jAy, pobre Romeo! Ya esta muerto. Apunaleado por los negros 
-ojos de una blanca beldad, herido el oido con un canto de amor, 
-ingerida en el mismo centra del corazon una saeta del pequeno y 
-ciego arquero, ^es hombre en situacion de hacer frente a Tybal 
-
-
-68 
-
-
-BENVOLIO 
-
-jEh! ^Quien es Tybal 
-
-MERCUCIO 
-
-Mas que un principe de gatos, os lo puedo afirmar. jOh! Es el 
-formidable campeon de la cortesia. Se bate como el que modula 
-una cancion musical guarda el compas, la medida, el tono; os 
-observa su pausa de minima, una, dos, y la tercera en el pecho. 
-Os horada maestramente un boton de seda un duelista, un due- 
-lista, un caballero de la legitima, principal escuela, que en todo 
-funda su honor. Si, el sempitemo pase, la doble finta, el jaah! 
-
-BENVOLIO 
-^E1 que 
-
-MERCUCIO 
-
-;A1 diablo esos fatuos ridiculos, pretenciosos media lenguas, 
-esos modemos acentuadores de palabras! }P or Jesus, una hoja 
-de primera! jUna gran tallal jUna liebre exquisitalDi, abuelo, 
-mo es una cosa deplorable que de tal modo nos veamos afligi- 
-dos por esos exoticos moscones, esos traficantes de modas nue- 
-vas, esos pardonnez-moi, tan aferrados a las formas del dia, que 
-no pueden sentarse a gusto en un viejo escabel ;Oh! jSus bon- 
-jours, sus bonsoirs! 
-
-( Entra ROMEO) 
-
-BENVOLIO 
-
-Ahi viene Romeo, ahi viene Romeo. 
-
-
-69 
-
-
-MERCUCIO 
-
-Enjuto, como un curado arenque. jOh, carne, came, en que ma- 
-grez te has convertido! Vedlo; alimentandose esta con las ca- 
-dencias que flulan de la vena de Petrarca. Laura, en 
-comparacion de su dama, era solo una fregona; si, pero tenia 
-mas habil trovador por apasionado, Dido, una moza inculta; 
-Cleopatra, una gitana; Helena y Hero, mujeres de mal vivir, 
-unas perdidas; Tisbe, unos azules ojos o cosa parecida, pero sin 
-alma. ; Senor Romeo, bon jour Este es un saludo trances a vues- 
-tros franceses pantalones. Anoche nos la pegasteis de lo Undo. 
-
-ROMEO 
-
-Buenos dlas, senores. ^Que cosa os pegue 
-
-MERCUCIO 
-
-La escapada, querido, la escapada; 7110 acabais de comprender 
-ROMEO 
-
-Perdon, buen Mercucio, tenia mucho que hacer y, en un caso 
-como el mlo, es dable a un hombre quebrar cumplidos. 
-
-MERCUCIO 
-
-Esto equivale a decir que un caso como el vuestro fuerza a un 
-hombre a quebrar las corvas. 
-
-ROMEO 
-
-En el sentido de cortesla. 
-
-
-70 
-
-
-MERCUCIO 
-
-Con sumo favor la aplicaste. 
-
-ROMEO 
-
-Manifestation cortes en extremo. 
-
-MERCUCIO 
-
-Si, yo soy de la cortesia el punto supino. 
-
-ROMEO 
-
-Punto por flor. 
-
-MERCUCIO 
-
-Exactamente. 
-
-ROMEO 
-
-Pues entonces mis zapatos estan bien floreados. 
-
-MERCUCIO 
-
-Deduccion cabal  prosiguenos esta punta de agudeza hasta que 
-hayas usado tus zapatos y, de este modo, cuando, por efecto del 
-uso, no exista la suela, quizas quede la punta, que sera sola en 
-su especie. 
-
-ROMEO 
-
-jOh! jFutil agudeza, singular unicamente por su propia singu- 
-laridad! 
-
-
-71 
-
-
-MERCUCIO 
-
-Interponte entre nosotros, buen Benvolio; mi vena se agota. 
-ROMEO 
-
-Vara y espuelas, vara y espuelas; o pedire que me apareen otro. 
-MERCUCIO 
-
-No, si tu ingenio empena la caza del ganso silvestre, por perdido 
-me doy; pues mas de silvestre ganso tienes tu seguramente en 
-un solo sentido que yo en los cinco mios. ^Hacia yo el ganso 
-contigo 
-
-ROMEO 
-
-Jamas te has reunido conmigo para hacer de otra cosa que de 
-ganso. 
-
-MERCUCIO 
-
-Voy a morderte en la oreja por ese chiste. 
-
-ROMEO 
-
-No, buen ganso, no muerdas. 
-
-MERCUCIO 
-
-Tu gracejo es como una manzana agria; tiene un sabor muy pi- 
-cante. 
-
-ROMEO 
-
-no es sazon a proposito para una gansa dulce 
-
-
-72 
-
-
-MERCUCIO 
-
-jOh! He aqui un chiste de piel de cabra; elastico, en su ancho, 
-desde una pulgada hasta cerca de una vara. 
-
-ROMEO 
-
-Le doy todo el largo a esa voz ancho, que, anadida a ganso, te 
-hace, a lo ancho y a lo largo, un ganso solemne. 
-
-MERCUCIO 
-
-Vaya, ^no vale mas esto que estar exhalando quejumbres de 
-amor Ahora eres sociable, ahora eres Romeo, ahora te muestras 
-cual eres por indole y educacion. Creeme, ese imbecil amor es 
-un gran badulaque que, con la boca abierta, anda corriendo de 
-un lado a otro para ocultar su pequeno maniqui en un agujero. 
-
-BENVOLIO 
-
-Detente ahi, detente ahi. 
-
-MERCUCIO 
-
-Quieres cortarme la palabra de un modo brusco. 
-
-BENVOLIO 
-
-De proseguir, hubieras etemizado tu historia. 
-
-MERCUCIO 
-
-jOh! Te enganas, la hubieras acortado; pues habia tratado la ma- 
-teria a fondo y no tenia ciertamente intencion de prolongar el 
-argumento. 
-
-
-73 
-
-
-ROMEO 
-
-jHe ahi un hermoso aparejo! 
-
-( Entran la NODRIZA y PEDRO) 
-
-MERCUCIO 
-
-jUna vela, una vela, una vela! 
-BENVOLIO 
-
-Dos, dos; un pantalon y una saya. 
-
-NODRIZA 
-j Pedro! 
-
-PEDRO 
-
-Mandad. 
-
-NODRIZA 
-
-Mi abanico, Pedro. 
-
-
-MERCUCIO 
-
-Daselo, por favor, buen Pedro, para que oculto la faz; de las dos, 
-vale mas la de su abanico. 
-
-
-NODRIZA 
-
-Buenos dias os de Dios, senores. 
-
-
-74 
-
-
-MERCUCIO 
-
-El os de buenas tardes, gentil dama. 
-
-NODRIZA 
-
-^Es ya tarde realmente 
-
-MERCUCIO 
-
-Nada menos, os lo afirmo; la libre mano del cuadrante marca la 
-puesta del sol. 
-
-NODRIZA 
-
-jQuitad alia! ^Que hombre sois 
-
-ROMEO 
-
-Uno, senora, que Dios creo para echarse el mismo a perder. 
-NODRIZA 
-
-Bien contestado, por vida mia. ^No ha dicho para perderse el 
-mismoSenores, ^puede alguno de vosotros indicarme donde 
-es dable hallar aljoven Romeo 
-
-ROMEO 
-
-Yo puedo informaros; pero el joven Romeo, hallado que sea, 
-sera mas viejo de lo que era al tiempo de andar vos en su busca. 
-Yo soy el mas joven de ese nombre en defecto de otro peor. 
-
-NODRIZA 
-
-Decis bien. 
-
-
-75 
-
-
-MERCUCIO 
-
-^Si ^Lo peor bien El bien tomar, a fe mla. Juiciosa, juiciosa- 
-mente. 
-
-NODRIZA 
-
-Si sois Romeo, senor, deseo conferenciar con vos. 
-BENVOLIO 
-
-Quiere invitarle a alguna cena. 
-
-MERCUCIO 
-
-jUna intrigante, una intrigante, una intrigante! jHola! [Eh! 
-ROMEO 
-
-^Que has hallado 
-
-MERCUCIO 
-
-Ninguna liebre, querido, si no es una liebre en un pastel de Cua- 
-resma, rancio y mohoso antes de ser acabado. (Cantando) 
-
-Liebre, aunque dura y picada, 
-
-Aneja liebre pasada, 
-
-En Cuaresma es de comer; 
-
-Pero una que el moho ostenta 
-Y de vejez pierde cuenta 
-No es plato para un doncel. 
-
-Romeo, ^vendreis a casa de vuestro padre A la hora de comer 
-estaremos alii. 
-
-
-76 
-
-
-ROMEO 
-
-
-Ire a reuni r me con vosotros. 
-
-MERCUCIO (Cantando) 
-
-Adios, vieja dama; adios, senora, senora, senora. 
-
-(Vanse MERCUCIO y BENVOLIO) 
-
-NODRIZA 
-
-j Vaya, adios! ^Quereis decirme, senor, quien es ese mozo inso- 
-lente, tan lleno de malicia 
-
-ROMEO 
-
-Un hidalgo, nodriza, que gusta escucharse a si propio y que dice 
-mas en un minuto de lo que aguantaria oir en un mes. 
-
-NODRIZA 
-
-Si osa decir algo en contra mia, doy con el en tierra, aunque sea 
-mas fomido de lo que aparenta; con el y veinte jaquetones de 
-su ralea. Y si no puedo, encontrare quienes puedan. jRuin tu- 
-nante! No soy ninguno de sus gastados estuches, ninguna de sus 
-companeras de punal. Y tu tambien, ^es justo que estes ahi y 
-permitas que todo bellaco abuse de mi a su placer 
-
-PEDRO 
-
-A nadie he visto abusar de vos a su placer; si visto lo hubiera, 
-mi tizona habria salido a relucir prontamente, os lo aseguro. Yo 
-desenvaino con igual presteza que otro cuando veo la ocasion 
-de una buena rina y el favor esta de mi parte. 
-
-
-77 
-
-
-NODRIZA 
-
-En este momento, Dios me es testigo, siento tal vejacion, que 
-todo el cuerpo me tiembla. jRuin bellaco! Permitidme una pa- 
-labra, caballero. Como ya os dije, mi senorita me ha enviado a 
-buscaros. Lo que me ha prevenido hacer presente, lo guardare 
-para mi hasta tanto me digais si teneis la intencion de conducirla 
-al paraiso de los locos, como dice el vulgo. Este seria un muy 
-villano proceder, como el vulgo dice; pues la senorita es joven, 
-y por lo tanto, si usarais de doblez con ella, seria en verdad una 
-cosa indigna de ponerse en planta con una doncella noble, seria 
-ejercitar una accion bien torpe. 
-
-ROMEO 
-
-Nodriza, di bien de mi a tu senorita, a tu duena. Te juro... 
-NODRIZA 
-
-jBuen corazon! Si, bajo mi palabra, la dire todo eso. Senor, 
-senor, se va a llenar de jubilo. 
-
-ROMEO 
-
-^Que intentas decirla, nodriza No me prestas atencion. 
-NODRIZA 
-
-La dire, senor... que jurais; lo que, para mi, equivale a prometer 
-como hidalgo. 
-
-ROMEO 
-
-Dile que busque el medio de ir a confesion esta tarde ; y que en 
-el convento, en la celda de Fray Lorenzo, quedara confesa y ca- 
-
-
-78 
-
-
-sada. Toma por tu trabajo. 
-
-
-NODRIZA 
-
-No, en verdad, senor; ni un ochavo. 
-
-ROMEO 
-
-Vaya, digo que lo tomes. 
-
-NODRIZA 
-
-^Esta tarde, senor Corriente, alii estara. 
-
-ROMEO 
-
-Y tu, buena nodriza, aguarda detras del muro de la abadia den- 
-tro de una hora mi criado ira a reunirse contigo y te llevara una 
-escala de cuerda, cuyos cabos, en la misteriosa noche, me daran 
-ascenso, al pinaculo de mi felicidad. jAdios! Se fiel y recom- 
-pensare tus servicios. jAdios! Ponme bien con tu senora. 
-
-NODRIZA 
-
-jQue el Dios del cielo te bendiga! Una palabra, senor. 
-
-ROMEO 
-
-^Que dices, cara nodriza 
-
-NODRIZA 
-
-^Es discreto vuestro criado dTo habeis oido decir que, de dos 
-personas, una sobra para guardar un secreto 
-
-
-79 
-
-
-ROMEO 
-
-Mi criado es tan fiel como el acero, yo te lo garantizo. 
-NODRIZA 
-
-Bien, senor, mi ama es la mas dulce criatura. j Senor, senor! Aun 
-era una pequena habladora. jOh! Hay en Verona un caballero, 
-un tal Paris, que de buen grado la echaria el anzuelo; pero ella, 
-la buena alma, gustara tanto de ver a un sapo, a un verdadero 
-sapo, como de verle a el. Yo la desespero a ocasiones diciendola 
-que Paris es el galan mas donoso; pero, creedme, cuando la digo 
-esto se pone tan blanca como una cera. Romero y Romeo mo, 
-comienzan los dos por la misma letra 
-
-ROMEO 
-
-Si, nodriza, que esto ambos con una R. 
-
-NODRIZA 
-
-i Ah, burlon! Ese es el nombre del perro. R es para el perro. No; 
-se que el principio es otra letra de el, de vos y de Romero, ha 
-formado ella la mas linda composicion; si, bien os haria el oirla. 
-
-ROMEO 
-
-Di bien de mi a tu senora. 
-
-(Se marcha) 
-
-NODRIZA 
-
-Si, mil y mil veces. j Pedro! 
-
-
-80 
-
-
-PEDRO 
-
-j Presente! 
-
-NODRIZA 
-
-Pedro, toma mi abanico y marcha delante. 
-
-(Vanse) 
-
-
-Escena V 
-
-
-(Jardin de Capuleto) 
-
-( Entra JULIETA) 
-
-JULIETA 
-
-Las nueve daban cuando envie la nodriza me habia prometido 
-estar de vuelta en media hora. Quizas no puede dar con el. jOh! 
-No es esto; es coja. Los mensajeros del amor debieran ser pen- 
-samientos; ellos salvan el espacio con diez veces mas rapidez 
-que los rayos del sol cuando ahuyentan las sombras de las os- 
-curas colinas. Por eso es que ligeras palomas tiran del carro del 
-Amor, por eso Cupido, veloz como el aire, tiene alas. Ya el sol, 
-en su curso de este dia, ha llegado a su mayor altura y de las 
-nueve a las doce se han pasado tres largas horasy ella no ha 
-vuelto aun. Si tuviera el corazon, la ardiente sangre de la juven- 
-tud, rapida como un proyectil fuera en su marcha; una palabra 
-
-
-81 
-
-
-mia la lanzaria al lado de mi dulce bien y otra de este a mi lado. 
-Pero la gente vieja la da por fingirse in extremis ; lenta, inerte, 
-pesada y con sombra de plomo. 
-
-( Entran la NODRIZA y PEDRO) jOh, Dios, ella es! Cara no- 
-driza, ^que hay ^Le encontraste Despide al criado. 
-
-NODRIZA 
-
-Pedro, esperad en la puerta. 
-
-( Vase PEDRO) 
-
-JULIETA 
-
-Y bien, buena, querida nodriza. jCielos! ^por que ese aire triste 
-Aunque sean malas las nuevas, comunicamelas alegremente si 
-son buenas, no rebajes su dulce cadencia exponiendolas con tan 
-hosco semblante. 
-
-NODRIZA 
-
-Estoy fatigada, dejadme reposar un momento. jAhi! jcual me 
-duelen los huesos! jQue caminata he hecho! 
-
-JULIETA 
-
-Quisiera que tuvieses mis huesos y tener yo tus noticias. Eh, 
-vamos, habla, te lo suplico; habla, buena, bondadosa nodriza. 
-
-NODRIZA 
-
-j Jesus! jQue prisa! ^No podeis aguardar un instante ^No veis 
-que estoy sin aliento 
-
-
-82 
-
-
-JULIETA 
-
-
-^Como es que te falta, cuando lo tienes para decirme que estas 
-sin el Las razones que produces en este intervalo de tiempo 
-son mas largas que el relato que estas excusando. Tus noticias, 
-^son buenas o malas Responde a esto; di si o no y aguardare 
-por los detalles. Sacame de ansiedad, ^son buenas o malas 
-
-NODRIZA 
-
-Bien, habeis hecho una tonta eleccion; no sabeis escoger un 
-hombre. jRomeo! No, el no. Aunque su rostro sea el del varon 
-mas bello, no hay piema de varon como la suya; y por lo que 
-hace a mano, pie y cuerpo aunque no dignas de mencionarse, 
-sobrepujan toda comparacion. No es la flor de la cortesia mas 
-garantizo que es tan dulce como un cordero. Sigue tu camino, 
-criatura; sirve a Dios. ;Que! ^Se ha comido ya en casa 
-
-JULIETA 
-
-No, no; pero ya sabia yo todo eso. ^Que dice el de nuestro ma- 
-trimonio ^Que es lo que dice 
-
-NODRIZA 
-
-jCielos! jQue me duele la cabeza! ;Que cabeza tengo! Me late 
-como si fuera a hacerseme astillas. La espalda por otro lado... 
-jOh! [La espalda, la espalda!... jMal corazon teneis en echarme 
-asi a buscar la muerte, correteando de arriba abajo! 
-
-JULIETA 
-
-En verdad, me aflige que no te sientas bien. Querida, querida 
-nodriza, cuentame, ^que dice mi amor 
-
-
-83 
-
-
-NODRIZA 
-
-Vuestro amor se explica como un honrado hidalgo, cortes, afa- 
-ble, gracioso y, respondo de ello, lleno de virtud. ^Donde esta 
-vuestra madre 
-
-JULIETA 
-
-^Donde esta mi madre Y bien, esta adentro. ^Donde habria de 
-estar ;Que extrana respuesta la tuya! Vuestro amor se explica 
-como un honrado hidalgo. £ Donde esta vuestra madre 
-
-NODRIZA 
-
-jOh, Virgen Maria! ^Tan en ascuas estais Si, lo veo, la tomais 
-conmigo. -Es ese el fomento que aplicais a mis doloridos hue- 
-sos De aqui en adelante, llevad vos misma vuestros mensajes. 
-
-JULIETA 
-
-^Por que tal baraunda Vamos, ^que dice Romeo 
-
-NODRIZA 
-
-^Habeis alcanzado permiso para ir hoy a confesaros 
-
-JULIETA 
-
-Si. 
-
-NODRIZA 
-
-Bien, id a la celda de Fray Lorenzo, donde un hombre aguarda 
-para haceros su mujer. Si, la bullidora sangre os sube a las me- 
-jillas. Cada cosa que diga va subitamente a enrojecerlas. Co- 
-
-
-84 
-
-
-rred a la iglesia; yo voy por otro lado en busca de una escala, 
-por la cual vuestro amante, tan pronto como oscurezca subira 
-al nido de su tortola. Yo soy la bestia de carga, la que se fatiga 
-por vuestro placer; mas, a poco tardar, esta noche, llevareis 
-vos el peso. En marcha, yo voy a comer; vos, deprisa a la 
-celda. 
-
-JULIETA 
-
-jCorramos a la dicha suprema! Fiel nodriza, adios. 
-
-(Vanse) 
-
-
-Escena VI 
-
-
-(Celda de Fray Lorenzo) 
-
-( Entran FRAY LORENZO y ROMEO) 
-
-FRAY LORENZO 
-
-Que la sonrisa del cielo presida este pacto sacrosanto, para que 
-la conciencia no nos reproche en las horas venideras. 
-
-ROMEO 
-
-; Amen, amen! Que venga el pesar que quiera; nunca igualara a 
-la suma de felicidad que brinda el contemplarla un breve ins- 
-tante. Enlaza tan solo nuestras manos con la formula bendita y 
-
-
-85 
-
-
-que la muerte, vampiro del amor, despliegue su osadla me basta 
-poder llamarla mla. 
-
-FRAY LORENZO 
-
-Esos violentos trasportes tienen violentos fines y en su triunfo 
-mueren son como el fiiego y la polvora que, al ponerse en con- 
-tacto, se consumen. La mas dulce miel, por su propia dulzura 
-se hace empalagosa y embota la sensibilidad del paladar. Amad, 
-pues, con moderacion; el amor permanente es moderado. El que 
-va demasiado aprisa, llega tan tarde como el que va muy des- 
-pacio. 
-
-( Entra JULIETA) He ahl la dama. jOh! Tan leve pie jamas gas- 
-tara estas piedras inalterables. Bien puede un amante deslizarse 
-sobre esos blancos copos que fluctuan a merced de la caprichosa 
-aura de otono y no dar en tierra sin embargo. [Tan ligera es la 
-amorosa satisfaccion! 
-
-JULIETA 
-
-Mi reverendo confesor, buenas tardes. 
-
-FRAY LORENZO 
-
-Romeo, hija mia, te dara las gracias por los dos. 
-
-JULIETA 
-
-A el saludo igualmente, para que sus gracias no excedan. 
-ROMEO 
-
-i Ah, Julieta! Si es que, cual la mia, esta colmada la medida de 
-
-
-86 
-
-
-tu felicidad y, para pintarla, tienes mas talento, perfuma, si, con 
-tu halito, el aire que nos rodea y que la brillante armonia de tu 
-voz desenvuelva los suenos de ventura que en esta tiema entre- 
-vista nos trasmitimos mutuamente. 
-
-JULIETA 
-
-Los pensamientos, mas ricos de fondo que de palabras, se pagan 
-de su entidad, no de su omato. Pobre es uno en tanto que puede 
-contar su tesoro; pero el sincero amor mio ha llegado a tal punto, 
-que a sumar no alcanzo la mitad de mi cabal fortuna. 
-
-FRAY LORENZO 
-
-Venid, venid conmigo y sera obra de un instante; pues, contando 
-con vuestra dispensa, solos no quedareis hasta que la Santa Igle- 
-sia os refunda en uno solo. 
-
-(Se marchan) 
-
-
-87 
-
-
-Acto tercero 
-
-
-Escena I 
-
-
-(Una plaza publica) 
-
-(Entran MERCUCIO, BENVOLIO, an pajey criados) 
-BENVOLIO 
-
-Por favor, amigo Mercucio, retiremonos. El dia esta caliente, 
-los Capuletos en la calle, y si llegamos a encontramos, sera in- 
-evitable una contienda; pues con los calores que hacen, bulle la 
-irritada sangre. 
-
-MERCUCIO 
-
-Te pareces a esos hombres que al entrar en una tabema nos suel- 
-tan la tizona sobre la mesa, diciendo jDios haga que no te ne- 
-cesite ! ; y que, a efecto del segundo vaso, la tiran contra el 
-sirviente, cuando, en verdad, no hay para que. 
-
-BENVOLIO 
-
-^Me parezco a esa gente 
-
-MERCUCIO 
-
-Vamos, vamos, tu, de natural, eres un pendenciero tan fogoso 
-como no le hay en Italia; una nada te provoca a la colera y, co- 
-lerico, una nada te vuelve provocador. 
-
-
-88 
-
-
-BENVOLIO 
-
-
-a que viene eso 
-
-MERCUCIO 
-
-Vaya, si hubiera dos de tu casta, en breve los echariamos de 
-menos; pues uno a otro se matarian.jTu! Tu la emprenderias 
-con un hombre por llevarte un pelo de mas o de menos en la 
-barba, le armarias contienda por estar partiendo avellanas, sin 
-haber mas razon que el ser de estas el color de tus ojos. ^Quien, 
-sino un ente igual, se fijara en un pretexto semejante La cabeza 
-se halla tan repleta de insultos, como lo esta un huevo de sus- 
-tancia; y eso que, a causa de rinas, esta ya cascada, como un 
-huevo vacio. ^No has buscado disputa a un hombre porque to- 
-siendo en la calle despertaba a tu perro, que dormia al sol ^No 
-la emprendiste contra un sastre porque llevaba su casaca nueva 
-antes de las fiestas de Pascuas, y con otro porque una cinta vieja 
-ataba sus zapatos nuevos Y sin embargo, en lo de evitar cues- 
-tiones, ^quieres ser mi preceptor 
-
-BENVOLIO 
-
-Si yo fuera tan dado a pelear como tu, el primer venido podria 
-comprar las mansas redituaciones de mi vida por el precio de 
-un cuarto de hora. 
-
-MERCUCIO 
-
-^Las mansas redituaciones ;Que manso! 
-
-(Entran TYBAL y otros) 
-
-
-89 
-
-
-BENVOLIO 
-
-jPor mi vida! Ahi llegan los Capuletos. 
-
-MERCUCIO 
-
-jPor mis pies! Poco me da. 
-
-TYBAL 
-
-Seguidme de cerca, piles voy a hablarles. Salud, Caballeros; una 
-palabra a uno de vosotros. 
-
-MERCUCIO 
-
-^Una palabra a uno de nosotros ^Eso tan solo Acompanadla 
-de algo; palabra y golpe a la vez. 
-
-TYBAL 
-
-Bien dispuesto me hallareis para el caso, senor, si me dais pie. 
-MERCUCIO 
-
-^No podeis tomarlo sin que os lo den 
-
-TYBAL 
-
-Mercucio, tu estas de concierto con Romeo. 
-
-MERCUCIO 
-
-jDe concierto! [Que! ^Nos tomas por corchetes Si tales nos 
-haces, entiende que solo vas a oir disonancias. Mira mi arco, 
-mira el que te va a hacer danzar. jDe concierto, pardiez! 
-
-
-90 
-
-
-BENVOLIO 
-
-Estamos discutiendo aqui en medio de una plaza publica; reti- 
-remonos a algun punto reservado, o razonemos tranquilamente 
-sobre nuestros agravios. De no ser asi, dejemos esto; en este 
-lugar todas las miradas se fijan en nosotros. 
-
-MERCUCIO 
-
-Los hombres tienen ojos para mirar; que nos miren pues. Yo, 
-por mi parte, no me muevo de aqui por complacer a nadie. 
-
-( Entra ROMEO) 
-
-TYBAL 
-
-En buen hora, quedad en paz, caballero. He aqui a mi mozo. 
-MERCUCIO 
-
-Pues que me ahorquen, senor, si lleva vuestra librea. Marchad 
-el primero a la liza, y a fe, el ira tras vos en este sentido puede 
-llamarle mozo vuestra senoria. 
-
-TYBAL 
-
-Romeo, el odio que te profeso no me permite otro mejor cum- 
-plido que el presente. Eres un infame. 
-
-ROMEO 
-
-Tybal, las razones que tengo para amarte disculpan en alto grado 
-el furor que respira semejante saludo. No soy ningun i nf ame 
-con Dios pues. Veo que no me conoces. 
-
-
-91 
-
-
-TYBAL 
-
-
-Mancebo, esto no repara las injurias que me has inferido; por 
-lo tanto, cara a ml y espada en mano. 
-
-ROMEO 
-
-Protesto que jamas te he ofendido, si que te estimo mas de lo 
-que te es dable imaginar, mientras desconozcas la causa de mi 
-afeccion. Asl, pues, bravo Capuleto — poseedor de un nombre 
-que amo tan tiemamente como el mlo — date por satisfecho. 
-
-MERCUCIO 
-
-jOh! jCalma deshonrosa, abominable humildad! A lo espada- 
-chln se borra esto. 
-
-(Desenvaina) 
-
-Tybal, cogedor de ratas, ^quieres dar unas pasadas 
-
-TYBAL 
-
-^Que quieres conmigo 
-
-MERCUCIO 
-
-Buen rey de gatos, tan solo una de tus nueve vidas, para enva- 
-lentonarme con ella y despues, segun te las manejes conmigo, 
-extinguir a cintarazos el resto de las ocho. ^Quereis empunar el 
-acero y sacarlo de la vaina Despachad, o si no, antes que este 
-fuera, os andara el mio por las orejas. 
-
-
-TYBAL (desenvainando) 
-
-A vuestra disposicion. 
-
-
 92 
-
-
 ROMEO 
-
 Buen Mercucio, envaina la hoja. 
-
 MERCUCIO 
-
 Ea, senor, vuestra finta. 
-
 (Se baten) 
-
 ROMEO 
-
 Tira la espada, Benvolio; desarmemosles. Por decoro, Caballe- 
 ros, evitad semejante tropella. Tybal, Mercucio. El principe ha 
 prohibido expresamente semejante tumulto en las calles de Ve- 
 rona. Deteneos, Tybal; jBuen Mercucio! 
-
 (TYBAL y los suyos desaparecen) 
-
 MERCUCIO 
-
 jEstoy herido! jMaldicion sobre las dos casas! jMuerto soy! ^Se 
 ha marchado con el pellejo sano 
-
 ROMEO 
-
 ;Que! ^Estas herido 
-
 MERCUCIO 
-
 Si, si, un rasguno, un rasguno; de seguro, tengo bastante. 
 ^Donde esta mi paje Anda, belitre, trae un cirujano. 
-
 (Vase el paje) 
-
-
 93 
-
-
 ROMEO 
-
 Valor, amigo; la herida no puede ser grave. 
-
 MERCUCIO 
-
 No, no es tan profunda como un pozo, ni tan ancha como una 
 puerta de iglesia; pero hay con ella, hara su efecto. Ven a verme 
 manana y me hallaras hombre-carga. Creemelo para este 
@@ -3409,1938 +578,32 @@ bre a muerte! jUn fanfarron, un miserable, un bellaco que no
 pelea sino por reglas de aritmetica! ^Por que diablos viniste a 
 interponerte entre los dos Por debajo de tu brazo me han he- 
 rido. 
-
 ROMEO 
-
-Crei obrar del mejor modo. 
-
+Creí obrar del mejor modo. 
 MERCUCIO 
-
 Ayudame, Benvolio, a entrar en alguna casa, o voy a desma- 
 yarme. jMaldicion sobre vuestras dos casas! Ellas me han con- 
 vertido en pasto de gusanos. Lo tengo, y bien a fondo. j Vuestra 
 parentela! 
-
 (Vanse MERCUCIO y BENVOLIO) 
-
 ROMEO 
-
 Por causa mia, este hidalgo, el proximo deudo del principe, mi 
 ultimo amigo, ha recibido esta herida mortal; mi honra esta 
 manchada por la detraccion de Tybal, jde Tybal, que hace una 
 hora ha emparentado conmigo! jOh, querida Julieta! Tu belleza 
-
-
 94 
-
-
 me ha convertido en un ser afeminado, ha enervado en mi pecho 
 el vigoroso valor. 
-
 ( Vuelve a entrar BENVOLIO) 
-
 BENVOLIO 
-
 jOh! i Romeo, Romeo, el bravo Mercucio ha muerto! Esta alma 
 generosa ha demasiado pronto desdenado la tierra y volado a 
 los cielos. 
-
 ROMEO 
-
 El negro destino de este dia a muchos mas se extendera este 
 solo inaugura el dolor, otros lo daran fin. 
-
 ( Entra de nuevo TYBAL) 
-
-BENVOLIO 
-
-Ahi vuelve otra vez el furioso Tybal. 
-
-ROMEO 
-
-jVivo! jTriunfante! jY Mercucio matado! jRetoma a los cielos, 
-prudente moderacion, y tu, furor de sanguinea mirada, se al pre- 
-sente mi guia! Ahora, Tybal, recoge para ti el epiteto de infame, 
-que hace poco me diste. El alma de Mercucio se cierne a muy 
-poca altura de nosotros, aguardando que la tuya le haga com- 
-pania. O tu o yo, o los dos juntos tenemos que ir en pos de ella. 
-
-TYBAL 
-
-Tu, miserable mancebo, que eras de su partido en la tierra, iras 
-a su lado. 
-
-
-95 
-
-
-ROMEO 
-
-Esto lo va a decidir. 
-
-(Se baten. Cae TYBAL) 
-
-BENVOLIO 
-
-jHuye, Romeo, ponte en salvo! El pueblo esta en alarma, Tybal 
-matado. Sal del estupor el prmcipe va a condenarte a muerte si 
-te cogen. ; Parte, huye, salvate! 
-
-ROMEO 
-
-jOh! jSoy el juguete de la fortuna! 
-
-BENVOLIO 
-
-^Por que estas aun ahi 
-
-(Vase ROMEO) 
-
-(Entran algunos CIUDADANOS) 
-
-PRIMER CIUDADANO 
-
-^Que rambo ha tornado el que mato a Mercucio Tybal, ese ase- 
-sino ^por donde ha huido 
-
-BENVOLIO 
-
-Tybal, Tybal yace ahi. 
-
-PRIMER CIUDADANO 
-
-Alzad, senor, seguidme; os requiero en nombre del principe; 
-obedeced. 
-
-
-96 
-
-
-(Entran el PRINCIPE y su sequito, MONTAGUE, CAPU- 
-LETO, las esposas de estos ultimos y otros) 
-
-PRINCIPE 
-
-^Donde estan los viles autores de esta contienda 
-
-BENVOLIO 
-
-Noble principe, yo puedo relatar todos los desgraciados porme- 
-nores de esta fatal querella. Ese que veis ahl, muerto a manos 
-del joven Romeo, fue el que mato al bravo Mercucio, tu pa- 
-riente. 
-
-LADY CAPULETO 
-
-jTybal, mi primo! jEl hijo de mi hermano! jDoloroso cuadro! 
-j Ay ! jLa sangre de mi caro deudo derramada! Principe, si eres 
-justo para con nuestra sangre, derrama la sangre de los Monta- 
-gues, j Oh, primo, primo! 
-
-PRINCIPE 
-
-Benvolio, ^quien dio principio a esta sangrienta querella 
-BENVOLIO 
-
-El que muerto ves ahi, Tybal, acabado por la mano de Romeo. 
-Romeo le hablo con dulzura, le suplico que pesase lo futil de la 
-cuestion, le hizo fuerza tambien con vuestro sumo coraj e. Todo 
-esto, dicho en tono suave, con mirada tranquila, en la humilde 
-actitud de un suplicante, no consiguio aplacar la indomita sana 
-de Tybal, que, sordo a la paz, asesta el agudo acero al pecho del 
-bravo Mercucio este, tan lleno como el de fuego, opone a la 
-
-
-97 
-
-
-contraria su arma mortifera, y con un desden marcial, ya aparta 
-de si la muerte con una mano, ya la envia con la otra a Tybal, 
-cuya destreza la rechaza a su vez. Romeo grita con fuerza jDe- 
-teneos, amigos! jAmigos, apartad! y con brazo agil y mas 
-pronto que su palabra, dando en tierra con las puntas homicidas, 
-se precipita entre los contendientes; pero una falsa estocada de 
-Tybal se abre camino bajo el brazo de Romeo y acierta a herir 
-mortalmente al intrepido Mercucio. El matador huye acto con- 
-tinuo; mas vuelve a poco en busca de Romeo, en quien acababa 
-de nacer el afan de venganza, y uno y otro se embisten como 
-un relampago tan es asi, que antes de poder yo tirar mi espada 
-para separarlos, el animoso Tybal estaba muerto. Al verle caer, 
-su adversario escapo. Si esta no es la verdad, que pierda la vida 
-Benvolio. 
-
-LADY CAPULETO 
-
-Es pariente de los Montagues, el carino le convierte en impostor, 
-no dice la verdad. Como veinte de ellos combatian en este 
-odioso encuentro, y los veinte juntos no han podido matar sino 
-un solo hombre. Yo imploro justicia, principe; tu nos la debes. 
-Romeo ha matado a Tybal, Romeo debe perder la vida. 
-
-PRINCIPE 
-
-Romeo mato a Tybal, este mato a Mercucio ^quien pagara 
-ahora el precio de esta sangre preciosa 
-
-MONTAGUE 
-
-No Romeo, principe; el era el amigo de Mercucio. Toda su culpa 
-es haber terminado lo que hubiera extinguido el ejecutor la vida 
-de Tybal. 
-
-
-98 
-
-
-PRINCIPE 
-
-Y por esa culpa, le desterramos inmediatamente de Verona. Las 
-consecuencias de vuestros odios me alcanzan ; mi sangre corro 
-por causa de vuestras feroces discordias; pero yo os impondre 
-tan fuerte condenacion que a todos os hare arrepentir de mis 
-quebrantos. No dare oidos a defensas ni a disculpas; ni lagrimas, 
-ni ruegos alcanzaran gracia; excusadlos pues. Que Romeo se 
-apresure a salir de aqui, o la hora en que se le halle sera su ul- 
-tima. Llevaos ese cadaver y esperad mis ordenes. La clemencia 
-que perdona al que mata, asesina. 
-
-(Vanse todos) 
-
-
-Escena II 
-
-
-(Un aposento en la casa de Capuleto) 
-
-( Entra JULIETA) 
-
-JULIETA 
-
-Galopad, galopad, corceles de flamigeros cascos hacia la man- 
-sion de Febo un cochero tal como Faeton os lanzaria a latigazos 
-en direccion al Poniente y traeria inmediatamente la lobrega 
-noche. Extiende tu denso velo, noche protectora del amor, para 
-que se cierren los errantes ojos y pueda Romeo, invisible, sin 
-que su nombre se pronuncie, arrojarse en mis brazos. La luz de 
-su propia belleza basta a los amantes para celebrar sus amorosos 
-
-
-99 
-
-
-misterios; y, dado que el amor sea ciego, mejor se conviene con 
-la noche. Ven, noche majestuosa, matrona de simples y solo ne- 
-gras vestiduras; ensename a perder, ganandola, esta partida en 
-que se empenan dos virginidades sin tacha. Cubre con tu negro 
-manto mis mejillas, do la inquieta sangre se revuelve, hasta que 
-el timido amor, ya adquirida confianza en los actos del amor 
-verdadero, solo vea pura castidad.  Ven, noche! j Ven, Romeo! 
-Ven, tu, que eres el dia en la noche; pues sobre las alas de esta 
-apareceras mas bianco que la nieve recien caida sobre las plu- 
-mas de un cuervo. Ven, tu, la de negra frente, dulce, amorosa 
-noche, dame a mi Romeo; y cuando muera, hazlo tuyo y com- 
-partelo en pequenas estrellas la faz del cielo sera por el tan em- 
-bellecida que el mundo entero se apasionara de la noche y no 
-rendira mas culto al sol esplendente. jOh! He comprado un al- 
-bergue de amor, pero no he tornado posesion de el, y aunque 
-tengo dueno, no me he entregado aun. Tan insufrible es este dia 
-como la tarde, vispera de una fiesta, para el impaciente nino que 
-tiene un vestido nuevo y no puede llevarlo. jOh! ahi llega mi 
-nodriza. 
-
-(Entra la NODRIZA, con una escala de cuerdas) 
-
-Ella me trae noticias si, toda boca que pronuncie el nombre de 
-Romeo, solo por ello, habla un estilo celeste. Y bien, nodriza, 
-^que hay ^Que tienes ahi ^La escala que te mando traer 
-Romeo 
-
 NODRIZA 
-
-Si, si, la escala. 
-
-(Arrojandola al suelo) 
-
-
-100 
-
-
-JULIETA 
-
-jCielos! ^Que pasa ^Por que te tuerces las manos 
-NODRIZA 
-
-jOh, infausto dia! j Muerto, muerto, muerto! jEstamos perdidas, 
-senora, estamos perdidas! jDia aciago! jYa no existe, le han ma- 
-tado, esta sin vida! 
-
-JULIETA 
-
-^Cabe tal crueldad en el cielo 
-
-NODRIZA 
-
-Si no en el cielo, cabe en Romeo. jOh! jRomeo, Romeo! ^Quien 
-lo hubiera pensado jRomeo! 
-
-JULIETA 
-
-^Que demonio eres tu para atormentarme asi Semej antes la- 
-mentos son para aullarse en el horrible infiemo. ^Se ha suici- 
-dado Romeo Responde unicamente si, y este simple 
-monosilabo envenenara mas pronto que la mortifera mirada 
-del basilisco. Cierra esos ojos que dicen si, a pesar tuyo, o si 
-el si aparece en ellos, yo sucumbo. ^Esta muerto Di si. i No 
-lo esta Di no. Breves sonidos determinen mi dicha o mi des- 
-gracia. 
-
-NODRIZA 
-
-He visto la herida, la he visto con mis ojos. jDios me 
-perdone!Aqui, sobre su pecho varonil. Un lastimoso cadaver, 
-un lastimoso, ensangrentado cadaver; palido, palido cual ceniza, 
-
-
-101 
-
-
-todo impregnado de sangre, de cuajarones de sangre. A1 verlo 
-me desmaye. 
-
-JULIETA 
-
-iQuiebra, oh corazon mio! jPobre fallido, quiebra para siempre! 
-jEn prision mis ojos! [No penseis mas en ser libres!  Vil polvo, 
-vuelve a la tierra; cesa al punto de moverte y en un mismo pe- 
-sado ataud comprimete con Romeo! 
-
-NODRIZA 
-
-jOh, Tybal, Tybal, mi mejor amigo! jOh, cortes Tybal, leal hi- 
-dalgo! jQue haya sobrevivido yo para verte muerto! 
-
-JULIETA 
-
-^Que tormenta es esta que asi sopla de dos bandas opuestas 
-^Asesinado Romeo y Tybal muerto ^Mi caro primo y mi es- 
-poso, mas caro aun jQue la terrible trompeta anuncie, pues, el 
-juicio final! ^Quien existe, si faltan esos dos hombres 
-
-NODRIZA 
-
-Tybal ha muerto y Romeo esta desterrado. Romeo, matador de 
-Tybal, esta desterrado. 
-
-JULIETA 
-
-jOh, Dios! ^La mano de Romeo ha vertido la sangre de Tybal 
-
-NODRIZA 
-
-Si, si; jdia fatal!, si. 
-
-
-102 
-
-
-JULIETA 
-
-jOh, alma de vlbora, oculta bajo belleza en flor! ^Que dragon 
-habito nunca tan hermosa cavema jAgradable tirano! j Ange- 
-lico demonio! j Cuervo con plumas de paloma! [Cordero de lo- 
-buna sana! [Despreciable sustancia de la mas divina forma! 
-jJusto opuesto de lo que apareces con razon, condenadosanto, 
-honorifico traidor! [Oh, naturaleza! ^Para que reservabas el in- 
-fiemo cuando albergaste el espiritu de un demonio en el paraiso 
-mortal de un cuerpo tan encantador ^Volumen contentivo de 
-tan vil materia fue jamas tan bellamente encuademado [Oh! 
-[Triste es que habite la impostura tan brillante palacio! 
-
-NODRIZA 
-
-No hay sinceridad, ni fe, ni honor en los hombres; todos son 
-falsos, perjuros, hipocritas. [Ah! ^Donde esta mi paje Dadme 
-un elixir. Estos pesares, estas angustias, estas penas me enveje- 
-cen. jOprobio sobre Romeo! 
-
-JULIETA 
-
-[Maldita sea tu lengua por semejante deseo! El no ha nacido 
-para la deshonra. La verguenza se correria de aposentarse en su 
-frente; pues es un trono donde puede coronarse el honor, unico 
-monarca del universo mundo. [Oh, que inhumana he sido en ca- 
-lumniarle! 
-
-NODRIZA 
-
-^Hablais bien del que ha matado a vuestro primo 
-
-
-103 
-
-
-JULIETA 
-
-^Debo hablar mal del que es mi esposo ; Ah! [Mi dueno infeliz! 
-^Que lengua hara bien a tu nombre, cuando yo, desposada hace 
-tres horas contigo, le he desgarrado Mas ^por que, perverso, 
-diste muerte a mi primo Ese perverso primo hubiera matado a 
-mi esposo. Dentro, lagrimas insensatas, volved a vuestra nativa 
-fuente; a la afliccion pertenece el acuoso tributo que por error 
-ofreceis a la alegria. Mi consorte, a quien Tybal queria matar, 
-esta vivo; y Tybal, que queria acabar con mi consorte, esta 
-muerto. Todo esto es consolante; ^por que lloro pues Una pa- 
-labra he oido mas siniestra que la muerte de Tybal, ella me ha 
-asesinado. Bien quisiera olvidarla; pero, ;ah!, pesa sobre mi me- 
-moria, cual execrables faltas sobre las almas de los pecadores. 
- Tybal esta muerto y Romeo desterrado! Este desterrado, esta 
-sola palabra desterrado, ha matado diez mil Tybales. Harta des- 
-gracia era, sin necesidad de otras, la muerte de Tybal; y si es 
-que los crueles dolores se recrean en juntarse, e indispensable- 
-mente deben marchar subseguidos de otras penas, ^por que des- 
-pues de haber dicho «Tybal ha muerto», no ha proseguido ella 
-y tu padre, o y tu madre, o bien y tu padre y tu madre Esto hu- 
-biera excitado en mi un ordinario dolor. Pero, tras la muerte de 
-Tybal, venir con el agregado Romeo esta desterrado, decir esto, 
-es matar, es hacer morir, de un golpe, padre, madre, primo, con- 
-sorte y esposa. j Romeo desterrado! Ni fin, ni limite, ni medida, 
-ni determinacion tiene esta frase mortal; no hay ayes que den 
-la profundidad de este dolor. ^Donde estan mi padre y mi madre, 
-nodriza 
-
-NODRIZA 
-
-Lloran y gimen sobre el cadaver de Tybal, ^quereis ir donde 
-estan Yo os conducire. 
-
-
-104 
-
-
-JULIETA 
-
-^Banan con lagrimas las heridas de aquel El destierro de 
-Romeo hara correr las mlas cuando esten secas las de ellos. Re- 
-coge esas cuerdas. Pobre escala, hete aqul enganada, lo mismo 
-que yo; pues mi bien esta desterrado. A1 puente del amor anudo 
-el tu extremidad; pero yo, aun virgen, virgen viuda morire. Es- 
-cala, nodriza, venid; voy a mi lecho nupcial. Que la muerte, en 
-vez de Romeo, tome mi virginidad. 
-
-NODRIZA 
-
-Id de seguida a vuestra alcoba yo buscare a Romeo, para con- 
-solaros; se bien donde esta. Old, vuestro bien se hallara aqui 
-esta noche; corro a encontrarle; oculto esta en la celda de Fray 
-Lorenzo. 
-
-JULIETA 
-
-jOh, vele! Entregale este anillo y dile que venga a darme el ul- 
-timo adios. 
-
-(Vanse) 
-
-
-105 
-
-
-Escena III 
-
-
-(La celda de Fray Lorenzo) 
-
-( Entran FRAY LORENZO y ROMEO) 
-
-FRAY LORENZO 
-
-Adelante, Romeo; avanza, hombre timido. La inquietud se ha 
-adherido con pasion a tu ser y has tornado por esposa a la cala- 
-midad. 
-
-ROMEO 
-
-^Que hay de nuevo, padre mio ^Cual es la resolucion del prin- 
-cipe ^Que nuevo, desconocido infortunio anhela estrechar 
-lazos conmigo 
-
-FRAY LORENZO 
-
-Hijo amado, harto habituado estas a esta triste compania. Voy a 
-noticiarte el fallo del prmcipe. 
-
-ROMEO 
-
-^Cual menos que un Juicio Final es su final sentencia 
-
-FRAY LORENZO 
-
-Un fallo menos riguroso ha salido de sus labios; no el de muerte 
-corporal, si el destierro de la persona. 
-
-
-106 
-
-
-ROMEO 
-
-
-j Ah! 7EI destierro Ten piedad, di la muerte. La proscripcion 
-es de faz mas terrible, mucho mas terrible que la muerte no 
-pronuncies esa palabra. 
-
-FRAY LORENZO 
-
-De aqui, de Verona, estas desterrado. No te impacientes; pues 
-el mundo es grande y extenso. 
-
-ROMEO 
-
-Fuera del recinto de Verona, el mundo no existe; solo el purga- 
-torio, la tortura, el propio infiemo. Desterrado de aqui, lo estoy 
-de la tierra, y el destierro terrestre es la etemidad. Si, la pros- 
-cripcion es la muerte con un nombre supuesto llamar a esta des- 
-tierro, es cortarme la cabeza con un hacha de oro y sonreir al 
-golpe que me asesina. 
-
-FRAY LORENZO 
-
-jOh grave pecado! jOh feroz ingratitud! Por tu falta pedian la 
-muerte las leyes de Verona; pero el bondadoso principe, intere- 
-sandose por ti, echa a un lado lo prescrito y cambia el funesto 
-muerte en la palabra destierro esta es una insigne merced y tu 
-no la reconoces. 
-
-ROMEO 
-
-Es un suplicio, no una gracia. El paraiso esta aqui, donde vive 
-Julieta los gatos, los perros, el menor ratoncillo, el mas ruin in- 
-secto, habitando este eden, podra contemplarla; pero Romeo no. 
-Mas importancia que el, mas digna representacion, mas pri- 
-
-
-107 
-
-
-vanza, disfrataran las moscas, huespedes de la podredumbre. 
-Ellas podran tocar las blancas, las admirables manos de la 
-amada Julieta y hurtar una celeste dicha de esos labios que, aun 
-respirando pura y virginal modestia, se ruborizan de continuo, 
-tomando a falta los besos que ellos mismos se dan. [Ah! Romeo 
-no lo puedo; esta desterrado. Las moscas pueden tocar esa ven- 
-tura, que a mi me toca huir. Ellas son entes libres, yo un ente 
-proscripto. diras aun que no es la muerte el destierro ^No 
-tenias, para matarme, alguna venenosa mistura, un punal agu- 
-zado, un rapido medio de destruccion, siempre, en suma, menos 
-vil que el destierro j Desterrado! jOh, padre! Los condenados 
-pronuncian esa palabra en el infierno en medio de aullidos. 
-^Como tienes el corazon, tu, un sacerdote, un santo confesor, 
-uno que absuelve faltas y es mi patente amigo, de triturarme 
-con esa voz desterrado  
-
-FRAY LORENZO 
-
-jEh! Amante insensato, escuchame solamente una palabra. 
-ROMEO 
-
-jOh! ^Vas a hablarme aun de destierro 
-
-FRAY LORENZO 
-
-Voy a darte una armadura para que esa voz no te ofenda. La fi- 
-losofia, dulce balsamo de la adversidad, que te consolara aun 
-en medio de tu extranamiento. 
-
-ROMEO 
-
-^Extranamiento otra vez jEn percha la filosofia! Si no puede 
-crear una Julieta, trasponer una ciudad, revocar el fallo de un prin- 
-
-
-108 
-
-
-cipe, para nada sirve; ningun poder tiene; no hables mas de ella. 
-
-
-FRAY LORENZO 
-
-jOh! Esto me praeba que los insensatos no tienen oidos. 
-ROMEO 
-
-^Como habrian de tenerlos, cuando los cuerdos carecen de ojos 
-FRAY LORENZO 
-
-Discutamos, si lo permites, sobre tu situacion. 
-
-ROMEO 
-
-Tu no puedes hablar de lo que no sientes. Si fiieras tan joven 
-como yo, el amante de Julieta, casado de hace una hora, el ma- 
-tador de Tybal; si estuvieses loco de amor como yo, y como yo 
-desterrado, entonces podrias hacerlo, entonces, arrancarte los 
-cabellos y arrojarte al suelo, como lo hago en este instante, para 
-tomar la medida de una fosa que aun esta por cavar. 
-
-(Tocan dentro) 
-
-FRAY LORENZO 
-
-Alza, alguien llama; ocultate, buen Romeo. 
-
-ROMEO 
-
-^Yo No, a menos que el vapor de los penosos ayes del alma, 
-en forma de niebla, no me guarezca de los ojos que me buscan. 
-
-(Dan golpes) 
-
-
-109 
-
-
-FRAY LORENZO 
-
-
-jEscucha como llaman! ^Quien esta ahi Alza, Romeo, vas a 
-ser preso. Aguardad un instante. En pie, huye a mi gabinete. 
-(Llaman de nuevo) Ahora mismo. jJusto Dios! ^Que obstina- 
-cion es esta Alla voy, alia voy. (Continuan los golpes) Quien 
-llama tan recio ^De parte de quien venis ^Que quereis 
-
-
-NODRIZA (desde dentro) 
-
-Dejadme entrar y sabreis mi mensaje. La senora Julieta es quien 
-me envia. 
-
-
-FRAY LORENZO (abriendo) 
-
-Bienvenida entonces. 
-
-( Entra la NODRIZA) 
-
-NODRIZA 
-
-jOh! Bendito padre, joh! decidme, bendito padre, ^donde esta 
-el marido de mi senora, donde, esta Romeo 
-
-FRAY LORENZO 
-
-Helo ahi, en el suelo, ebrio de sus propias lagrimas. 
-NODRIZA 
-
-jEn igual estado que mi senora, en el mismo, sin diferencia! 
-FRAY LORENZO 
-
-jOh! jFunesta simpatia, deplorable semejanza! 
-
-
-no 
-
-
-NODRIZA 
-
-Asi cabalmente yace ella, gimiendo y llorando, llorando y gi- 
-miendo. Arriba, arriba si sois hombre; alzad. En bien de Julieta, 
-por su amor, en pie y firme. .Por que caer en tan profundo aba- 
-timiento 
-
-ROMEO 
-
-jNodriza! 
-
-NODRIZA 
-
-jAh, senor! j Senor! Si, la muerte lo acaba todo. 
-
-ROMEO 
-
-.Hablas de Julieta .En que estado se encuentra Despues 
-que he manchado de sangre la infancia de nuestra dicha, de 
-una sangre que tan de cerca participa de la suya, .no me 
-juzga un consumado asesino .Donde esta .Como se 
-halla.Que dice mi secreta esposa de nuestra amorosa mise- 
-ria 
-
-NODRIZA 
-
-;Ah! Nada dice, senor, llora y llora, eso si. Ya cae sobre su 
-lecho, ya se levanta sobresaltada, llamando a Tybal, j Romeo!, 
-grita enseguida; y enseguida cae en la cama otra vez. 
-
-ROMEO 
-
-Cual si ese nombre fuese el disparo de un arma mortifera que 
-la matase, como mato a su primo la maldita mano del que le 
-lleva. jOh! dime, religioso, dime en que vil parte de este cuerpo 
-
-
-ill 
-
-
-reside mi nombre, dimelo, para que pueda arrasar la odiosa mo- 
-rada. 
-
-(Tirando de su espada) 
-
-FRAY LORENZO 
-
-Deten la airada mano. ^Eres hombre Tu figura lo pregona, mas 
-tus lagrimas son de mujer y tus salvajes acciones manifiestan 
-la ciega rabia de una fiera. jBastarda hembra de varonil aspecto! 
-j Deforme monstmo de doble semejanza! Me has dejado atonito. 
-Por mi santa orden, creia mejor templada tu alma. jHas matado 
-a Tybal! ^Quieres ahora acabar con tu vida ^Dar tambien 
-muerte a tu amada, que respira en tu aliento, haciendote propia 
-victima de un odio maldito ^Por que injurias a la naturaleza, 
-al cielo y a la tierra Naturaleza, tierra y cielo, los tres a un 
-tiempo te dieron vida; y a un tiempo quieres renunciar a los tres. 
-jQuita alia, quita alia! Haces injuria a tu presencia, a tu amor, a 
-tu entendimiento con dones de sobra, verdadero judio, no te 
-sirves de ninguno para el fin, ciertamente provechoso, que ha- 
-bria de dar realce a tu exterior, a tus sentimientos, a tu inteli- 
-gencia. Tu noble configuracion es tan solo un cuno de cera, 
-desprovisto de viril energia; tu caro juramento de amor, un 
-negro perjurio unicamente, que mata la fidelidad que hiciste 
-voto de mantener; tu inteligencia, este omato de la belleza y del 
-amor, contrariedad al servirles de guia, prende fuego por tu 
-misma torpeza, como la polvora en el frasco de un soldado 
-novel, y te hace pedazos en vez de ser tu defensa. j Vamos, hom- 
-bre, levantate! Tu Julieta vive, tu Julieta, por cuyo caro amor 
-yacias inanimado hace poco. Esto es una dicha. Tybal queria 
-darte la muerte y tu se la has dado a el; en esto eres tambien di- 
-choso. La ley, que te amenaza con pena capital, vuelta tu amiga, 
-ha cambiado aquella en destierro otra dicha tienes aqui. Un mar 
-
-
-112 
-
-
-de bendiciones llueve sobre tu cabeza, la felicidad, luciendo sus 
-mejores galas, te acaricia; pero tu, como una joven obstinada 
-yperversa, te muestras enfadada con tu fortuna y con tu amor. 
-Ten cuidado, ten cuidado; pues las que son asl, mueren misera- 
-bles. Ea, ve a reunirte con tu amante, segun lo convenido; sube 
-a su aposento, ve a darle consuelo. Eso si, sal antes que sea de 
-dla, pues ya claro, no podras trasladarte a Mantua, donde debes 
-permanecer hasta que podamos hallar la ocasion de publicar tu 
-matrimonio, reconciliar a tus deudos, alcanzar el perdon del 
-prlncipe y hacerte volver con cien mil veces mas dicha que la- 
-mentos das al partir. Adelantate, nodriza saluda en mi nombre 
-a tu senora, dile que precise a los del castillo, ya por los crueles 
-pesares dispuestos al descanso, a que se recojan. Romeo va de 
-seguida. 
-
-NODRIZA 
-
-jOh Dios! Me habria quedado aqui toda la noche para olr salu- 
-dables consejos. ;Ah, lo que es la ciencia! Digno hidalgo, voy 
-a anunciar a la senora vuestra visita. 
-
-ROMEO 
-
-Si, y di a mi bien que se prepare a renirme. 
-
-NODRIZA 
-
-Tomad, senor, este anillo que me encargo entregaros. Daos 
-prisa, no tardeis; pues se hace muy tarde. 
-
-(Vase la NODRIZA) 
-
-
-113 
-
-
-ROMEO 
-
-
-jCuanto este don reanima mi espiritu! 
-
-FRAY LORENZO 
-
-jPartid; feliz noche! Dejad a Verona antes que sea de dia, o al 
-romper el alba salid disfrazado. Toda vuestra fortuna depende 
-de esto Permaneced en Mantua; yo me vere con vuestro criado, 
-quien de tiempo en tiempo os comunicara todo lo que aqui ocu- 
-rra de favorable para vos. Venga la mano; es tarde. jAdios, feliz 
-noche! 
-
-ROMEO 
-
-Si una alegria superior a toda alegria no me llamara a otra parte, 
-seria para mi un gran pesar separarme de ti tan pronto. Adios. 
-
-(Vase) 
-
-
-Escena IV 
-
-
-(Un aposento en la casa de Capuleto) 
-
-( Entran CAPULETO, la senora CAPULETO y PARIS) 
-
-CAPULETO 
-
-Han acontecido, senor, tan desgraciados sucesos que no hemos 
-
-
-114 
-
-
-tenido tiempo de prevenir a nuestra hija. Considerad, ella pro- 
-fesaba un tiemo afecto a su primo Tybal, y yo tambien. Si, he- 
-laos nacido para morir. Es muy tarde; ella no bajara esta noche. 
-Os respondo que a no ser por vuestra compania ya estaria en la 
-cama hace una hora. 
-
-PARIS 
-
-Tan turbio tiempo no presta tiempo al amor. Buenas noches, se- 
-nora, saludad en mi nombre a vuestra hija. 
-
-LADY CAPULETO 
-
-Con placer, y manana temprano sabre lo que piensa. El pesar la 
-tiene encerrada esta noche. 
-
-CAPULETO 
-
-Senor Paris, me atrevo a responderos del amor de mi hija. 
-Pienso que en todos conceptos se dejara guiar por mi; digo mas, 
-no lo dudo. Esposa, pasad a verla antes de ir a recogeros; ins- 
-truidla sin demora del amor de mi hijo Paris; y prevenidla, es- 
-cuchadme bien, que el miercoles proximo. Mas poco a poco; 
-^que dia es hoy 
-
-PARIS 
-
-Lunes, senor. 
-
-CAPULETO 
-
-^Lunes j Ah! [Ah! Si, el miercoles es demasiado pronto que 
-sea el jueves. Decidla que el jueves se casara con este noble 
-conde. ^Estareis dispuesto i Os place esta precipitacion No 
-
-
-115 
-
-
-haremos gran ruido. Un amigo o dos; pues, parad la atencion 
-hallandose tan reciente el asesinato de Tybal, podria pensarse 
-que nos era indiferente como deudo, si nos diesemos a grande 
-algazara. En tal virtud, tendremos una docena de amigos, y 
-punto final. Pero, ^que decis del jueves 
-
-PARIS 
-
-Senor, quisiera que el jueves fuese manana. 
-
-CAPULETO 
-
-Vaya, retiraos. Queda pues aplazado para el jueves. Vos, senora, 
-id a ver a Julieta antes de recogeros, preparadla para el dia del 
-desposorio. Adios, senor. jHola! jLuz en mi aposento! Id de- 
-lante. Es tan excesivamente tarde que dentro de nada diremos 
-que es temprano. Buenas noches. 
-
-(Vanse) 
-
-
-Escena V 
-
-
-(Alcoba de Julieta) 
-
-( Entran esta y ROMEO) 
-
-JULIETA 
-
-^Quieres dejarme ya Aun dista el amanecer fue la voz del rui- 
-
-
-116 
-
-
-senor y no la de la alondra la que penetro en tu alarmado oldo. 
-Todas las noches canta sobre aquel granado. Creeme, amor mlo, 
-fue el ruisenor. 
-
-ROMEO 
-
-Era la alondra, la anunciadora del dla, no el ruisenor. Mira, mi 
-bien, esos celosos resplandores que orlan, alia en el Oriente, las 
-nubes crepusculares las antorchas de la noche se han extinguido 
-y el riente dia trepa a la cima de las brumosas montanas. Tengo 
-que partir y conservar la vida, o quedarme y perecer. 
-
-JULIETA 
-
-Esa luz no es la luz del dia, estoy segura, lo estoy es algun me- 
-teoro que exhala el sol, para que te sirva de hachero esta noche 
-y te alumbre en tu rata hacia Mantua. Demorate, asi, algo mas; 
-no tienes precision de marcharte. 
-
-ROMEO 
-
-Que me sorprendan, que me maten, satisfecho estoy con tal que 
-tu lo quieras. No, ese gris resplandor no es el resplandor matu- 
-tino, es solo el palido reflejo de la frente de Cintia; no, no es la 
-alondra la que hiere con sus notas la boveda celeste a tan in- 
-mensa altura de nosotros. Mas tengo inclinacion de quedarme 
-que voluntad de irme. Ven, muerte; jbienvenida seas! Asi lo 
-quiere Julieta. ^Que dices, alma mia Platiquemos; la aurora no 
-ha lucido. 
-
-JULIETA 
-
-Si, si, parte, huye, vete de aqui. Es la alondra la que asi desafma, 
-lanzando broncas discordancias, desagradables sostenidos. Pro- 
-
-
-117 
-
-
-palan que la alondra produce melodiosos apartes; no es asl, pues 
-que deshace el nuestro. La alondra se dice que ha cambiado de 
-ojos con el repugnante sapo joh! quisiera en este momento que 
-hubieran tambien cambiado de voz; pues que esta voz, atemo- 
-rizados, nos arranca de los brazos al uno del otro y te arroja de 
-aqui con sones que despiertan al dia. jOh! Parte desde luego; la 
-claridad aumenta mas y mas. 
-
-ROMEO 
-
-^Mas y mas claridad Mas y mas negro es nuestro infortunio. 
-
-( Entra la NODRIZA) 
-
-NODRIZA 
-
-jSenora! 
-
-JULIETA 
-
-^Nodriza 
-
-NODRIZA 
-
-La senora condesa se dirige a vuestro aposento es de dia, estad 
-sobre aviso, ojo alerta. 
-
-(Vase la NODRIZA) 
-
-JULIETA 
-
-En tal caso, joh ventana!, deja entrar el dia y salir mi vida. 
-
-
-118 
-
-
-ROMEO 
-
-j Adios, adios! Un beso, y voy a bajar. 
-
-(Empieza a bajar) 
-
-JULIETA 
-
-jAmigo, senor, dueno mio! ^asi me dejas Necesito nuevas 
-tuyas a cada instante del dla, pues que muchos dlas hay en cada 
-minuto. [Oh! Por esta cuenta, muchos anos pesaran sobre mi 
-cuando vuelva a ver a mi Romeo. 
-
-ROMEO 
-
-Adios; en cuantas ocasiones haya, amada mia, te enviare mis 
-recuerdos. 
-
-JULIETA 
-
-jOh! ^Crees tu que aun nos volveremos a ver 
-
-ROMEO 
-
-No lo dudo; y todos estos dolores haran el dulce entretenimiento 
-de nuestros venideros dias. 
-
-JULIETA 
-
-jDios mio! Tengo en el alma un fatal presentimiento. Ahora, 
-que abajo estas, me parece que te veo como un muerto en el 
-fondo de una tumba. O mis ojos se enganan, o palido apareces. 
-
-ROMEO 
-
-Pues creeme, mi amor, de igual suerte te ven los mios. El dolor 
-
-
-119 
-
-
-penetrante deseca nuestra sangre. jAdios! jAdios! 
-
-(Desaparece ROMEO) 
-
-JULIETA 
-
-;Oh fortuna! jFortuna! La humanidad te acusa de inconstante. 
-Si inconstante eres, ,que tienes que hacer con Romeo, cuya le- 
-altad es notoria Se inconstante, fortuna; pues que asi alimentare 
-la esperanza de que no le retendras largo tiempo, volviendole a 
-mi lado. 
-
-LADY CAPULETO (desde dentro) 
-jEh! jHija mia! ^Estas levantada 
-
-JULIETA 
-
-^Quien llama ^Acaso, la condesa mi madre ^Es que tan tarde 
-no se ha acostado aun, o que se halla en pie tan de manana 
-^Que extraordinario motivo la trae aqui 
-
-(Entra LADY CAPULETO) 
-
-LADY CAPULETO 
-
-jEh! ^Que tal va, Julieta 
-
-JULIETA 
-
-No estoy bien, senora. 
-
-LADY CAPULETO 
-
-^Siempre llorando la muerte de vuestro primo [Que! ^Preten- 
-
-
-120 
-
-
-des quitarle el polvo de la tumba con tus lagrimas Aunque lo 
-alcanzaras, no podrlas retomarle la vida. Basta pues; un dolor 
-moderado prueba gran sentimiento; un dolor excesivo, al con- 
-trario, anuncia siempre cierta falta de juicio. 
-
-JULIETA 
-
-Dejadme llorar aun una perdida tan sensible. 
-
-LADY CAPULETO 
-
-Haciendolo, sentiras la perdida, sin sentir a tu lado al amigo por 
-quien lloras. 
-
-JULIETA 
-
-Sintiendo de tal suerte la perdida, tengo a la fuerza que llorar le 
-siempre. 
-
-LADY CAPULETO 
-
-Vaya, hija, lloras, no tanto por su muerte, como por sabor que 
-vive el miserable que le mato. 
-
-JULIETA 
-
-^Que miserable, senora 
-
-LADY CAPULETO 
-
-Ese miserable Romeo. 
-
-JULIETA 
-
-Entre un miserable y el hay muchas millas de distancia. jPer- 
-
-
-121 
-
-
-donele Dios! Yo le perdono con toda mi alma y, sin embargo, 
-ningun hombre aflige tanto como el mi corazon. 
-
-LADY CAPULETO 
-
-Si, porque vive el traidor asesino. 
-
-JULIETA 
-
-Cierto, senora, lejos del alcance de mis brazos. ;Que no fuera 
-yo sola la encargada de vengar la muerte de mi primo! 
-
-LADY CAPULETO 
-
-Alcanzaremos venganza de ella, pierde cuidado asi, no llores 
-mas. Avisare en Mantua, donde vive ese vagabundo desterrado 
-a cierta persona que le brindara una eficaz pocion, con la que 
-ira pronto a hacer compania a Tybal, y entonces, me prometo 
-que estaras satisfecha. 
-
-JULIETA 
-
-Si, jamas me hallare satisfecha mientras no vea a Romeo, muerto 
-esta realmente mi pobre corazon por el dano de un pariente. Se- 
-nora, si pudieseis hallar un hombre, tan solo para llevar el ve- 
-neno, yo lo prepararia de modo que, tomandolo Romeo, 
-durmiera en paz sin retardo. jOh! jCuanto repugna a mi corazon 
-el oirle nombrar y no poder ir hacia el. jY no vengar el afecto 
-que profesaba a mi primo sobre la persona del que lo ha matado! 
-
-LADY CAPULETO 
-
-Halla tu los medios, y yo encontrare el hombre. Ahora, hija mia, 
-voy a participarte alegres noticias. 
-
-
-122 
-
-
-JULIETA 
-
-Si, en tan preciso tiempo, la alegria viene a proposito. Por favor, 
-senora madre, ^que nuevas son esas 
-
-LADY CAPULETO 
-
-Vaya, hija, vaya, tienes un padre cuidadoso, un padre que, para 
-libertarte de tu tristeza, ha preparado un pronto dia de regocijo, 
-que ni suenas tu ni me esperaba yo. 
-
-JULIETA 
-
-Sea en buen hora, ^que dia es ese, senora 
-
-LADY CAPULETO 
-
-Positivamente, hija mia, el jueves proximo, bien de manana, el 
-ilustre, guapo y joven hidalgo, el conde Paris, en la iglesia de 
-San Pedro, tendra la dicha de hacerte ante el altar una esposa 
-feliz. 
-
-JULIETA 
-
-jAh! Por la iglesia de San Pedro y por San Pedro mismo, no 
-hara de mi ante el altar una feliz esposa. Me admira tal pre- 
-cipitacion; el que tenga que casarme antes que el hombre que 
-debe ser mi marido me haya hecho la corte. Os ruego, senora, 
-digais a mi senor y padre que no quiero desposarme aun, y 
-que, cuando lo haga, juro efectuarlo con Romeo, a quien sa- 
-beis que odio, mas bien que con Paris. Estas son nuevas real- 
-mente. 
-
-
-123 
-
-
-LADY CAPULETO 
-
-
-Ahi viene vuestro padre, decidle eso vos misma y ved como lo 
-recibe de vuestra boca. 
-
-( Entran CAPULETO y la NODRIZA) 
-
-CAPULETO 
-
-Cuando el sol se pone, el aire gotea roclo; mas por la desapari- 
-cion del hijo de mi hermano llueve en toda forma. ^Como, 
-como, nina, una gotera tu ^Siempre llorando [Tu un chapa- 
-rron etemo! De tu pequeno cuerpo haces a la vez un oceano, 
-una barca, un aquilon; pues tus ojos, que mantienen un continuo 
-flujo y reflujo de lagrimas, son para mi como el mar, tu cuerpo 
-es la barca que boga en esas ondas saladas, el aquilon tus sus- 
-piros que, luchando en mutua furia con tus lagrimas, haran, si 
-una calma subita no sobreviene, zozobrar tu cuerpo, batido por 
-la tempestad. ^Que tal, esposa ^Le habeis significado nuestra 
-determinacion 
-
-LADY CAPULETO 
-
-Si, pero ella no quiere, ella os da las gracias, senor. jDeseara 
-que la loca estuviese desposada con su tumba! 
-
-CAPULETO 
-
-Poco a poco, enterame, mujer, enterame. jComo! ^no quiere, 
-no nos da las gracias ^No esta orgullosa, no se estima feliz de 
-que hayamos hecho que un tan digno hidalgo, no valiendo ella 
-nada, se brinde esposo suyo 
-
-
-124 
-
-
-JULIETA 
-
-
-No orgullosa de lo alcanzado, si agradecida a vuestro esfuerzo. 
-Jamas puedo estar orgullosa de lo que detesto; mas si obligada 
-a lo mismo que odio cuando es indicio de amor. 
-
-CAPULETO 
-
-jComo, como! jComo, como! jRespondona! ^Que significa 
-eso Orgullosa y agradecida — desobligada — y sin embargo, 
-no orgullosa. Oid, senorita remilgada no me vengais con afa- 
-bles agradecimientos, con hinchazones de orgullo; antes bien, 
-aprestad vuestras finas piemas para ir el jueves proximo a la 
-iglesia de San Pedro, en compania de Paris, o te arrastrare hacia 
-alii sobre un zarzo. jFuera de aqui clorotica materia! jFuera, mi- 
-serable! jCara de sebo! 
-
-LADY CAPULETO 
-
-jVaya, anda, anda! ^Estas sin sentido 
-
-JULIETA 
-
-Querido padre, os pido de rodillas que me oigais, con calma, 
-producir solo una frase. 
-
-CAPULETO 
-
-jLlevete el verdugo, joven casquivana, refractaria criatura»! 
-Te lo repito o ve a la iglesia el jueves, o nunca vuelvas a pre- 
-sentarme la cara. Ni una palabra, ni una replica, muda la boca; 
-tienen mis dedos tentacion. Senora, creiamos pobremente 
-bendecido nuestro enlace porque Dios nos habia dado tan solo 
-esta unica hija; pero veo ahora que esa una esta de sobra y 
-
-
-125 
-
-
-que hemos tenido en ella una maldicion. jDesaparezca, mi- 
-serable! 
-
-NODRIZA 
-
-jQue Dios, desde el cielo, la bendiga! Haceis mal, senor, en tra- 
-tarla asi. 
-
-CAPULETO 
-
-por que, senora Sabiduria Retened la lengua, madre Pru- 
-dencia; id a parlotear con vuestros iguales. 
-
-NODRIZA 
-
-No digo ninguna indignidad. 
-
-CAPULETO 
-
-jEa, vete con Dios! 
-
-NODRIZA 
-
-^No se puede hablar 
-
-CAPULETO 
-
-jSilencio, caduca farfullera! Reserva tus predicas para tus co- 
-madres de banquete; pues aqui no necesitamos de ellas. 
-
-LADY CAPULETO 
-
-Os acalorais demasiado. 
-
-
-126 
-
-
-CAPULETO 
-
-jHostia divina! Eso me trastoma el juicio. De dla, de noche, a 
-cada hora, a cada minuto, en casa, fuera de casa, solo o acom- 
-panado, durmiendo o velando, mi unico afan ha sido el casarla, 
-y hoy, que he hallado un hidalgo de fastuosa alcurnia, que 
-posee hellos dominios, joven, de noble educacion, lleno, como 
-se dice, de caballerosos dones, un hombre tan cumplido como 
-puede un corazon desearlo... venir, una tonta, lloricona cria- 
-tura, una quejumbrosa muneca a responder cuando se le pre- 
-senta su fortuna Yo no quiero casarme, No puedo amar, soy 
-demasiado joven, os ruego que me perdoneis. Si, si no quereis 
-casaros, os perdonare; id a holgaros donde os plazca, no habi- 
-tareis mas conmigo. Fijaos en esto, pensad en ello, no acos- 
-tumbro chancearme. El jueves se acerca; poned la mano sobre 
-el corazon, aconsejaos. Si sois mi hija, mi amigo os alcanzara; 
-si no lo sois, haceos colgar, mendigad, pereced de hambre, 
-morid en las calles; pues, por mi alma, jamas os reconocere; 
-nada de cuanto me pertenece se empleara jamas en vuestro 
-bien. Contad con esto, reflexionad; no quebrantare mi pala- 
-bra. 
-
-(Vase) 
-
-JULIETA 
-
-7N0 existe, no hay piedad en el cielo que penetre la profundidad 
-de mi dolor jOh tiema madre mia, no me arrojeis lejos de vos! 
-Diferid este matrimonio por un mes, por una semana; o, si no 
-lo haceis, erigid mi lecho nupcial en el sombrio monumento que 
-Tybal reposa. 
-
-
-127 
-
-
-LADY CAPULETO 
-
-
-No te dirijas a mi, pues no respondere una palabra. Haz lo que 
-quieras, todo ha concluido entre las dos. 
-
-(Se marcha) 
-
-JULIETA 
-
-;Dios mio! Nodriza, ^como precaver esto Mi marido esta en 
-la tierra, mi fe en el cielo ^como esta fe puede descender aqui 
-abajo, si no es que mi esposo me la devuelve desde arriba, aban- 
-donando el mundo Dame consuelo, aconsejame. j Ay, ay de mi! 
-jQue el cielo ponga en practica enganos contra un tan apacible 
-ser como yo! ^Que dices ^No tienes una palabra de alegria, 
-algun consuelo, nodriza 
-
-NODRIZA 
-
-Si, en verdad, hele aqui Romeo esta desterrado, y apostaria el 
-mundo contra nada a que no osara jamas venir a reclamaros, y 
-a que, si lo hace, sera indispensablemente a ocultas. En vista de 
-esto, pues que al presente la situacion es tal, opino que lo mejor 
-para vos seria casaros con el conde. ;Oh! jEs un amable Caba- 
-llero! Romeo es un trapo a su lado. Un aguila, senora, no tiene 
-tan claros, tan vivos, tan bellos ojos como tiene Paris. jPese a 
-mi propio corazon, creo que es una dicha para vos este segundo 
-matrimonio! Esta muy por encima del primero y, prescindiendo 
-de esto, vuestro primer marido no existe, lo que equivale a tanto 
-como a tenerle viviente en la tierra sin que le poseais. 
-
-JULIETA 
-
-^Hablas de corazon 
-
-
-128 
-
-
-NODRIZA 
-
-Y tambien de alma, o que Dios me castigue. 
-
-JULIETA 
-
-Amen. 
-
-NODRIZA 
-
-^Que 
-
-
-JULIETA 
-
-Vaya, me has consolado maravillosamente. Entra y di a la con- 
-desa que, habiendo disgustado a mi padre, he ido a la celda de 
-Fray Lorenzo a confesarme y a alcanzar absolucion. 
-
-NODRIZA 
-
-Corriente, ire a decirlo; en esto obrais cuerdamente. 
-
-(Vase) 
-
-JULIETA 
-
-jVieja condenada! jPerverso Satanas! ^Cual es peor pecado in- 
-ducirme asi al perjurio, o improperar a mi senor con esa propia 
-lengua que tantos millares de veces le ha puesto por encima de 
-toda comparacion Anda, consejera; tu y mi corazon han hecho 
-etema ruptura. Voy a visitar al monje, para ver el recurso que 
-me ofrece. Si todo medio falla, tengo el de acabar conmigo. 
-
-(Vase) 
-
-
-129 
-
-
-Acto IV 
-
-
-Escena I 
-
-
-(La celda de Fray Lorenzo) 
-
-(Entran FRAY LORENZO y PARIS) 
-
-FRAY LORENZO 
-
-^El jueves, senor El plazo es bien corto. 
-
-PARIS 
-
-Mi padre Capuleto lo quiere asi y nada tengo de calmudo para 
-entibiar su premura. 
-
-FRAY LORENZO 
-
-Decis que no conoceis los sentimientos de la j oven torcido es 
-el modo de obrar, no me agrada. 
-
-PARIS 
-
-Julieta llora sin medida la muerte de Tybal y, por lo tanto, ape- 
-nas la he hablado de amor; pues en casa de lagrimas no se sonrie 
-Venus. Ahora bien, senor, su padre estima peligroso el que ella 
-de tal latitud a su pesar y, en su cordura, activa nuestro consor- 
-cio, para contener ese diluvio de llanto que, harto amado por 
-Julieta en sil aislamiento, puede alejar de su mente la compania. 
-Esta, ya lo sabeis, es la causa de su presteza. 
-
-
-130 
-
-
-FRAY LORENZO (apart e) 
-
-Quisiera ignorar el motivo que debiera entibiarla. Ved, senor, 
-ahi viene Julieta hacia mi celda. 
-
-( Entra JULIETA) 
-
-PARIS 
-
-jDichoso encuentro, senora y esposa mia! 
-
-
-JULIETA 
-
-Tal saludo cabra, senor, cuando quepa llamarme esposa. 
-
-
-PARIS 
-
-Puede, debe caber, amor mio, el jueves proximo. 
-
-
-JULIETA 
-
-Sera lo que debe ser. 
-
-
-FRAY LORENZO 
-
-Sentencia positiva es esa. 
-
-
-PARIS 
-
-^Venis a confesaros con Fray Lorenzo 
-
-
-JULIETA 
-
-Responder a esto seria confesarme con vos. 
-
-
-131 
-
-
-PARIS 
-
-
-No le oculteis que me amais. 
-
-JULIETA 
-
-Os hare la confesion de que le amo. 
-
-PARIS 
-
-Igualmente, estoy. seguro, le confesareis que me amais. 
-JULIETA 
-
-Si tal hago, mas precio tendra la declaratoria hecha en vuestra 
-ausencia que delante de vos. 
-
-PARIS 
-
-jlnfeliz criatura! Tu rostro se halla bien alterado por las lagri- 
-mas. 
-
-JULIETA 
-
-El lloro ha conseguido sobre el victoria debil; pues bien poco 
-valia antes de sus injurias. 
-
-PARIS 
-
-Mas que las lagrimas le ofendes tu con semejante respuesta. 
-JULIETA 
-
-Lo que no es una calumnia, senor, es una verdad, y lo que he 
-dicho, dicho lo tengo a mi faz. 
-
-
-132 
-
-
-PARIS 
-
-
-Tu faz es mia y la has calumniado. 
-
-JULIETA 
-
-Quizas sea asl, pues no me pertenece. Santo padre, -os hallais 
-desocupado al presente, o tendre que venir a veros a la hora de 
-vlsperas 
-
-FRAY LORENZO 
-
-El tiempo es mlo al presente, mi grave hija. Senor, debemos pe- 
-diros que nos dejeis solos. 
-
-PARIS 
-
-jDios me preserve de turbar la devocion! Julieta, el jueves, tem- 
-prano, ire a despertaros. Adios hasta entonces, y recibid este 
-santo beso. 
-
-(Vase) 
-
-JULIETA 
-
-jOh! Cierra la puerta y, hecho esto, ven a llorar conmigo jacabo 
-la esperanza, el consuelo, la proteccion! 
-
-FRAY LORENZO 
-
-; Ah, Julieta! Ya conozco tu pesar; el me lleva a un extremo que 
-me saca de juicio. Se que debes, sin que nada pueda retardarlo, 
-desposarte con ese conde el jueves proximo. 
-
-
-133 
-
-
-JULIETA 
-
-Padre, no me digas que sabes del caso sin manifestarme como 
-puedo impedirlo. Si en tu sabiduria, no cabe prestarme ayuda, 
-declara solamente que apruebas mi resolucion, y con este punal 
-voy a remediarlo al instante. Dios ha unido mi corazon al de 
-Romeo, tu nuestras manos, y antes que esta mano, enlazada por 
-ti a la de Romeo, sirva de sello a otro pacto, antes que mi cora- 
-zon fiel, con desleal traicion, se de a otro, esto acabara con 
-ambos. Alcanza pues de tu vieja, dilatada experiencia algun con- 
-sejo que darme al presente, o, mira este sangriento punal se en- 
-derezara decisorio entre mi vejacion y yo, resolviendo como 
-arbitro lo que la autoridad de tus anos y tu ciencia no atraiga a 
-la senda del verdadero honor. No asi dilates el responder; la 
-muerte se me dilata si tu respuesta no habla de salvacion. 
-
-FRAY LORENZO 
-
-Detente, hija; entreveo cierta clase de esperanza que requiere 
-una resolucion tan desesperada como desesperado es el mal que 
-deseamos huir. Si tienes la energia de querer matarte antes que 
-ser la esposa del conde Paris, no es, pues, dudoso que osaras in- 
-tentar el remedo de la muerte para rechazar el ultraje a que haces 
-cara con la muerte misma, en tu afan de evitarlo. Y pues tienes 
-ese valor, voy a ofrecerte recurso. 
-
-JULIETA 
-
-jOh! Antes que casarme con Paris, manda que me precipite 
-desde las almenas de esa torre, que discurra por las sendas de 
-los bandidos, que vele donde se abrigan serpientes; encadename 
-con osos feroces o encuadrame por la noche en un osario repleto 
-de rechinantes esqueletos humanos, de fetidos trozos de amari- 
-llas y descamadas calaveras; mandame entrar en una fosa recien 
-
-
-134 
-
-
-cavada y envuelveme con un cadaver en su propia mortaja, or- 
-dename cosas que me hayan hecho temblar al escucharlas, y las 
-llevare a cabo sin temor ni hesitation para permanecer, la in- 
-maculada esposa de mi dulce bien. 
-
-FRAY LORENZO 
-
-Oye, pues vuelve a casa, muestrate alegre, presta anuncia al 
-enlace con Paris. Manana es miercoles; manana por la noche 
-haz por dormir sola, no dejes que la nodriza te haga compania 
-en tu aposento. Asi que estes en el lecho, toma este frasquito y 
-traga el destilado licor que guarda. Incontinenti correra por tus 
-venas todas un frio y letargico humor, que dominara los espiri- 
-tus vitales; ninguna arteria conservara su natural movimiento; 
-por el contrario, cesaran de latir; ni calor, ni aliento alguno tes- 
-tificaran tu existencia; el carmin de tus labios y mejillas bajara 
-hasta cenicienta palidez; caeran las cortinas de tus ojos como al 
-tiempo de cerrarse por la muerte el dia de la vida. Cada miem- 
-bro, de agil potencia despojado, yerto, inflexible, frio, sera una 
-imagen del reposo etemo. En este fiel trasunto de la pasmosa 
-muerte permaneceras cuarenta y dos horas completas y, al ven- 
-cerse, te despertaras como de un sueno agradable. Asi, cuando 
-por la manana venga el novio para hacerte levantar del lecho, 
-yaceras muerta en este. Segun el uso de nuestro pais, omada en- 
-tonces de tus mejores galas, descubierta en el feretro, seras lle- 
-vada al antiguo panteon donde reposa toda la familia de los 
-Capuletos. Mientras esto sucede, antes que vuelvas en ti, ins- 
-truido Romeo por mis cartas de lo que intentamos, vendra aqui 
-el y yo velaremos tu despertar y la propia noche te llevara tu 
-esposo a Mantua. Este expediente te salvara de la afrenta que 
-te amenaza si un futil capricho, un terror femenino, no viene en 
-la ejecucion a abatir tu valor. 
-
-
-135 
-
-
-JULIETA 
-
-
-Dame, ;oh, dame!, no hables de temor. 
-
-FRAY LORENZO 
-
-Toma, adios. Se fuerte y dichosa en la empresa. Enviare sin di- 
-lacion a Mantua un religioso que lleve mi mensaje a tu dueno. 
-
-JULIETA 
-
-; Amor! jDame fiierza! La fiierza me salvara. j Adios, mi querido 
-padre! 
-
-
-Escena II 
-
-
-(Un aposento en la casa de Capuleto) 
-
-( Entran CAPULETO, la senora CAPULETO, la NODRIZAy 
-CRIADOS) 
-
-CAPULETO 
-
-Invita a las personas cuyos nombres estan inscritos aqui. 
-
-(Vase el PRIMER CRIADO) 
-
-Maula, ve a alquilarme veinte cocineros habiles. 
-
-
-136 
-
-
-SEGUNDO CRIADO 
-
-Ni uno malo tendreis, senor, pues vere si pueden lamerse los 
-dedos. 
-
-CAPULETO 
-
-^Como probarlos de este modo 
-
-SEGUNDO CRIADO 
-
-Vaya, senor, es un mal cocinero el que no puede lamerse los 
-dedos; por consecuencia, el que no consiga hacer tal cosa, no 
-viene conmigo. 
-
-CAPULETO 
-Ea, vete. 
-
-{Vase el SEGUNDO CRIADO) 
-
-Bien mal preparados estaremos esta vez. jEh! ^Ha ido mi hija 
-a ver al Padre Lorenzo 
-
-NODRIZA 
-
-Si, por cierto. 
-
-CAPULETO 
-
-Bueno, quiza pueda el hacer algo en bien suyo. Es una imperti- 
-nente, una terca bribona. 
-
-{Entra JULIETA) 
-
-
-137 
-
-
-NODRIZA 
-
-Ved, ahi llega de la confesion, con semblante alegre. 
-CAPULETO 
-
-^Que hay, senorita obstinada ^Donde se ha estado correteando 
-JULIETA 
-
-Donde he aprendido a arrepentirme del pecado de terca desobe- 
-diencia a mi padre y a sus mandatos. El santo Lorenzo me ha 
-impuesto el caer aqui de rodillas e implorar vuestro perdon. 
-j Perdon, concededmelo! En lo adelante me guiare constante- 
-mente por vos. 
-
-CAPULETO 
-
-Que se vaya por el conde, id e instraidle de lo que pasa. Quiero 
-que este vinculo quede estrechado manana temprano. 
-
-JULIETA 
-
-He encontrado al joven conde en la celda de Fray Lorenzo y le 
-he acordado cuanto pudiera un decoroso afecto sin traspasar los 
-limites de la modestia. 
-
-CAPULETO 
-
-Vaya, eso me alegra, eso esta bien. Levantaos; la cosa esta en 
-regia. Tengo que ver al conde; si, pardiez; id, os digo, y traedle 
-aqui. Ciertamente, Dios antepuesto, toda nuestra ciudad debe 
-grandes obligaciones a este santo y reverendo padre. 
-
-
-138 
-
-
-JULIETA 
-
-
-Nodriza, ^quereis seguirme a mi gabinete y ayudarme a escoger 
-el traje de etiqueta que juzgueis a proposito para vestirme ma- 
-nana 
-
-LADY CAPULETO 
-
-No, no, hasta el jueves; hay tiempo bastante. 
-
-CAPULETO 
-
-Id, nodriza, id con ella. (A Lady Capuleto) Nosotros, a la iglesia 
-manana. 
-
-LADY CAPULETO 
-
-Nuestra provision sera incompleta ya es casi de noche. 
-CAPULETO 
-
-jCalla, mujer! Yo andare vivo y todo ira bien, te lo garantizo. 
-Ve tu al lado de Julieta, ayudala a ataviarse; yo no me acostare 
-esta noche. Dejadme solo; hare de ama por esta vez. [Que! 
-jHola! Todos han salido. Bien, yo propio ire a ver al conde 
-Paris, a fin de que este listo para manana. Mi corazon se halla 
-dilatado en extremo desde que esa trastrocada criatura de tal 
-modo ha vuelto en si. 
-
-(Vanse) 
-
-
-139 
-
-
-Escena III 
-
-
-(Habitation de Julieta) 
-
-(. Entran JULIETA y la NODRIZA) 
-
-JULIETA 
-
-SI, este traje es el mejor. Mas... te lo ruego, buena nodriza, de- 
-jame sola esta noche; pues necesito orar mucho para conseguir 
-que el cielo mire propicio mi situacion, que, bien sabes tu, es 
-viciada y pecaminosa. 
-
-(Entra LADY CAPULETO) 
-
-LADY CAPULETO 
-
-jQue! ^Estais afanada ^Necesitais mi ayuda 
-
-JULIETA 
-
-No, senora, tenemos elegidas todas las galas que exige manana 
-mi posicion. Si lo teneis a bien, consentid que permanezca sola 
-y que la nodriza vele con vos esta noche; pues, estoy segura, te- 
-neis toda vuestra gente ocupada en este tan atropellado prepa- 
-rativo. 
-
-LADY CAPULETO 
-
-Buenas noches. Vete al lecho y reposa, porque lo necesitas. 
-(Vanse LADY CAPULETO y la NODRIZA) 
-
-
-140 
-
-
-JULIETA 
-
-
-Id en paz. Dios sabe cuando nos volveremos a ver! Siento correr 
-por mis venas un frio, extenuante temblor, que casi hiela el 
-fuego vital. Voy a hacerlas volver, para que me den fuerza. ;No- 
-driza! ^Que habria de hacer aqui Preciso es que yo sola ejecute 
-mi horrible escena. Ven, porno. [Y si este brebaje ningun efecto 
-obra ^Tendre a la fuerza que casarme con el conde No, no; 
-esto lo impedira. Reposa ahi, tu. (Escondiendo un punal en su 
-lecho) Mas, ^si fuera un veneno que me hubiese sutilmente pre- 
-parado el monje para causarme la muerte, a fin de no verse des- 
-honrado por este matrimonio, el, que primero me desposo con 
-Romeo Lo tomo, aunque, bien mirado, no puede ser; pues 
-siempre ha sido tenido por un hombre santo. No quiero alimen- 
-tar tan mal pensamiento. si, ya depuesta en la tumba, salgo 
-del sueno antes que, venga a libertarme Romeo jTerrifico lance 
-este! ^No seria, en tal caso, sufocada en esa boveda, cuya boca 
-inmunda jamas inspira un aire puro, muriendo en ella ahogada 
-antes que llegara mi esposo Y, suponiendo que viva, mo es 
-bien facil que la horrible imagen de la muerte y de la noche, 
-juntamente con el pavor del lugar, en un semejante subterraneo, 
-una antigua catacumba, donde, despues de tantos siglos, yacen 
-hacinadas las osamentas de todos mis enterrados ascendientes, 
-donde Tybal, ensangrentado, aun recien sepulto, se pudre en su 
-mortaja; donde, segun se dice, a ciertas horas de la noche se 
-juntan los espiritus... ; Ay! [Ay! ^No es probable que yo, tan tem- 
-prano vuelta en mi en medio de esos vapores infectos, de esos 
-estallidos que imitan los de la mandragora que se arranca de la 
-tierra y privan de razon a los mortales que los oyen. jOh! Si des- 
-pierto, mo me volvere furiosa, rodeada de todos esos horribles 
-espantos ^No puedo, loca, jugar con los restos de mis antepa- 
-sados, arrancar de su pano mortuorio al mutilado Tybal y, en se- 
-mejante frenesi, con el hueso de algun ilustre pariente, destrozar, 
-
-
-141 
-
-
-cual si fuera con una porra, mi perturbado cerebro jOh! 
-jMirad! Pareceme ver la sombra de mi primo persiguiendo a 
-Romeo, que le ha cruzado por el pecho la punta de una espada. 
-Detente, Tybal, detente. Voy, Romeo; bebo esto por ti. 
-
-( Apura el frasco y se arroja en a lecho) 
-
-
-Escena IV 
-
-
-(Salon en la casa de Capuleto) 
-
-(. Entran LADY CAPULETO y la NODRIZA) 
-
-LADY CAPULETO 
-
-Eh, nodriza, tomad las Haves e id a buscar mas especias. 
-NODRIZA 
-
-En la reposteria piden mas datiles y membrillos. 
-
-( Entra CAPULETO) 
-
-CAPULETO 
-
-jVamos, levantaos, en pie, en pie! El gallo ha cantado por se- 
-gunda vez; ha sonado el toque matutino, son las tres. Cuidad de 
-la pasteleria, buena Angelica, que no se repare en gastos. 
-
-
-142 
-
-
-NODRIZA 
-
-Andad, andad, maricon, andad con Dios; idos a la cama; de se- 
-guro estareis enfermo manana, por haber velado esta noche. 
-
-CAPULETO 
-
-jBah! No, ni sombra de eso. Otras noches he pasado en vela por 
-causas menores y nunca me senti indispuesto. 
-
-LADY CAPULETO 
-
-Cierto, habeis sido una comadreja en vuestra juventud, mas yo 
-velare al presente que no veleis de ese modo. 
-
-(Vanse LADY CAPULETO y la NODRIZA) 
-
-CAPULETO 
-
-jGenio celoso, genio celoso! 
-
-(Entran CRIADOS con azadones, lehosy cestos) 
-
-Y bien, muchacho, ^que traeis ahi 
-
-PRIMER CRIADO 
-
-Utiles para el cocinero, senor; mas no se que. 
-
-CAPULETO 
-
-Date prisa, date prisa. 
-
-(Vase el PRIMER CRIADO) 
-
-Trahan, trae troncos mas secos; llama a Pedro, el te ensenara 
-donde hay. 
-
-
-143 
-
-
-SEGUNDO CRIADO 
-
-
-Senor, tengo una cabeza que los hallara nunca molestare a 
-Pedro por semejante cosa. 
-
-(Vase) 
-
-CAPULETO 
-
-jCuerpo de Cristo! Bien dicho. He ahi un tuno divertido. jJa! 
-Tu seras cabeza de tronco. Por mi vida, es de dia. El conde no 
-tardara en presentarse aqui con la musica; pues asi lo prometio. 
-(Musica en el interior) Siento que se aproxima. jNodriza! ;Es- 
-posa! jVamos, ea! jNodriza! Ea, digo. 
-
-(1 Vuelve la NODRIZA) 
-
-Id, id a despertar a Julieta y aderezadla; yo voy a hablar con 
-Paris. jVamos, daos prisa, daos prisa! El novio ha llegado ya. 
-Apresuraos os digo. 
-
-(Se van) 
-
-
-144 
-
-
-Escena V 
-
-
-( Alcoba de Julieta. Esta en su lecho) 
-
-( Entra la NODRIZA) 
-
-NODRIZA 
-
 jSenora! [Eh, senora! j Julieta! Duerme profundamente, estoy 
 segura. jEh! palomamia; jEh, minina! jVergiienza! jLadormi- 
 lona! jEh! amor mio, soy yo. jMi duena! jDulce corazon! jEh, 
@@ -5356,326 +619,40 @@ pertaros sinfalta. jSenora, senora, senora! j Ay!, jay! jSocorro!,
 j socorro! jMi senora esta muerta! jOh! jSiempre infausto dia 
 aquel en que naci! jHola! Un poco de espiritu. jSenor amo! jSe- 
 nora condesa! 
-
 {Entra LADY CAPULETO) 
-
 LADY CAPULETO 
-
-^Que ruido es este 
-
-
+^Que ruido es este
 145 
-
-
 NODRIZA 
-
 jOh! jDesdichado dia! 
-
 LADY CAPULETO 
 ^Que ocurre 
-
 NODRIZA 
-
 [Mirad, mirad! [Oh! jdia angustioso! 
-
 LADY CAPULETO 
-
 j Ay de mi, ay de mi! jHija mia! [Mi unica vida! Despierta, abre 
 los ojos, o morire contigo. [Socorro!, [socorro! [Pide socorro! 
-
 ( Entra CAPULETO) 
-
 CAPULETO 
-
 Por decoro, haced salir a Julieta; el conde ha llegado. 
 NODRIZA 
-
 [Esta muerta! Ha finado; [Esta muerta! ; Aciago dia! 
-
 LADY CAPULETO 
-
 [Dia aciago! [Esta muerta, muerta, muerta! 
-
 CAPULETO 
-
 [Oh! Dejadme verla. Se acabo, jay de mi! Esta fria, su sangre 
 no corre, sus miembros estan rigidos ha tiempo que la vida se 
 ha apartado de estos labios. La muerte pesa sobre ella, cual una 
-
-
-146 
-
-
-intempestiva helada sobre la mas dulce flor de la pradera. jMal- 
-dito tiempo! jDesdichado anciano! 
-
-NODRIZA 
-
-i Lamentable dla! 
-
-LADY CAPULETO 
-jFunesto instante! 
-
-CAPULETO 
-
-La muerte que de aqul me la lleva para hacerme gemir, enca- 
-dena mi lengua, embarga mi voz. 
-
-{Entran FRAY LORENZO 7 PARIS, con los MUSICOS) 
-FRAY LORENZO 
-
-Ea, ^se halla lista la novia para ir a la iglesia 
-
-CAPULETO 
-
-Dispuesta para ir, mas para no volver nunca. jOh, hijo mio! La 
-noche, vispera de tus desposorios, la ha pasado la muerte con 
-tu prometida. Mirado yace, ella, la flor, en sus brazos desflorada. 
-Mi yemo es el sepulcro, el sepulcro es mi heredero; jel se ha 
-casado con mi hija! Morire y le dejare cuanto tengo vida, for- 
-tuna, todo es de la muerte. 
-
-PARIS 
-
-^He deseado tanto tiempo ver esta aurora para que solo me 
-ofrezca un semejante espectaculo 
-
-
-147 
-
-
-LADY CAPULETO 
-
-jDia desdichado y maldito! [Miserable, odioso dia! jHora la 
-mas infausta que ha visto el tiempo en todo el laborioso curso 
-de su peregrinacion! jUna sola, una pobre, unica y amante hija, 
-un solo ser, mi alegria y mi consuelo, y la muerte cruel me le 
-arrebata de aqui! 
-
-NODRIZA 
-
-jOh, dolor! jOh, angustioso, angustioso, angustioso dia! [El mas 
-lamentable, el mas doloroso que nunca jamas vieron mis ojos! 
-jOh, dia! jDia, dia! jDia aborrecible! j Nunca fue visto otro tan 
-negro como tu! jOh, doloroso, doloroso dia! 
-
-PARIS 
-
-jSeducido, divorciado, ofendido, traspasado, asesinado! Muerte 
-execrable, jme has hecho traicion! jA ti, cruel, desapiadada, 
-debo mi ruina total! [Amor mio, mi vida! jVida no, solo amor 
-en la muerte! 
-
-CAPULETO 
-
-jEscamecido, congojado, aborrecido, deshecho, acabado! jOh, 
-triste momento! ^Por que has venido tu a destruir, a matar al 
-presente nuestro solemne jubilo jHija, hija mia! jMi alma, mi 
-hija no! jMuerta estas! j Ay! jMi hija no existe, y con ella se han 
-hundido mis alegrias! 
-
-FRAY LORENZO 
-
-jEh, por decoro, apaciguaos! El remedio de la desesperacion no 
-se halla en desesperaciones como las presentes. El cielo, lo pro- 
-
-
-148 
-
-
-pio que vos, tenia su parte en esta bella criatura; Dios la posee 
-ahora por completo, y la bien librada en ello es la doncella. Sal- 
-var no podiais de la muerte la parte que os tocaba, en tanto que 
-el cielo conserva la suya en vida eternal. Vuestro sumo fin era 
-realzarla; si, que ella se encumbrase, vuestro paraiso; y ahora, 
-que mas alta que las nubes se encuentra, a la misma altura del 
-cielo, ^estais llorando j Oh! Tan inverso es este amor que sends 
-por vuestra hija, que os desesperais porque la veis dichosa. No 
-es la mejor casada la que vive largo tiempo en maridaje; la 
-mejor casada es la que muere joven esposa. Enjugad esas lagri- 
-mas, esparcid vuestro romero sobre la bella difimta y, conforme 
-al uso, llevadla a la iglesia, adomada de sus mas brillantes ata- 
-vios; pues aunque la debil naturaleza nos pida a todos llanto, el 
-lloro de la naturaleza excita el sonreir de la razon. 
-
-CAPULETO 
-
-Todos nuestros preparativos de fiesta pasan a prestar oficio de 
-pompa funebre las vihuelas haran de lugubres campanas, esta 
-alegre celebracion nupcial se cambiara en grave, funerario ban- 
-quete, los himnos festivos en melancolicas endechas y nuestros 
-ramos de novia adomaran el ataud de un cadaver. Todo en lo 
-contrario se trasforma. 
-
-FRAY LORENZO 
-
-Retiraos, senory vos, senora, seguid a vuestro esposo.Salid, senor 
-Paris. Disponeos cada uno a acompanar hasta su sepulcro este 
-bello cadaver. El cielo, por cierto acto pecaminoso, se os muestra 
-sombrio no le irriteis mas contrariando su voluntad suprema. 
-
-(Vanse CAPULETO, la senora CAPULETO, PARIS y FRAY 
-LORENZO) 
-
-
-149 
-
-
-MUSICO PRIMERO 
-
-Por mi alma, bien podemos guardar nuestras flautas y marchar- 
-nos. 
-
-NODRIZA 
-
-i Ah! Buena, honrada gente, guardadlas, guardadlas; pues bien 
-veis que es este un caso triste. 
-
-{Vase la NODRIZA) 
-
-MUSICO PRIMERO 
-
-Si, a fe mia, el caso no es nada bueno. 
-
-{Entra PEDRO) 
-
-PEDRO 
-
-jAh! jMusicos, musicos! jContento del corazon! jContento del 
-corazon! Si quereis que viva, tocad jContento del corazon! 
-
-MUSICO PRIMERO 
-
-^Por que Contento del corazon! 
-
-PEDRO 
-
-jAh! Musicos, porque el mio toca Mi corazon esta lleno de tris- 
-teza. jOh! Tocadme alguna alegre letania para consolarme. 
-
-MUSICO PRIMERO 
-
-Ninguna letania por nuestra parte. No es ahora ocasion de tocar. 
-
-
-150 
-
-
-PEDRO 
-
-^No quereis, pues 
-
-MUSICO PRIMERO 
-No. 
-
-PEDRO 
-
-Bien, yo os la dare de ley. 
-
-MUSICO PRIMERO 
-
-^Que nos vais a dar 
-
-
-PEDRO 
-
-Nada de dinero, Por vida mla; solfa si; os dare el solfista. 
-
-MUSICO PRIMERO 
-Pues yo el corchete. 
-
-
-PEDRO 
-
-En tal caso, os plantare la daga del corchete en la cabeza. No 
-soporto corchetes; os hare re, os hare fa. ^Notais lo que digo 
-
-MUSICO PRIMERO 
-
-Si me haceis re, si me haceis fa, nota ya soy. 
-
-
 MUSICO SEGUNDO 
-
-Por favor, poned la daga en la vaina y a luz la imagination. 
-
-
-151 
-
-
-PEDRO 
-
-
-En guardia, entonces, contra mi imaginacion. Voy a envainar 
-mi daga de hierro y a daros duro con el hierro de la inteligencia. 
-Contestadme racionalmente. 
-
-Cuando un dolor acerbo el pecho hiere 
-Y aguda pena nuestra mente oprime, 
-
-La musica de sones argentinos... ^Por que son argentino ^Por 
-que musica de son argentino Di, Simon Cuerda de Tripa. 
-
-MUSICO PRIMERO 
-
-En verdad, senor, porque la plata tiene un sonido agradable. 
-PEDRO 
-
-jLindo! ^Por que Vos, Hugo Rebeck. 
-
-MUSICO SEGUNDO 
-
-Digo son argentino, porque los musicos tocan por plata. 
-PEDRO 
-
-jLindo tambien! ^Vos, que decis, Santiago Alma de Violin 
-
-MUSICO TERCERO 
-
-Por mi vida, no se que decir. 
-
-PEDRO 
-
-jOh! jPerdonadme! Sois el cantor yo hablare por vos. Se dice 
-musica de son argentino, porque hombres de vuestra especie 
-
-
-152 
-
-
-rara vez alcanzan oro por su tocar. 
-
-La musica de sones argentinos 
-
-Presto alivio nos brinda diligente. (Vase cantando) 
-
-MUSICO PRIMERO 
-
-jQue maligno truhan es ese hombre! 
-
-MUSICO SEGUNDO 
-
 jQue lo cuelgue el verdugolVen, entremos aqui; aguardaremos 
 por los del duelo y comeremos mientras. 
-
 (Se marchan) 
-
-
 153 
-
-
 Acto V 
-
-
 Escena I 
-
-
 (Mantua. Una calle) 
-
 ( Entra ROMEO) 
-
 ROMEO 
-
 Si puedo confiar en la propicia muestra del sueno, mis suenos 
 me anuncian una proxima dicha. Ligero sobre su trono reposa 
 el senor de mi pecho y todo el dia una extrana animacion, en 
@@ -5686,62 +663,38 @@ sus besos inspiraban tal vida en mis labios, que volvi en mi con-
 vertido en emperador. ;Oh cielos! jQue dulce debe ser la real 
 posesion del amor, cuando sus solos reflejos tanta ventura ate- 
 soran! 
-
 {Entra BALTASAR) 
-
 jNuevas de Verona! ^Que hay, Baltasar ^No me traes cartas 
 del monje ^Como esta mi dueno ^Goza mi padre salud ^Va 
 bien mi Julieta Te vuelvo a preguntar esto, porque nada puede 
 ir mal si lo pasa ella bien. 
-
 BALTASAR 
-
 Pues que bien esta ella, nada malo puede existir. Su cuerpo re- 
-
-
 154 
-
-
 posa en el panteon de los Capuletos y su alma inmortal mora 
 con los angeles. Yo la he visto depositar en la boveda de sus pa- 
 dres y tome la posta al instante para anunciaroslo. jOh, senor! 
 Perdonadme por traer esta funesta noticia; pues que es el en- 
 cargo que me dejasteis. 
-
 ROMEO 
-
 ^Es lo cierto Pues bien, astros, yo os hago frente. Tu sabes 
 donde vivo, procurame tinta y papel y alquila caballos de posta 
 parto de aqui esta noche. 
-
 BALTASAR 
-
 Excusadme, senor, no puedo dejaros asi. Vuestras palidas y des- 
 compuestas facciones vaticinan una desgracia. 
-
 ROMEO 
-
 jBah! Te enganas. Dejame y haz lo que te he mandado. ^No tie- 
 nes para mi ninguna carta del padre 
-
 BALTASAR 
-
 No, mi buen senor. 
-
 ROMEO 
-
 No importa vete y alquilame los caballos; me reunire contigo 
 sin demora. 
-
 (Vase BALTASAR) 
-
 Bien, Julieta, reposare a tu lado esta noche. Busquemos el 
 medio. jOh, mal! jCuan dispuesto te hallas para entrar en la 
-
-
 155 
-
-
 mente del mortal desesperado! Me viene a la idea un boticario 
 por aqui cerca vive; le vi poco ha, el vestido andrajoso, las cejas 
 salientes, entresacando simples su mirada era hueca, la cruda 
@@ -5758,437 +711,71 @@ solo pronostico de mi necesidad. Si, ese necesitado tiene que
 despacharmela. A lo que recuerdo, esta debe ser la casa. Como 
 es dia de fiesta, la tienda del pobre esta cerrada. [Eh, eh!  Boti- 
 cario! 
-
 ( Aparece el BOTICARIO) 
-
 BOTICARIO 
-
 ^Quien llama tan recio 
-
 ROMEO 
-
 Llegate aqui, amigo. Veo que eres pobre; toma, ahi tienes cua- 
 renta ducados. Proporcioname una dosis de veneno, sustancia, 
 de tal suerte activa, que se esparza por las venas todas y el can- 
 sado de vivir que la tome caiga muerto; tal, que haga perder al 
 pecho la respiracion con el propio impetu con que la electrica, 
 inflamada polvora sale del terrible hueco, del canon. 
-
-
 156 
-
-
 BOTICARIO 
-
 Tengo de esos mortiferos venenos; pero la ley de Mantua castiga 
 de muerte a todo el que los vende. 
-
 ROMEO 
-
 tu, tan desnudo y lleno de miseria, tienes miedo a la muerte 
 El hambre aparece en tus mejillas, la necesidad y el sufrimiento 
 mendigan en tus ojos, sobre tu espalda cuelga la miseria en an- 
 drajos. Ni el mundo, ni su ley son tus amigos; el mundo no tiene 
 ley ninguna para hacerte rico; quebranta, pues, sus prescripcio- 
 nes; sal de miserias, y toma esto. 
-
 BOTICARIO 
-
 Mi pobreza, no mi voluntad, lo acepta. 
-
 ROMEO 
-
 Pago tu pobreza, no tu voluntad. 
-
 BOTICARIO 
-
 Echad esto en el liquido que tengais a bien, apurad la disolucion 
 y aunque tuvieseis la fuerza de veinte hombres daria cuenta de 
 vos en el acto. 
-
 ROMEO 
-
 Ahi tienes tu oro, veneno mas funesto para el corazon de los 
 mortales, causante de mas homicidios en este mundo odioso 
 que esas pobres misturas que no tienes permiso de vender. Yo 
 te entrego veneno, tu a mi ninguno me has vendido. Adios, 
 compra pan y engordate. Ven, cordial, no veneno! Yen con- 
-
-
 157 
-
-
 migo al sepulcro de Julieta; pues en el es donde debes ser- 
 virme. 
-
-
 Escena II 
-
-
 (La celda de Fray Lorenzo) 
-
 {Entra FRAY JUAN) 
-
 FRAY JUAN 
-
 jHermano francisco, reverendo padre, eh! 
-
 {Entra FRAY LORENZO) 
-
 FRAY LORENZO 
-
 Esta es, si, la voz de Fray Juan. Bienvenido de Mantua. ^Que 
 dice Romeo Si se expresa por escrito, dadme su carta. 
-
 FRAY JUAN 
-
 Buscando, para acompanarme, un hermano descalzo, miembro 
 de nuestra orden, que se hallaba visitando los enfermos de esta 
 poblacion, al dar con el, los inspectores de la ciudad, sospe- 
 chando que estabamos en un convento donde reinaba el mal 
 contagio, cerraron las puertas y no quisieron dejamos salir. Asi, 
 pues, mi viaje a Mantua quedo alii en suspenso. 
-
-
-158 
-
-
-FRAY LORENZO 
-
-Entonces ^quien llevo mi carta a Romeo 
-
-FRAY JUAN 
-
-Aqui vuelve, no pude mandarla ni encontrar un mensajero que 
-te la trajera. jTanto miedo infundia a todos el contagio! 
-
-FRAY LORENZO 
-
-jFunesta contrariedad! Lo juro por nuestra orden, no era una 
-carta insignificante; por el contrario, abrazaba un encargo de 
-suma cuenta, y su demora puede acarrear gran peligro. Ve, Fray 
-Juan, procurame una barrena y traela sin dilacion a mi celda. 
-
-FRAY JUAN 
-
-Voy a traertela, hermano. 
-
-(Vase) 
-
-FRAY LORENZO 
-
-Ahora, preciso es que me dirija solo al panteon. Dentro de tres 
-horas despertara la bella Julieta y me colmara de maldicion por- 
-que Romeo no ha sido instruido de estos percances. Pero yo es- 
-cribire de nuevo a Mantua y guardare a la joven en mi celda 
-hasta que vuelva su esposo. jPobre cadaver viviente, encerrado 
-en el sepulcro de un muerto! 
-
-( Se retira) 
-
-
-159 
-
-
-Escena III 
-
-
-(Un cementerio, en medio del cual se alza el sepulcro de los 
-Capuletos) 
-
-(Entra PARIS, seguido de su PAJE, que trae una antorchay j, lo- 
-res) 
-
-PARIS 
-
-Paje, dame la antorcha. Retirate, y mantente a distancia. No, apa- 
-gala; pues no quiero ser visto. Tiendete alia, al pie de esos sauces, 
-manteniendo el oido pegado en la cavernosa tierra; de este modo, 
-ninguna planta hollara el suelo del cementerio (ya flojo y movi- 
-ble, a fuerza de abrirse en el sepulturas) sin que la oigas en tal 
-caso, me silbaras, siendo indicio de que sientes aproximarse a 
-alguno. Dame esas flores. Anda, haz lo que te he dicho. 
-
-PAJE (aparte) 
-
-Medio amedrentado estoy de quedarme aqui solo, en el cemen- 
-terio; sin embargo, voy a arriesgarme. 
-
-(Se aleja) 
-
-PARIS 
-
-Dulce flor, yo siembro de flores tu lecho nupcial. Querida 
-tumba, que contienes en tu ambito la perfecta imagen de los 
-seres etemales, bella Julieta, que moras con los angeles, acepta 
-esta ultima ofrenda de mis manos; ellas, en vida te respetaron, 
-y muerta, con funeral celebridad adoman tu tumba. 
-
-
-160 
-
-
-(Silba el PAJE) 
-
-
-El paje da aviso; alguno se acerca. ^Que pie sacrilego yerra por 
-este sitio, en la noche presente, turbando mis ceremonias, las 
-exequias del fiel amor ^Con una antorcha [Como! Noche, ve- 
-lame un instante. 
-
-(Se aparta) 
-
-(Entra ROMEO, seguido de BALTASAR, que trae una antor- 
-cha, un azadon, etc) 
-
-ROMEO 
-
-Dame aca ese azadon y esa barra de hierro. Ten, toma esta 
-carta; manana temprano cuida de entregarla a mi senor y padre. 
-Trae aca la luz. Bajo pena de vida te prevengo que permanezcas 
-a distancia, sea lo que quiera lo que oigas o veas, y que no me 
-interrumpas en mis actos. Si bajo a este lecho de muerte, ha- 
-golo en parte para contemplar el rostro de mi adorada; mas 
-sobre todo, para quitar en la tumba del insensible dedo de Ju- 
-lieta un anillo precioso, un anillo que debe servirme para una 
-obra importante. Alejate pues, vete. Y haz cuenta que si, rece- 
-loso, vuelves atras para espiar lo que en lo adelante tengo el 
-designio de llevar a cabo, jpor el cielo!, te desgarrare pedazo a 
-pedazo y sembrare este goloso suelo con tus miembros. Como 
-el momento, mis proyectos son salvajes, feroces; mucho mas 
-fieros, mas inexorables que el tigre hambriento o el mar em- 
-bravecido. 
-
-BALTASAR 
-
-Quiero irme, senor, y no turbaros. 
-
-
-161 
-
-
-ROMEO 
-
-
-Haciendolo, me probaras tu adhesion. Toma esto. Vive y se di- 
-choso, buen hombre, y adios. 
-
-BALTASAR (para si) 
-
-Por todo eso mismo voy a ocultarme en las cercanias. Sus mi- 
-radas me inquietan y recelo de sus intenciones. 
-
-(Se esconde cerca) 
-
-ROMEO 
-
-jOh! Tu, abominable seno, vientre de muerte, repleto del mas 
-exquisito bocado de la tierra, de este modo hare que se abran 
-tus putridas quijadas ;(Desencajando la puerta del monumento) 
-te sobrellenare a la fuerza de mas alimento. 
-
-PARIS 
-
-Es ese proscrito, altanero Montague, que dio muerte al primo 
-de Julieta, por cuyo pesar, segun dicen, murio la graciosa joven. 
-Aqui viene ahora a inferir a los cadaveres algun bajo ultraje. 
-Voy a echarle mano. 
-
-(Se adelanta) 
-
-Cesa en tu afan impio, vil Montague -cabe proseguir la ven- 
-ganza mas alia de la muerte Miserable proscrito, arrestado que- 
-das obedece y sigueme; pues es preciso que mueras. 
-
-ROMEO 
-
-Si, indispensable es, y por ello vengo a este sitio. Noble y buen 
-mancebo, no tientes a un hombre desesperado; huye de aqui y 
-
-
-162 
-
-
-dejame. Piensa en esosmuertos y dente pavor. Suplicote, joven, 
-que no cargues mi cabeza con un nuevo pecado impeliendome 
-a la rabia. [Oh!, vote. Por Dios, te amo mas que a mi mismo; 
-pues contra mi propio vengo armado a este lugar. No tardes, 
-marchate vive, y di, a contar desde hoy, que la piedad de un fu- 
-rioso te impuso el huir. 
-
-PARIS 
-
-Desprecio tus exhortaciones y te echo mano aqui como a un 
-malhechor. 
-
-ROMEO 
-
-^Quieres provocarme Pues bien, mancebo, mira por ti. 
-
-(Se baten) 
-
-
-PAJE 
-
-jOh Dios! Se baten. Voy a llamar la guardia. 
-
-( Vase el PAJE) 
-
-PARIS 
-
-j Ah! jMuerto soy! (Cae) Si hay piedad en ti, abre la tumba y 
-ponme al lado de Julieta. 
-
-(Muere) 
-
-ROMEO 
-
-Si, por cierto, lo hare. Contemplemos su faz. jEl pariente de 
-Mercucio, el noble conde Paris! ^Que dijo Baltasar mientras ca- 
-balgabamos, en esos instantes en que mi alma agitada no le 
-
-
-163 
-
-
-ponia atencion Me contaba, creo, que Paris debia haberse ca- 
-sado con Julieta. ^No dijo eso ^,0 lo habre yo sonado, i,o es 
-que, demente, asi me lo imagine al oir hablar de ella jOh, dame 
-tu mano, tu, lo mismo que yo, inscrito en el riguroso libro de la 
-adversidad! Voy a sepultarte en una tumba esplendente. ^Una 
-tumba jOh! no, una gloria, asesinado joven; pues en ella reposa 
-Julieta, y su belleza trueca esta boveda en una luminosa man- 
-sion de fiesta. (Dejando a PARIS en el monumento) Muerte, 
-yace ahi enterrada por un muerto. jCuantas veces los hombres, 
-a punto de morir, han sentido regocijo! ;E1 postrer relampago 
-vital, cual dicen sus asistentes! Mas ^como llamar a lo que 
-siento un relampago jOh! Amor mio, esposa mia! La muerte, 
-que ha extraido la miel de tu aliento, no ha tenido poder aim 
-sobre tu hermosura; no has sido vencida el carmin, distintivo 
-de la belleza, luce en tus labios y mejillas, do aun no ondea la 
-palida ensena de la muerte. ^ Ahi, tu, Tybal, reposando en tu san- 
-grienta mortaja jOh! ^que mayor servicio puedo ofrecerte que 
-aniquilar con la propia mano que troncho tu juventud la juven- 
-tud del que fue tu enemigo jPerdoname, primo! Amada Julieta, 
-^por que luces tan bella aun ^Debo creer que el fantasma de la 
-muerte se halla apasionado y que el horrible, descamado mons- 
-truo te guarda aqui, en las tinieblas, para hacerte su dama Te- 
-meroso de que sea asi, permanecere a tu lado eternamente y 
-jamas tornare a retirarme de este palacio, de la densa noche. 
-Aqui, aqui voy a estacionarme con los gusanos, tus actuales 
-doncellas; si, aqui voy a establecer mi eternal permanencia, a 
-sacudir del yugo de las estrellas enemigas este cuerpo cansado 
-de vivir. jEchad la postrer mirada, ojos mios! j Brazos, estrechad 
-la vez ultima! Y vosotros, joh labios!, puertas de la respiracion, 
-sellad con un osculo legitimo un perdurable pacto con la muerte 
-monopolista! Ven, amargo conductor ; ven, repugnante guia! 
-jPiloto desesperado, lanza ahora de un golpe, contra las pedre- 
-
-
-164 
-
-
-gosas rompientes, tu averiado, rendido bajel! jPor mi amor! 
-(Apura el veneno) jOh, fiel boticario! Tus drogas son activas. 
-Asi, besando muero. 
-
-(Muere) 
-
-(Aparece FRAY LORENZO por el otro extremo del cementerio, 
-con una linterna, una barrena y una azada) 
-
-FRAY LORENZO 
-
-jSan Francisco, se mi auxiliar! jCuantas veces, esta noche, han 
-tropezado contra tumbas mis ariosos pies! ^Quien esta ahi 
-^Quien es el que hace compania a los muertos a hora tan avan- 
-zada 
-
-BALTASAR 
-
-El que esta aqui es un amigo, uno que os conoce bien. 
-
-FRAY LORENZO 
-
-jDios os bendiga! Decid, mi buen amigo, ^que antorcha es 
-aquella que inutilmente presta su luz a los gusanos y a los cra- 
-neos sin ojos A lo que distingo, arde en el sepulcro de los Ca- 
-puletos. 
-
-BALTASAR 
-
-Asi es, reverendo padre; y alii esta mi senor, una persona a quien 
-estimais. 
-
-FRAY LORENZO 
-Quien es 
-
-
-165 
-
-
-BALTASAR 
-
-Romeo. 
-
-FRAY LORENZO 
-
-^Cuanto hace que esta ahi 
-
-BALTASAR 
-
-Una media hora larga. 
-
-FRAY LORENZO 
-
-Ven conmigo al panteon. 
-
-BALTASAR 
-
-No me atrevo, senor; mi amo cree que he dejado este sitio y me 
-amenazo de un modo terrible con la muerte si permanecia para 
-espiar sus intentos. 
-
-FRAY LORENZO 
-
-Quedate, pues; yo ire solo. Me asalta el miedo; joh!, mucho me 
-temo un siniestro accidente. 
-
-BALTASAR 
-
-Mientras dormia aqui, bajo estos sauces, sone que mi senor se 
-batia con otro hombre y que mi amo habia matado a este. 
-
-
-FRAY LORENZO (adelantandose) 
-
-j Romeo! j Ay!, jay!, ^que sangre es esta que mancha el petreo 
-umbral de este sepulcro ^Que indican estos perdidos, sangrien- 
-
-
-166 
-
-
-tos aceros, empanados, por tierra en tal sitio de paz 
-
 (Entra en el monumento) 
-
 j Romeo! jOh!, jpalido esta! ^Otro aun [Como! ^Paris tambien 
 jY banado en su sangre! j Ah! , ^que desap iadada hora es culpa- 
 ble de este lamentable suceso 
-
 ( Despierta JULIETA) 
-
 JULIETA 
-
 jOh, padre caritativo! ^Donde esta mi dueno Recuerdo bien el 
 sitio en que debia despertarme; si, en el me hallo. ^Donde esta 
 mi Romeo 
-
 (Ruido al exterior de la escena) 
-
 FRAY LORENZO 
-
 Oigo ruido. Seiiora, deja este antro de muerte, de contagio, de 
 sueno violento. Un poder superior, al que no podemos resistir, 
 ha desconcertado nuestros designios. Ven, sal de aqui; tu esposo 
@@ -6196,199 +783,117 @@ yace ahi, a tu lado, sin vida, y Paris tambien. Ven, yo te hare
 entrar en una comunidad de santas religiosas. No tardes con pre- 
 guntas, pues la ronda se acerca. Ven, sal, buena Julieta. (Ruido 
 otra vezjNo me atrevo a permanecer mas tiempo. 
-
 (Vase) 
-
 JULIETA 
-
 Sal, alejate de aqui; pues yo no quiero partir. ^Que es esto ^Una 
 copa comprimida en la mano de mi fiel consorte El veneno, lo 
 veo, ha causado su fin prematuro. jOh! jAvaro! jTomarselo 
 todo, sin dejar ni una gota amiga para ayudarme a ir tras el! 
-
-
 167 
-
-
 Quiero besar tus labios; acaso exista aun en ellos un resto de 
 veneno que me haga morir, sirviendome de cordial. (Lo besa) 
 jTus labios estan, calientes! 
-
 PRIMER GUARDIA ( desde el exterior de la escena) 
-
 Conducenos, muchacho. -Por donde es 
-
 JULIETA 
-
 ^Ruido Si. Apresuremonos pues. jOh, dichoso punal! ( Apode - 
 randose del punal de ROMEO) Esta es tu vaina; (Se hiere) en- 
 mohece en ella y dejame morir. 
-
 (Cae sobre el cuerpo de ROMEO, y muere) 
-
 ( Entra la ronda, guiado por el PAJE de PARIS) 
-
-
 PAJE 
-
 Este es el sitio; ahi donde arde la antorcha. 
-
 PRIMER GUARDIA 
-
 El suelo esta lleno de sangre; id, buscad algunos de vosotros 
-por el cementerio, echad mano a quien quiera que encontreis. 
-
+por el cementerio, echad mano a quien quiera que encontreis.
 (Vanse algunos) 
-
 jLastimoso cuadro! He ahi al conde asesinado y a Julieta ma- 
 nando sangre, caliente y apenas desfigurada; ella, hace dos dias 
 dejada aqui sepulta. Id a instruir al principe;corred a casa de los 
 Capuletos, poned en pie a los Montagues. Inquirid algunos de 
 vosotros. 
-
 (Vanse otros guardias) 
-
-
 168 
-
-
 Vemos el lugar en que tales duelos tienen asiento, pero lo que 
 realmente ha dado lugar a estos duelos deplorables no podemos 
 verlo sin informes. 
-
 ( Vuelven algunos de los guardias con BALTASAR) 
 SEGUNDO GUARDIA 
-
 Aqui teneis al criado de Romeo, le hemos hallado en el cemen- 
 terio. 
-
 PRIMER GUARDIA 
-
 Tenedle a recaudo mientras llega aqui el principe. 
-
 ( Entra otro guardia con FRAY LORENZO) 
-
 TERCER GUARDIA 
-
 Ved un monje que tiembla, suspira y llora. Le hemos quitado 
 este azadon y esta barra cuando venia de esa parte del cemen- 
 terio. 
-
 PRIMER GUARDIA 
-
 j Grave sospecha! Retened al monje tambien. 
-
 (Entran el PRINCIPE y su sequito) 
-
 PRINCIPE 
-
 ^Que infortunio ocurre a tan primera hora, que nos arranca de 
 nuestro matinal reposo 
-
 (Entran CAPULETO, LADY CAPULETO y otros) 
-
-
 169 
-
-
 CAPULETO 
-
 ^Que es lo que pasa, que asi alborotan por fuera 
-
 LADY CAPULETO 
-
 Unos gritan en las calles, ; Romeo!; otros, jJulieta! otros, [Paris!, 
 y todos corren con gran voceria hacia el panteon de nuestra fa- 
 milia. 
-
 PRINCIPE 
-
 ^Que alarma es esta que ensordece nuestros oidos 
-
 PRIMER GUARDIA 
-
 Augusto senor, el conde Paris yace asesinado ahi, Romeo sin 
 vida, y Julieta, de antemano muerta, caliente aun y acabada se- 
 gunda vez. 
-
 PRINCIPE 
-
 Buscad, inquirid y penetraos de como vino esta abominable ma- 
 tanza. 
-
 PRIMER GUARDIA 
-
 Aqui estan un monje y el criado del difunto Romeo; ambos por- 
 taban utensilios apropiados para abrir las sepulturas de estos 
 muertos. 
-
 CAPULETO 
-
 [Oh, cielos! [Oh, esposa mia! jVe como sangra nuestra hija! 
 Este punal ha equivocado el camino. Si, jmira!, en la trasera de 
-
-
 170 
-
-
 Montague esta su vaina vacia, y se ha metido por error en el 
 seno de mi hija. 
-
 LADY CAPULETO 
-
 jAy de mi! Este cuadro mortuorio es campana que llama al se- 
 pulcro mi vejez. 
-
 (Entran MONTAGUE y otros) 
-
 PRINCIPE 
-
 Acercate, Montague temprano te has puesto en pie para ver a 
 tu hijo y heredero mas temprano caido. 
-
 MONTAGUE 
-
 jAy! Principe mio, mi esposa ha muerto esta noche; el pesar del 
 destierro de su hijo la dejo inanime. ^Que nuevo dolor conspira 
 contra mi vejez 
-
 PRINCIPE 
-
 Mira y veras. 
-
 MONTAGUE 
-
 jOh, hijo degenerado! ^Que usanza es esta de lanzarte en la 
 tumba antes de tu padre 
-
 PRINCIPE 
-
 Tened, sellad el ultrajante labio hasta que hayamos podido es- 
 clarecer estos misterios y descubrir su origen, su esencia, su ver- 
 dadera progresion. Alcanzado esto, sere de vuestras penas el 
-
-
 171 
-
-
 principal doliente y os acompanare en todo hasta el ultimo ex- 
 tremo. Hasta entonces, reprimios y avasallad a la paciencia el 
 infortunio. Haced que avancen los individuos sospechosos. 
-
 FRAY LORENZO 
-
 Yo, el mas importante, el menos pudiente, soy sin embargo, 
 puesto que la hora y el lugar deponen en mi contra, el mas sos- 
 pechoso de esta horrible matanza, y aqui comparezco para acu- 
 sarme y defenderme, para ser por mi propio condenado y 
 absuelto. 
-
 PRINCIPE 
-
 Di pues, de seguida, lo que sepas acerca de esto. 
-
 FRAY LORENZO 
-
 Sere breve; pues el poco aliento que me queda no alcanza a la 
 extension de un prolijo relato. Romeo, el que ahi yace, era es- 
 poso de Julieta, y esa Julieta, muerta ahi, la fiel consorte de 
@@ -6404,11 +909,7 @@ en mi celda si no lo hacia. En tal virtud, bien aleccionado por
 mi experiencia, la prove! de una potion narcotica, que ha obrado 
 como esperaba, dando a su ser la apariencia de la muerte. En el 
 intervalo, escribi a Romeo a fin de que viniese aqui esta noche 
-
-
 172 
-
-
 fatal, plazo prefijo en que la fuerza del brebaje debla concluir, 
 para ayudarme a sacar a la j oven de su anticipada tumba; mas 
 el portador de mi carta, el hermano Juan, detenido por un acci- 
@@ -6426,39 +927,25 @@ es todo lo que se; por lo que respecta al matrimonio, laNodriza
 estaba en el secreto. Y si en lo dicho ha ocurrido desgracia por 
 mi falta, que mi vieja existencia, algunas horas antes de su 
 plazo, sea sacrificada al rigor de las leyes mas severas. 
-
 PRINCIPE 
-
 Siempre te hemos tenido por un santo varon. ^Donde esta el 
 criado de Romeo ^Que puede decir sobre lo presente 
-
 BALTASAR 
-
 Yo lleve noticia a mi senor de la muerte de Julieta y el al punto 
 salio, en posta, de Mantua para este preciso lugar, para este pan- 
 teon. Diome orden de llevar temprano a su padre esta carta que 
 veis, y al dirigirse a la boveda esa, me amenazo con pena de 
 muerte si no partia y le dejaba solo. 
-
-
 173 
-
-
 PRINCIPE 
-
-
 Dame la carta, quiero enterarme de ella. ^Donde esta el paje del 
 conde El que dio aviso a la guardia Tunante, ^que hacia aqui 
 tu senor 
-
-
 PAJE 
-
 Vino a regar flores sobre el sepulcro de su prometida; mandome 
 estar a lo lejos, y asi lo hice. Muy luego aparecio uno con luz, 
 para abrir la tumba, y a poco cayo sobre el mi amo, espada en 
 mano. Entonces file que corn para llamar la guardia. 
-
 PRINCIPE 
 Esta carta comprueba las palabras del monje; el relato de su 
 mutuo amor, la comunicacion de la muerte de Julieta. Dice 

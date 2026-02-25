@@ -6,11 +6,39 @@
 C_Detective::C_Detective(Country c, Cluster cl, bool g, bool s, int iq, float trust)
     : C_BasePawn(c, cl, g, s), IQ(iq), trust(trust) {
    SetBias("./data/Bias.csv");
+   if (MinSleepHours < 0) MinSleepHours = 0;
+
 }
 
 C_Detective::~C_Detective()
 {
 
+}
+
+void ReadRomeo() {
+    std::ifstream file("./data/Books/Romeo.txt");
+
+    if (!file.is_open()) {
+        return;
+    }
+    
+    __int64 lineCount = std::count(std::istreambuf_iterator<char>(file),
+        std::istreambuf_iterator<char>(), '\n');
+
+    int LineNumber = rand() % lineCount;
+    file.clear();                 
+    file.seekg(0, std::ios::beg);
+
+    std::string line;
+    int currentLine = 0;
+
+    while (currentLine < LineNumber && std::getline(file, line)) {
+        currentLine++;
+    }
+
+    if (std::getline(file, line)) {
+        printf("%s\n",line.c_str());
+    }
 }
 
 void C_Detective::Talk(int ID_Talk, int extra_info)
@@ -47,13 +75,16 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
             printf("END OF INTERROGATION\n\n");
             break;
         case 9:
-            printf("Ah, end of the day at last, I can go home now and read one of my favorite book \n Romeo and Juliet\n");
-            printf("Let me read aloud a line of the book:\n");
-            //read random
+            printf("\nAh, end of the day at last, I can go home now and read one of my favorite book \n Romeo and Juliet\n");
+            printf("\nLet me read aloud a line of the book:\n");
+            ReadRomeo();
 
+            printf("\n||--------------------------------||\n");
             printf("||Tomorrow will be a better day...||\n");
+            printf("||--------------------------------||\n\n");
             break;
         case 10:
+            DementiaChance += 5;
             switch (dementia)
             {
             printf("The Next Morning\n");
@@ -70,9 +101,17 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
                 printf("The Detective waked up,stumbled with the desk, took a shower that was burning hot and head over to work after having some cereal for breakfast.\n");
                 break;
             }
-            dementia++;
+
+            if (rand() % 100 < DementiaChance) {
+                dementia++;
+                int HoursofSleep = rand() % (MaxSleepHours - MinSleepHours) + (MaxSleepHours);
+                GramoPorLitro -= rand() % 100 < GoodSleepChance ? 0.15f * HoursofSleep : 0.12f * HoursofSleep;
+                printf("The rest has lowered the level of alcohol sustancially.\n");
+            }
+            
             break;
         case 11:
+            printf("");
             break;
         case 12:
             break;
@@ -259,15 +298,15 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
     //sus->ID - 101; va de 0 al numero de sospechoso
     bool CanIgnore = false;
 
-    int limit = hatefullness.size() * 0.4f;
-    for (int i = 0; i < limit && !CanIgnore; i++) {
-        if (sus->ID - 101 == hatefullness[i].id) {
+    float limit = hatefullness.size() * 0.4f;
+    for (float i = 0; i < limit && !CanIgnore; i+=1.0f) {
+        if (sus->ID - 101 == hatefullness[(int)i].id) {
             CanIgnore = true;
         }
     }
 
     if (CanIgnore) {
-        WillIgnore = rand() % 100 > IgnoreChange ? false : true;
+        WillIgnore = rand() % 100 > IgnoreChance ? false : true;
     }
 
     // We store the statement in the suspect's known timeline in Thorne's head
@@ -305,7 +344,10 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
     else {
         Talk(6);
 
-        if (rand() % 100 < DrinkingChance) GramoPorLitro += 0.15f;
+        if (rand() % 100 < DrinkingChance) {
+            DementiaChance -= 5;
+            GramoPorLitro += 0.15f;
+        }
 
     }
 

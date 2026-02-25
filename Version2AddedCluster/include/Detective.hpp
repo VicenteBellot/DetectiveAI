@@ -41,9 +41,14 @@ public:
 
     std::vector<THate>hatefullness;
 
-    float IgnoreChange = 90; //over 100
-    float DrinkingChance = 80; //over 100
+    int IgnoreChance = 90; //over 100
+    int DrinkingChance = 80; //over 100
+    int DementiaChance = 80; //over 100
+    int GoodSleepChance = 80; //over 100
     bool WillIgnore = false;
+
+    int MinSleepHours = 5;
+    int MaxSleepHours = 8;
 
     float classism;
     float racism;
@@ -52,6 +57,7 @@ public:
     int IQ = 101;
 
     int dementia = 0;
+    int MaxDementia = 0;
 
     //Cerveza +0.15;
     float GramoPorLitro = 0.0f;
