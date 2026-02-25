@@ -1,0 +1,11 @@
+ID,Room,Q1: Arrive,Q2: Stay,Q3: Vouch,Q4: Saw Leaving,Q5: Leave,Q6: Time
+101,Garden,-1,-1,-1,110,-1,30
+102,Kitchen,-1,-1,109,-1,-1,60
+103,Security,107,107,107,-1,-1,90
+104,Ballroom,-1,-1,-1,105,-1,45
+105,Hallway,-1,-1,-1,104,-1,15
+106,Kitchen,-1,-1,-1,102,-1,60
+107,Security,103,103,103,-1,-1,90
+108,Entrance,-1,-1,-1,109,-1,20
+109,Entrance,-1,-1,-1,108,-1,20
+110,Quarters,-1,-1,-1,101,-1,40
