@@ -30,8 +30,6 @@ public:
 
     robin_hood::unordered_map<int, SuspectInfo> memory;
 
-    std::vector<int> SuspectOrder;
-
     void GenerateSuspectOrder(std::vector<std::shared_ptr<C_Suspect>> suspects);
 
     void Remember(std::shared_ptr<C_Suspect> sus, Statement cat);
@@ -41,6 +39,9 @@ public:
     const SuspectInfo* GetInfo(const int& suspectID) const;
 
     std::vector<THate>hatefullness;
+
+    float IgnoreChange = 99; //over 100
+    bool WillIgnore = false;
 
     float classism;
     float racism;

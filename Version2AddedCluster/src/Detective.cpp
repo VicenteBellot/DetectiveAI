@@ -62,10 +62,6 @@ void C_Detective::GenerateSuspectOrder(std::vector<std::shared_ptr<C_Suspect>> s
             }
         }
     }
-
-    for (int i = 0; i < hatefullness.size() - 1; i++) {
-        printf("id: %d\n", hatefullness[i].id + 101);
-    }
 }
 
 void C_Detective::Remember(std::shared_ptr<C_Suspect> sus, Statement cat)
@@ -77,8 +73,6 @@ void C_Detective::Remember(std::shared_ptr<C_Suspect> sus, Statement cat)
         newInfo.name = sus->name;
         memory.emplace(sus->ID, newInfo);
     }
-
-    //memory[sus.ID].AddEntry(cat);
 }
 
 const SuspectInfo* C_Detective::GetInfo(const int& suspectID) const
@@ -130,8 +124,6 @@ void C_Detective::AnalyzeAlibis(int idA, int idB)
         if (answerCurrent == idA - 101 && answerPrevious == idB - 101) {
 
             printf("[ALIBI CONFIRMED] Suspect %d and %d cover each other.\n", idA, idB);
-
-            // Mark both as SAFE so we stop asking about this loop
             memPrev.cat = Category::Safe;
             memCurr.cat = Category::Safe;
         }
@@ -141,15 +133,11 @@ void C_Detective::AnalyzeAlibis(int idA, int idB)
             memPrev.cat = Category::Suspicious;
             memCurr.cat = Category::Suspicious;
 
-            //Aqui se guarda el ID del que miente, para marcarlo como culpable
-
             printf("CULPABLE: %d\n", idA);
             FoundCulprit = true;
             Culprit = idA;
 
         }
-        
-
     }
 }
 
@@ -165,44 +153,66 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
 {
     Statement report = sus->ProvideStatement(Question);
 
-
     if (memory.find(sus->ID) == memory.end()) {
         SuspectInfo newInfo;
         newInfo.ID = sus->ID;
         newInfo.name = sus->name;
         newInfo.suspectRef = sus;
         memory[sus->ID] = newInfo;
-        
+    }
+
+    //sus->ID - 101; va de 0 al numero de sospechoso
+    bool CanIgnore = false;
+
+    int limit = std::min((int)hatefullness.size(), 4);
+
+    for (int i = 0; i < limit && !CanIgnore; i++) {
+        if (sus->ID - 101 == hatefullness[i].id) {
+            CanIgnore = true;
+        }
+    }
+
+    if (CanIgnore) {
+        WillIgnore = rand() % 100 > IgnoreChange ? false : true;
     }
 
     // We store the statement in the suspect's known timeline in Thorne's head
     int* ptr = (int*)(&report);
     bool breakloop = false;
     int answerID = -2;
-    for (int i = 0; i < 6 && !breakloop; i++) {
-        if ((ptr[i]) > -2) {
-            answerID = ptr[i] - 101;
-            breakloop = true;
 
-            // Store the answer
-            memory[sus->ID].AddEntry((SuspectInfo::KQuestionAsked(Question)), answerID);
-            printf("[Answer Stored: Suspect %d answered %d]\n", sus->ID, answerID);
+    if (!WillIgnore || cat == Category::ToAsk) {
+        for (int i = 0; i < 6 && !breakloop; i++) {
+            if ((ptr[i]) > -2) {
+                answerID = ptr[i] - 101;
+                breakloop = true;
 
-            // Determine Status
-            if (answerID > -1 && Question != SuspectInfo::KQuestionAsked::TimeStayed && Question != SuspectInfo::KQuestionAsked::WatchLeave) {
-                printf("[Category: TO ASK] - Points to another suspect.\n");
-                memory[sus->ID].cat = Category::ToAsk;
-            }
-            else {
-                printf("[Category: Safe]\n");
-                memory[sus->ID].cat = Category::Safe;
+                // Store the answer
+                memory[sus->ID].AddEntry((SuspectInfo::KQuestionAsked(Question)), answerID);
+                printf("[Answer Stored: Suspect %d answered %d]\n", sus->ID, answerID);
+
+                // Determine Status
+                if (answerID > -1 && Question != SuspectInfo::KQuestionAsked::TimeStayed && Question != SuspectInfo::KQuestionAsked::WatchLeave) {
+                    printf("[Category: TO ASK] - Points to another suspect.\n");
+                    memory[sus->ID].cat = Category::ToAsk;
+                }
+                else {
+                    printf("[Category: Safe]\n");
+                    memory[sus->ID].cat = Category::Safe;
+                }
             }
         }
+
+        if (cat == Category::ToAsk && LastSuspectedInterrogates != -2 && LastSuspectedInterrogates != sus->ID) {
+            AnalyzeAlibis(LastSuspectedInterrogates, sus->ID);
+        }
     }
-    
-    if (cat == Category::ToAsk && LastSuspectedInterrogates != -2 && LastSuspectedInterrogates != sus->ID) {
-        AnalyzeAlibis(LastSuspectedInterrogates, sus->ID);
+    else {
+        printf("-- THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM --\n");
     }
+
+    WillIgnore = false;
+
     printf("---------------------\n");
     printf("END OF INTERROGATION\n\n");
 }
