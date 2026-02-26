@@ -2,13 +2,10 @@
 #define GAMEMANAGER_HPP
 
 #include "Detective.hpp"
-
 #include "imgui/imgui.h"
 
 class C_GameManager {
 public:
-    C_GameManager() {
-    }
 
     ~C_GameManager();
 
@@ -28,6 +25,9 @@ public:
 
     void MainLoop(float deltaTime);
 
+    void DrawSpriteWindow();
+    std::vector<ImTextureRef> Images;
+
     void EndOfDayCycle();
 
     float Speed = 1.0f;
@@ -35,6 +35,9 @@ public:
     void LoadScenarioFromCSV(std::string filePath);
     void LoadAlibisFromCSV(std::string filePath);
     void LoadRoomsFromCSV(std::string filePath);
+
+    void LoadImages(std::string folderPath);
+
     void DrawInterface(float DeltaTime);
 
     void LoadLowIQWords(std::string filepath);

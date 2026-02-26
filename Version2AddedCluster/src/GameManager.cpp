@@ -19,7 +19,6 @@ void C_GameManager::MainLoop(float deltaTime)
     if (rounds >= maxroundsPerDay) {
         EndOfDayCycle();
         rounds = 0;
-        printf("night night\n");
     }
     if (Thorne->GramoPorLitro > MaxComaEtilico) {
         Thorne->dead = true;
@@ -27,10 +26,19 @@ void C_GameManager::MainLoop(float deltaTime)
     }
 }
 
+void C_GameManager::DrawSpriteWindow()
+{
+    ImGui::Begin("Imagery");
+    ImDrawList* drawList = ImGui::GetWindowDrawList();
+}
+
 void C_GameManager::EndOfDayCycle()
 {
     Thorne->Talk(9);
     Thorne->Talk(10);
+    Thorne->UpdateDementia();
+    Thorne->UpdateBias();
+    Thorne->GenerateSuspectOrder(suspects);
 }
 
 void C_GameManager::LoadScenarioFromCSV(std::string filePath)
@@ -108,6 +116,11 @@ void C_GameManager::LoadRoomsFromCSV(std::string filePath)
         }
     }
 
+}
+
+void C_GameManager::LoadImages(std::string folderPath)
+{
+    
 }
 
 void C_GameManager::DrawInterface(float DeltaTime)
@@ -213,9 +226,6 @@ void C_GameManager::DrawInterface(float DeltaTime)
         if(target->sexualOrientation) ImGui::Text("Orientation: Heterosexual");
         else ImGui::Text("Orientation: Other");
 
-
-        ImGui::ProgressBar(target->stress, ImVec2(0, 0), "Suspect Stress");
-
         ImGui::Separator();
 
         // Show questions from the Spreadsheet
@@ -261,17 +271,15 @@ void C_GameManager::DrawInterface(float DeltaTime)
 
                 // Advance index for the NEXT exploration turn
                 activeSuspectIndex = (activeSuspectIndex + 1);
-                if (activeSuspectIndex >= quantitySustec) {
-                    printf("round passed\n");
-                    activeSuspectIndex = 0;
-                    rounds++;
-                }
+                
             }
 
             if (nextTarget) {
                 Category catParam = AskFor ? Category::ToAsk : Category::Safe;
                 if (i < maxQuestions) {
+                    printf("\n||\n||Question asked: %s\n||\n\n", currentScenario.timelineQuestions[Thorne->LastQuestionAsked].text.c_str());
                     Thorne->Interrogate(nextTarget, Thorne->LastQuestionAsked, catParam);
+
                     Thorne->LastSuspectedInterrogates = nextTarget->ID;
                 }
                 else {
@@ -297,7 +305,11 @@ void C_GameManager::DrawInterface(float DeltaTime)
         }
         ImGui::End();
     }
-
+    if (activeSuspectIndex >= quantitySustec) {
+        Thorne->Talk(12);
+        activeSuspectIndex = 0;
+        rounds++;
+    }
     ImGui::Begin("Suspect Files");
     for (int i = 0; i < suspects.size(); i++) {
         if (i == Thorne->hatefullness[activeSuspectIndex].id) {
@@ -333,7 +345,7 @@ void C_GameManager::InitializeGame()
 {
     srand(static_cast<unsigned int>(time(NULL)));
     C_BasePawn::CharacterOrigin CharacterOrigin = C_BasePawn::GenerateRandomOrigin(true);
-    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,101,0);
+    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,101.0f,0);
     LoadScenarioFromCSV("./data/Gala/Questions.csv");
     LoadRoomsFromCSV("./data/Gala/Locations.csv");
     LoadLowIQWords("./data/Words.txt");

@@ -13,7 +13,6 @@ void C_Suspect::AddAlibi(std::vector<Statement>& alibi)
 Statement C_Suspect::ProvideStatement(int Question)
 {
 	Statement emptyStatement{ -2, -2, -2, -2, -2, -2,{}, "UNDEFINED"};
-	printf("INT QUESTION: %d\n", Question);
 	switch (Question)
 	{
 	case 0: // asking for arriveWithID

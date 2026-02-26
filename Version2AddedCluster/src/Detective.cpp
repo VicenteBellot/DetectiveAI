@@ -3,7 +3,7 @@
 #include <filesystem>
 #include <fstream>
 
-C_Detective::C_Detective(Country c, Cluster cl, bool g, bool s, int iq, float trust)
+C_Detective::C_Detective(Country c, Cluster cl, bool g, bool s, float iq, float trust)
     : C_BasePawn(c, cl, g, s), IQ(iq), trust(trust) {
    SetBias("./data/Bias.csv");
    if (MinSleepHours < 0) MinSleepHours = 0;
@@ -15,8 +15,8 @@ C_Detective::~C_Detective()
 
 }
 
-void ReadRomeo() {
-    std::ifstream file("./data/Books/Romeo.txt");
+void ReadBook(std::string filepath) {
+    std::ifstream file(filepath);
 
     if (!file.is_open()) {
         return;
@@ -37,83 +37,93 @@ void ReadRomeo() {
     }
 
     if (std::getline(file, line)) {
-        printf("%s\n",line.c_str());
+        printf("||%s\n\n",line.c_str());
     }
 }
 
 void C_Detective::Talk(int ID_Talk, int extra_info)
 {
-    if (IQ > 100){
+    if (IQ > 50){
         switch (ID_Talk) {
         case 0:
-            printf("START OF INTERROGATION\n");
-            printf("---------------------\n");
+            printf("||======================||\n");
+            printf("||START OF INTERROGATION||\n");
+            printf("||======================||\n");
             break;
         case 1:
-            printf("[FOLLOW UP] Corroborating with Suspect %d\n", extra_info);
+            printf("||[FOLLOW UP] Corroborating with Suspect %d\n", extra_info);
             break;
         case 2:
-            printf("[Answer Stored: Suspect %d ", extra_info);
+            printf("||[Answer Stored: Suspect %d ", extra_info);
             break;
         case 3:
             printf("answered % d]\n", extra_info);
             break;
         case 4:
-            printf("[Category: TO ASK] - Points to another suspect.\n");
+            printf("||[Category: TO ASK] - Points to another suspect.\n");
             break;
         case 5:
-            printf("[Category: Safe]\n");
+            printf("||[Category: Safe]\n");
             break;
         case 6:
-            printf("-- THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM --\n");
+            printf("||====================================================||\n");
+            printf("|| THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM ||\n");
+            printf("||====================================================||\n");
             break;
         case 7:
-            printf("Suspect: %d has been asked all questions posible\n", extra_info);
+            printf("||Suspect: %d has been asked all questions posible\n", extra_info);
             break;
         case 8:
-            printf("---------------------\n");
-            printf("END OF INTERROGATION\n\n");
+            printf("||====================||\n");
+            printf("||END OF INTERROGATION||\n");
+            printf("||====================||\n\n");
+            printf("-------------------------------------------------------------------------------------\n");
             break;
         case 9:
-            printf("\nAh, end of the day at last, I can go home now and read one of my favorite book \n Romeo and Juliet\n");
-            printf("\nLet me read aloud a line of the book:\n");
-            ReadRomeo();
+            printf("\n||Ah, end of the day at last, I can go \n||home now and read one of my favorite book \n||Romeo and Juliet\n");
+            printf("\n||Let me read aloud a line of the book:\n");
+            ReadBook("./data/Books/Romeo.txt");
 
-            printf("\n||--------------------------------||\n");
+            printf("||================================||\n");
             printf("||Tomorrow will be a better day...||\n");
-            printf("||--------------------------------||\n\n");
+            printf("||================================||\n||\n");
             break;
         case 10:
-            DementiaChance += 5;
+            printf("||The Next Morning\n");
             switch (dementia)
             {
-            printf("The Next Morning\n");
             case 0:
-                printf("The Detective waked up, took a nice shower and head over to work after having a healty breakfast.\n");
+                printf("||The Detective waked up, took a nice shower and head over to work after having a healty breakfast.\n");
                 break;
             case 1: 
-                printf("The Detective waked up, stumbled with the desk, took a nice shower and head over to work after having a healty breakfast.\n");
+                printf("||The Detective waked up, stumbled with the desk, took a nice shower and head over to work after having a healty breakfast.\n");
                 break;
             case 2: 
-                printf("The Detective waked up,stumbled with the desk, took a nice shower and head over to work after having some cereal for breakfast.\n");
+                printf("||The Detective waked up,stumbled with the desk, took a nice shower and head over to work after having some cereal for breakfast.\n");
                 break;
             default:
-                printf("The Detective waked up,stumbled with the desk, took a shower that was burning hot and head over to work after having some cereal for breakfast.\n");
+                printf("||The Detective waked up,stumbled with the desk, took a shower that was burning hot and head over to work after having some cereal for breakfast.\n");
                 break;
             }
 
-            if (rand() % 100 < DementiaChance) {
-                dementia++;
-                int HoursofSleep = rand() % (MaxSleepHours - MinSleepHours) + (MaxSleepHours);
-                GramoPorLitro -= rand() % 100 < GoodSleepChance ? 0.15f * HoursofSleep : 0.12f * HoursofSleep;
-                printf("The rest has lowered the level of alcohol sustancially.\n");
-            }
+           
+            printf("||=======================================================||\n");
+            printf("||The rest has lowered the level of alcohol sustancially.||\n");
+            printf("||=======================================================||\n\n");
+            printf("-------------------------------------------------------------------------------------\n");
             
             break;
         case 11:
-            printf("");
+            printf("||==================================================================||\n");
+            printf("||   The Detective died due to inhumanly possible rate of alcohol   ||\n");
+            printf("|| He drove his car into the nearest tree at a velocity of %d km/h ||\n", (rand() % 250));
+            printf("||==================================================================||\n");
             break;
         case 12:
+            printf("||============||\n");
+            printf("||END OF ROUND||\n");
+            printf("||============||\n");
+            printf("-------------------------------------------------------------------------------------\n");
             break;
 
         }
@@ -127,6 +137,7 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
                 printf("%s ", RandomLowIQWords[randomword].c_str());
             }
             printf("Humpty Dumpty\n");
+            ReadBook("./data/Books/Humpty.txt");
 
             //Imprimir Quote
 
@@ -218,6 +229,37 @@ const SuspectInfo* C_Detective::GetInfo(const int& suspectID) const
     return nullptr; // empty if not found
 }
 
+void C_Detective::UpdateBias()
+{
+    if (GramoPorLitro > 0.5f && GramoPorLitro <= 2.5f) {
+        racism *= 0.92f;
+        classism *= 0.85f;
+        sexism *= 0.95f;
+        homophobia *= 0.97f;
+
+        IQ *= 1.07f;
+    }
+    else if (GramoPorLitro > 2.5f) {
+        racism *= 1.15f;
+        classism *= 1.18f;
+        sexism *= 1.2f;
+        homophobia *= 1.32f;
+
+        IQ *= 0.97f;
+    }
+}
+
+void C_Detective::UpdateDementia()
+{
+    DementiaChance += 5;
+    if (rand() % 100 < DementiaChance) {
+        dementia++;
+    }
+    int HoursofSleep = rand() % (MaxSleepHours - MinSleepHours) + (MaxSleepHours);
+    GramoPorLitro -= rand() % 100 < GoodSleepChance ? 0.15f * HoursofSleep : 0.12f * HoursofSleep;
+    if (GramoPorLitro < 0.0f) GramoPorLitro = 0.0f;
+}
+
 
 std::shared_ptr<C_Suspect> C_Detective::GetSuspectByID(int targetID) const
 {
@@ -257,17 +299,17 @@ void C_Detective::AnalyzeAlibis(int idA, int idB)
 
         if (answerCurrent == idA - 101 && answerPrevious == idB - 101) {
 
-            printf("[ALIBI CONFIRMED] Suspect %d and %d cover each other.\n", idA, idB);
+            printf("||[ALIBI CONFIRMED] Suspect %d and %d cover each other.\n", idA, idB);
             memPrev.cat = Category::Safe;
             memCurr.cat = Category::Safe;
         }
         else {
-            printf("[ALIBI FAILED] Contradiction found between %d and %d.\n", idA, idB);
+            printf("||[ALIBI FAILED] Contradiction found between %d and %d.\n", idA, idB);
 
             memPrev.cat = Category::Suspicious;
             memCurr.cat = Category::Suspicious;
 
-            printf("CULPABLE: %d\n", idA);
+            printf("||CULPABLE: %d\n", idA);
             FoundCulprit = true;
             Culprit = idA;
 
@@ -346,7 +388,8 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
 
         if (rand() % 100 < DrinkingChance) {
             DementiaChance -= 5;
-            GramoPorLitro += 0.15f;
+            GramoPorLitro += 1.15f;
+            UpdateBias();
         }
 
     }

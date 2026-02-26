@@ -19,7 +19,7 @@ class C_Detective : public C_BasePawn{
 
 public:
     C_Detective(Country c, Cluster cl, bool g, bool s,
-        int iq, float trust);
+        float iq, float trust);
     
     ~C_Detective();
     
@@ -42,7 +42,7 @@ public:
     std::vector<THate>hatefullness;
 
     int IgnoreChance = 90; //over 100
-    int DrinkingChance = 80; //over 100
+    int DrinkingChance = 90; //over 100
     int DementiaChance = 80; //over 100
     int GoodSleepChance = 80; //over 100
     bool WillIgnore = false;
@@ -50,11 +50,14 @@ public:
     int MinSleepHours = 5;
     int MaxSleepHours = 8;
 
+    void UpdateBias();
+    void UpdateDementia();
+
     float classism;
     float racism;
     float homophobia;
     float sexism;
-    int IQ = 101;
+    float IQ = 101;
 
     int dementia = 0;
     int MaxDementia = 0;
