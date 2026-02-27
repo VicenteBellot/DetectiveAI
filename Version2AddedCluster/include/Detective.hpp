@@ -58,12 +58,14 @@ public:
     float homophobia;
     float sexism;
     float IQ = 101;
+    float MinDumbIQ = 50;
 
     int dementia = 0;
     int MaxDementia = 0;
 
     //Cerveza +0.15;
     float GramoPorLitro = 0.0f;
+    int BeersDrank = 0;
 
     float trust; // 0.0–1.0
 

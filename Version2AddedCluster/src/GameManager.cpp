@@ -9,27 +9,171 @@
 #include <filesystem>
 #include <iostream>
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "imgui/stb_image.h"
+
+
 C_GameManager::~C_GameManager()
 {
 }
 
 void C_GameManager::MainLoop(float deltaTime)
 {
+    //---------------------------------------------
+    ImGuiIO& io = ImGui::GetIO();
+    const int FONT_SMALL = 0;
+    const int FONT_MEDIUM = 1;
+    const int FONT_LARGE = 2;
+    const int FONT_XLARGE = 3;
+
+    ImFont* activeFont;
+    int displacement = 4;
+    if (m_LastWindowW < 800 || m_LastWindowH < 800)  activeFont = Fonts[FONT_SMALL + displacement];
+    else if (m_LastWindowW < 1280 || m_LastWindowH < 1200) activeFont = Fonts[FONT_MEDIUM + displacement];
+    else if (m_LastWindowW < 1600 || m_LastWindowH < 1600) activeFont = Fonts[FONT_LARGE + displacement];
+    else                               activeFont = Fonts[FONT_XLARGE + displacement];
+
+    ImGui::PushFont(activeFont);
+    //---------------------------------------------
+    DrawSpriteWindow();
     DrawInterface(deltaTime);
     if (rounds >= maxroundsPerDay) {
         EndOfDayCycle();
         rounds = 0;
+        BeerPos.clear();
     }
     if (Thorne->GramoPorLitro > MaxComaEtilico) {
         Thorne->dead = true;
         Thorne->Talk(11);
     }
+    ImGui::PopFont();
+}
+
+void C_GameManager::CheckAndHandleResize(int newWidth, int newHeight) {
+    
+
+    if (m_LastWindowW == newWidth && m_LastWindowH == newHeight) return;
+
+    float rx = (float)newWidth / m_LastWindowW;
+    float ry = (float)newHeight / m_LastWindowH;
+
+    for (auto& pos : BeerPos) {
+        pos.x *= rx;
+        pos.y *= ry;
+    }
+
+    m_LastWindowW = newWidth;
+    m_LastWindowH = newHeight;
+}
+
+void C_GameManager::AddBeerPosition() {
+    ImGuiIO& io = ImGui::GetIO();
+
+    float tableTop = io.DisplaySize.y * 0.70f;
+    float tableBottom = io.DisplaySize.y * 0.80f;;
+    float tableLeft;
+    float tableRight;
+
+    int area = rand() % 3;
+    T_Pos newPos;
+
+    switch (area) {
+    case 0:
+        newPos.inlight = false;
+        tableLeft = io.DisplaySize.x * 0.31f;
+        tableRight = io.DisplaySize.x * 0.35f;
+        break;
+    case 1:
+        newPos.inlight = false;
+        tableLeft = io.DisplaySize.x * 0.62f;
+        tableRight = io.DisplaySize.x * 0.64f;
+        break;
+    default:
+        newPos.inlight = true;
+        tableTop = io.DisplaySize.y * 0.80f;
+        tableBottom = io.DisplaySize.y * 0.90f;
+        tableLeft = io.DisplaySize.x * 0.35f;
+        tableRight = io.DisplaySize.x * 0.50f;
+        break;
+    }
+
+    newPos.x = tableLeft + (rand() % (int)(tableRight - tableLeft));
+    newPos.y = tableTop + (rand() % (int)(tableBottom - tableTop));
+
+    BeerPos.push_back(newPos);
+
+    std::sort(BeerPos.begin(), BeerPos.end(), [](const T_Pos& a, const T_Pos& b) {
+        return a.y < b.y;
+        });
 }
 
 void C_GameManager::DrawSpriteWindow()
 {
-    ImGui::Begin("Imagery");
-    ImDrawList* drawList = ImGui::GetWindowDrawList();
+    ImGuiIO& io = ImGui::GetIO();
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
+    ImGui::SetNextWindowPos(ImVec2(0, 0));
+    ImGui::SetNextWindowSize(io.DisplaySize);
+    ImGui::Begin("Background", nullptr,
+        ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize |
+        ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoBringToFrontOnFocus);
+
+
+    ImVec2 startPos = ImGui::GetCursorScreenPos();
+    
+    ImGui::SetCursorScreenPos(startPos);
+    ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[0], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+
+    ImGui::SetCursorScreenPos(startPos);
+    ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[1], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+
+    switch (Thorne->dementia)
+    {
+    case 0:
+        ImGui::SetCursorScreenPos(startPos);
+        ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[2], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+        break;
+    case 1:
+        ImGui::SetCursorScreenPos(startPos);
+        ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[3], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+        break;
+    case 2:
+        ImGui::SetCursorScreenPos(startPos);
+        ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[4], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+        break;
+    default:
+        ImGui::SetCursorScreenPos(startPos);
+        ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[5], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+        break;
+    }
+
+    float designWidth = 1500.0f;
+    float designHeight = 850.0f;
+
+    float scaleX = io.DisplaySize.x / designWidth;
+    float scaleY = io.DisplaySize.y / designHeight;
+
+    float beerW = 50.0f * scaleX;
+    float beerH = 100.0f * scaleY;
+
+    for (int i = 0; i < Thorne->BeersDrank; i++) {
+        if (i == BeerPos.size()) { //End of line no more pos, load new one
+            AddBeerPosition();
+        }
+        ImGui::SetCursorScreenPos(ImVec2(
+            BeerPos[i].x,
+            BeerPos[i].y
+        ));
+        if (BeerPos[i].inlight) {
+            ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[6], ImVec2(beerW , beerH), ImVec2(0, 1), ImVec2(1, 0));
+        }
+        else {
+            ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[6], ImVec2(beerW, beerH), ImVec2(0, 1), ImVec2(1, 0), ImVec4(0.5f, 0.55f, 0.6f, 1.0f), ImVec4(0, 0, 0, 0));
+        }
+    }
+
+    ImGui::End();
+    ImGui::PopStyleVar(2);
 }
 
 void C_GameManager::EndOfDayCycle()
@@ -118,28 +262,103 @@ void C_GameManager::LoadRoomsFromCSV(std::string filePath)
 
 }
 
+void C_GameManager::LoadFonts()
+{
+    ImGuiIO& io = ImGui::GetIO();
+
+    ImFont* fontSmall = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 13.0f);
+    ImFont* fontMedium = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 18.0f);
+    ImFont* fontLarge = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 24.0f);
+    ImFont* fontMax = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 40.0f);
+
+    Fonts.push_back(fontSmall);
+    Fonts.push_back(fontMedium);
+    Fonts.push_back(fontLarge);
+    Fonts.push_back(fontMax);
+
+    ImFont* MinefontSmall = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 10.0f);
+    ImFont* MinefontMedium = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 13.0f);
+    ImFont* MinefontLarge = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 16.0f);
+    ImFont* MinefontMax = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 23.0f);
+
+    Fonts.push_back(MinefontSmall);
+    Fonts.push_back(MinefontMedium);
+    Fonts.push_back(MinefontLarge);
+    Fonts.push_back(MinefontMax);
+
+
+}
+
 void C_GameManager::LoadImages(std::string folderPath)
 {
-    
+    if (this == nullptr) {
+        std::cerr << "CRITICAL ERROR: LoadImages called on a NULL C_GameManager pointer!" << std::endl;
+        return;
+    }
+    if (!std::filesystem::exists(folderPath) || !std::filesystem::is_directory(folderPath)) {
+        std::cerr << "Path does not exist: " << folderPath << std::endl;
+        return;
+    }
+
+    for (const auto& entry : std::filesystem::directory_iterator(folderPath)) {
+        if (entry.path().extension() == ".png") {
+            std::string path = entry.path().string();
+
+            int width, height, nrChannels;
+            stbi_set_flip_vertically_on_load(true);
+            unsigned char* data = stbi_load(path.c_str(), &width, &height, &nrChannels, 4);
+
+            if (data) {
+                GLuint textureID;
+                glGenTextures(1, &textureID);
+                glBindTexture(GL_TEXTURE_2D, textureID);
+
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+                glGenerateMipmap(GL_TEXTURE_2D);
+
+                m_TextureIDs.push_back(textureID);
+
+                stbi_image_free(data);
+                std::cout << "Successfully loaded: " << path << " (ID: " << textureID << ")" << std::endl;
+            }
+        }
+    }
 }
 
 void C_GameManager::DrawInterface(float DeltaTime)
 {
     tick += DeltaTime * Speed;
+    ImGuiIO& io = ImGui::GetIO();
 
-    ImGui::Begin("Locations");
+    ImGui::SetNextWindowPos(ImVec2(0, 0), ImGuiCond_Always, ImVec2(0, 0));
+    ImGui::Begin("Locations", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_AlwaysAutoResize);
     for (auto i : currentScenario.worldLocations) {
         ImGui::Text(i.c_str());
-
     }
     ImGui::End();
 
-    ImGui::Begin("TickSpeed");
+    ImGui::SetNextWindowPos(ImVec2(0, io.DisplaySize.y), ImGuiCond_Always, ImVec2(0, 1));
+    ImGui::Begin("TickSpeed", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoMove);
     ImGui::SliderFloat("Tick Speed", &Speed, 0.1f, 20.0f);
     ImGui::End();
 
-    ImGui::Begin("Alibis");
-    static ImGuiTableFlags flags = ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg | ImGuiTableFlags_Resizable;
+    //--------------------------
+    ImGui::SetNextWindowPos(
+        ImVec2(io.DisplaySize.x, io.DisplaySize.y),
+        ImGuiCond_Always,
+        ImVec2(1, 1)
+    );
+    ImGui::Begin("Alibis", nullptr,
+        ImGuiWindowFlags_NoMove |
+        ImGuiWindowFlags_AlwaysAutoResize |
+        ImGuiWindowFlags_NoScrollbar |
+        ImGuiWindowFlags_NoScrollWithMouse);
+    static ImGuiTableFlags flags = ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg;
 
     if (ImGui::BeginTable("AlibiTable", 8, flags))
     {
@@ -188,35 +407,36 @@ void C_GameManager::DrawInterface(float DeltaTime)
             }
         }
 
-        // 4. Critical: End the table
         ImGui::EndTable();
     }
 
     ImGui::End();
 
-    // 3. Thorne's Internal State (Mental Dashboard)
-    ImGui::Begin("Inspector Thorne's Notes");
+    ImGui::SetNextWindowPos(ImVec2(io.DisplaySize.x * 0.5f, 0),
+        ImGuiCond_Always,
+        ImVec2(0.5f, 0));
+
+    ImGui::Begin("Inspector Thorne's Notes", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_AlwaysAutoResize);
+
     ImGui::Text("Origin Country: %s", Thorne->CountryName[Thorne->country].c_str());
     ImGui::Text("Detectives Cluster: V%d", Thorne->cluster);
+    ImGui::Text("Current Style: %s", (Thorne->frustration > 0.6f ? "Aggressive" : "Professional"));
     ImGui::Separator();
-    ImGui::Text("Frustration: %.2f", Thorne->frustration);
     ImGui::Text("Racism: %.2f", Thorne->racism);
     ImGui::Text("Homophobia: %.2f", Thorne->homophobia);
     ImGui::Text("Classism: %.2f", Thorne->classism);
     ImGui::Text("Sexism: %.2f", Thorne->sexism);
     ImGui::Separator();
-    ImGui::Text("Current Style: %s", (Thorne->frustration > 0.6f ? "Aggressive" : "Professional"));
-
-    ImGui::Separator();
-    ImGui::ProgressBar(Thorne->GramoPorLitro / MaxComaEtilico, ImVec2(0, 0), "Alcohol Rate");
-    ImGui::Separator();
+    ImGui::ProgressBar(Thorne->GramoPorLitro / MaxComaEtilico, ImVec2(-1, 0), "Alcohol Rate");
+    ImGui::Text("%.2f g/L", Thorne->GramoPorLitro);
 
     ImGui::End();
-
+    static float InterrogationWidth;
+    ImGui::SetNextWindowPos(ImVec2(io.DisplaySize.x, 0), ImGuiCond_Always, ImVec2(1, 0));
+    ImGui::Begin("Interrogation Room", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
     if (activeSuspectIndex != -1) {
         std::shared_ptr target = suspects[Thorne->hatefullness[activeSuspectIndex].id];
 
-        ImGui::Begin("Interrogation Room");
         ImGui::Text("Subject: %s", target->name.c_str());
         ImGui::Text("Race: V%d", target->cluster);
         ImGui::Text("Country of Origin: %s", target->CountryName[target->country].c_str());
@@ -303,14 +523,19 @@ void C_GameManager::DrawInterface(float DeltaTime)
             }
             question++;
         }
-        ImGui::End();
+
     }
+    InterrogationWidth = ImGui::GetWindowWidth();
+    ImGui::End();
+
     if (activeSuspectIndex >= quantitySustec) {
         Thorne->Talk(12);
         activeSuspectIndex = 0;
         rounds++;
     }
-    ImGui::Begin("Suspect Files");
+
+    ImGui::SetNextWindowPos(ImVec2(io.DisplaySize.x - InterrogationWidth , 0), ImGuiCond_Always, ImVec2(1, 0));
+    ImGui::Begin("Suspect Files", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
     for (int i = 0; i < suspects.size(); i++) {
         if (i == Thorne->hatefullness[activeSuspectIndex].id) {
             ImGui::TextColored(ImVec4(0, 255, 0, 100), ("Asking: " + suspects[i]->name).c_str());
@@ -345,11 +570,12 @@ void C_GameManager::InitializeGame()
 {
     srand(static_cast<unsigned int>(time(NULL)));
     C_BasePawn::CharacterOrigin CharacterOrigin = C_BasePawn::GenerateRandomOrigin(true);
-    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,101.0f,0);
+    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,30.0f,0);
     LoadScenarioFromCSV("./data/Gala/Questions.csv");
     LoadRoomsFromCSV("./data/Gala/Locations.csv");
     LoadLowIQWords("./data/Words.txt");
-
+    LoadImages("./data/Images");
+    
     int Alibis = rand() % 5 + 1;
 
     //printf("Alibis: %d\n", Alibis);

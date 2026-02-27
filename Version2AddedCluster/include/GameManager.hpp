@@ -1,13 +1,25 @@
 #ifndef GAMEMANAGER_HPP
 #define GAMEMANAGER_HPP
+#include <GL/glew.h>
+
+#include <filesystem>
+#include <iostream>
 
 #include "Detective.hpp"
 #include "imgui/imgui.h"
 
+struct T_Pos {
+    float x, y;
+    bool inlight;
+};
+
 class C_GameManager {
 public:
-
+    C_GameManager() = default;
     ~C_GameManager();
+
+    int m_LastWindowW = 1500;
+    int m_LastWindowH = 850;
 
     C_Detective* Thorne;
     std::vector<std::shared_ptr<C_Suspect>> suspects;
@@ -25,8 +37,13 @@ public:
 
     void MainLoop(float deltaTime);
 
+    void CheckAndHandleResize(int newWidth, int newHeight);
+
+    void AddBeerPosition();
+
     void DrawSpriteWindow();
-    std::vector<ImTextureRef> Images;
+    std::vector<GLuint> m_TextureIDs;
+    std::vector<T_Pos> BeerPos;
 
     void EndOfDayCycle();
 
@@ -35,6 +52,8 @@ public:
     void LoadScenarioFromCSV(std::string filePath);
     void LoadAlibisFromCSV(std::string filePath);
     void LoadRoomsFromCSV(std::string filePath);
+    void LoadFonts();
+    std::vector< ImFont*> Fonts;
 
     void LoadImages(std::string folderPath);
 
@@ -48,7 +67,6 @@ public:
     float tick = 0.0f;
 
     unsigned int AskedQuestion = -1;
-
     
 };
 

@@ -43,7 +43,7 @@ void ReadBook(std::string filepath) {
 
 void C_Detective::Talk(int ID_Talk, int extra_info)
 {
-    if (IQ > 50){
+    if (IQ > MinDumbIQ){
         switch (ID_Talk) {
         case 0:
             printf("||======================||\n");
@@ -258,6 +258,7 @@ void C_Detective::UpdateDementia()
     int HoursofSleep = rand() % (MaxSleepHours - MinSleepHours) + (MaxSleepHours);
     GramoPorLitro -= rand() % 100 < GoodSleepChance ? 0.15f * HoursofSleep : 0.12f * HoursofSleep;
     if (GramoPorLitro < 0.0f) GramoPorLitro = 0.0f;
+    BeersDrank = 0;
 }
 
 
@@ -387,8 +388,9 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
         Talk(6);
 
         if (rand() % 100 < DrinkingChance) {
-            DementiaChance -= 5;
-            GramoPorLitro += 1.15f;
+            DementiaChance -= 1;
+            BeersDrank++;
+            GramoPorLitro += 0.15f;
             UpdateBias();
         }
 

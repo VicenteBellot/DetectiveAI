@@ -78,6 +78,8 @@ project "EliasThorne"
     targetdir "build/%{cfg.buildcfg}"
     includedirs { "include", "deps" }
     
+    conan_config_lib()
+
     files {
         "premake5.lua",
         "src/build/conanfile.txt",
