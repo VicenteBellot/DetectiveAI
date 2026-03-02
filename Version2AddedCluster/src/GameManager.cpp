@@ -27,7 +27,7 @@ void C_GameManager::MainLoop(float deltaTime)
     const int FONT_XLARGE = 3;
 
     ImFont* activeFont;
-    int displacement = 4;
+    int displacement = Thorne->IQ > Thorne->MinDumbIQ ? 0 : 4;
     if (m_LastWindowW < 800 || m_LastWindowH < 800)  activeFont = Fonts[FONT_SMALL + displacement];
     else if (m_LastWindowW < 1280 || m_LastWindowH < 1200) activeFont = Fonts[FONT_MEDIUM + displacement];
     else if (m_LastWindowW < 1600 || m_LastWindowH < 1600) activeFont = Fonts[FONT_LARGE + displacement];
@@ -570,7 +570,7 @@ void C_GameManager::InitializeGame()
 {
     srand(static_cast<unsigned int>(time(NULL)));
     C_BasePawn::CharacterOrigin CharacterOrigin = C_BasePawn::GenerateRandomOrigin(true);
-    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,30.0f,0);
+    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,120.0f,0);
     LoadScenarioFromCSV("./data/Gala/Questions.csv");
     LoadRoomsFromCSV("./data/Gala/Locations.csv");
     LoadLowIQWords("./data/Words.txt");
