@@ -11,7 +11,8 @@
 #include "Suspect.hpp"
 #include "Detective.hpp"
 #include "GameManager.hpp"
-
+#include "StoryGenerator.hpp"
+    
 
 #include <stdio.h>
 #include <chrono>
@@ -71,6 +72,14 @@ int main() {
 
         glfwSwapBuffers(window);
     }
+
+    /*FILE* OutputStory;
+    OutputStory = fopen("./data/Story.txt", "w");
+    std::string story = game->Thorne->Gen->GenerateStory();
+    if (OutputStory) {
+        fputs(story.c_str(), OutputStory);
+    }*/
+
 
     printf("------------------------\nINGAME TABLE\n");
     for (int i = 0; i < game->quantitySustec; i++) {

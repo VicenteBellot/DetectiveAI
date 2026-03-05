@@ -639,6 +639,7 @@ void C_GameManager::DrawInterface(float DeltaTime)
                 Category catParam = AskFor ? Category::ToAsk : Category::Safe;
                 if (i < maxQuestions) {
                     printf("\n||\n||Question asked: %s\n||\n\n", currentScenario.timelineQuestions[Thorne->LastQuestionAsked].text.c_str());
+                    Thorne->Gen->AddString("\n||\n||Question asked: " + currentScenario.timelineQuestions[Thorne->LastQuestionAsked].text+"\n||\n\n");
                     Thorne->Interrogate(nextTarget, Thorne->LastQuestionAsked, catParam);
 
                     Thorne->LastSuspectedInterrogates = nextTarget->ID;

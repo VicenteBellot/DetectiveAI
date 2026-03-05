@@ -6,6 +6,7 @@
 #include <iostream>
 
 #include "Detective.hpp"
+#include "StoryGenerator.hpp"
 #include "imgui/imgui.h"
 
 struct T_Pos {
@@ -20,6 +21,8 @@ public:
 
     int m_LastWindowW = 1500;
     int m_LastWindowH = 850;
+
+    
 
     C_Detective* Thorne;
     std::vector<std::shared_ptr<C_Suspect>> suspects;

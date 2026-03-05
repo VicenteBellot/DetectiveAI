@@ -4,6 +4,7 @@
 #include <vector>
 #include "BasePawn.hpp"
 #include "Information.hpp"
+#include "StoryGenerator.hpp"
 #include <robinmap/robin_hood.h>
 
 struct THate {
@@ -22,7 +23,11 @@ public:
         float iq, float trust);
     
     ~C_Detective();
+
+    void ReadBook(std::string filepath);
     
+    std::unique_ptr<C_StoryGen> Gen;
+
     void Talk(int ID_Talk, int extra_info = 0);
 
     void SetBias(std::string filePath);
@@ -41,7 +46,7 @@ public:
 
     std::vector<THate>hatefullness;
 
-    int IgnoreChance = 40; //over 100
+    int IgnoreChance = 100; //over 100
     int DrinkingChance = 90; //over 100
     int DementiaChance = 80; //over 100
     int GoodSleepChance = 80; //over 100

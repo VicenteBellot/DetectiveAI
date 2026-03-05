@@ -98,6 +98,8 @@ project "MainDetective"
 
     links { "EliasThorne" } 
     conan_config_exec() -- Ensure your Conan libs link here
+    conan_basic_setup()
+
 
     files {
         "example/main.cpp",

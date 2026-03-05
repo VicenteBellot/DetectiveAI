@@ -7,7 +7,7 @@ C_Detective::C_Detective(Country c, Cluster cl, bool g, bool s, float iq, float 
     : C_BasePawn(c, cl, g, s), IQ(iq), trust(trust) {
    SetBias("./data/Bias.csv");
    if (MinSleepHours < 0) MinSleepHours = 0;
-
+   Gen = std::make_unique<C_StoryGen>("./data/Log/log.txt");
 }
 
 C_Detective::~C_Detective()
@@ -15,7 +15,7 @@ C_Detective::~C_Detective()
 
 }
 
-void ReadBook(std::string filepath) {
+void C_Detective::ReadBook(std::string filepath) {
     std::ifstream file(filepath);
 
     if (!file.is_open()) {
@@ -38,6 +38,8 @@ void ReadBook(std::string filepath) {
 
     if (std::getline(file, line)) {
         printf("||%s\n\n",line.c_str());
+        Gen->AddString("|| " + line + "\n\n");
+
     }
 }
 
@@ -49,64 +51,84 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
             printf("||======================||\n");
             printf("||START OF INTERROGATION||\n");
             printf("||======================||\n");
+            Gen->AddString("||======================||\n||START OF INTERROGATION||\n||======================||\n");
             break;
         case 1:
             printf("||[FOLLOW UP] Corroborating with Suspect %d\n", extra_info);
+            Gen->AddString("||[FOLLOW UP] Corroborating with Suspect " + std::to_string(extra_info) + "\n");
             break;
         case 2:
+            Gen->AddString("||[Answer Stored: Suspect " + std::to_string(extra_info));
             printf("||[Answer Stored: Suspect %d ", extra_info);
             break;
         case 3:
+            Gen->AddString("answered " + std::to_string(extra_info) + "]\n");
             printf("answered % d]\n", extra_info);
             break;
         case 4:
+            Gen->AddString("|| [Category:TO ASK] - Points to another suspect.\n");
             printf("||[Category: TO ASK] - Points to another suspect.\n");
             break;
         case 5:
+            Gen->AddString("||[Category: Safe]\n");
             printf("||[Category: Safe]\n");
             break;
         case 6:
+            Gen->AddString("||====================================================||\n|| THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM ||\n||====================================================||\n");
             printf("||====================================================||\n");
             printf("|| THIS ANSWER HAS NOT BEEN LISTENED TO DUE TO RACISM ||\n");
             printf("||====================================================||\n");
             break;
         case 7:
+            Gen->AddString("||Suspect: " + std::to_string(extra_info) + " has been asked all questions posible\n");
             printf("||Suspect: %d has been asked all questions posible\n", extra_info);
             break;
         case 8:
+            Gen->AddString("||====================||\n||END OF INTERROGATION||\n||====================||\n-------------------------------------------------------------------------------------\n");
             printf("||====================||\n");
             printf("||END OF INTERROGATION||\n");
             printf("||====================||\n\n");
             printf("-------------------------------------------------------------------------------------\n");
             break;
         case 9:
+            Gen->AddString("\n||Ah, end of the day at last, I can go \n||home now and read one of my favorite book \n||Romeo and Juliet\n\n|| Let me read aloud a line of the book : \n");
             printf("\n||Ah, end of the day at last, I can go \n||home now and read one of my favorite book \n||Romeo and Juliet\n");
             printf("\n||Let me read aloud a line of the book:\n");
             ReadBook("./data/Books/Romeo.txt");
 
+            Gen->AddString("||================================||\n||Tomorrow will be a better day...||\n||================================||\n||\n");
             printf("||================================||\n");
             printf("||Tomorrow will be a better day...||\n");
             printf("||================================||\n||\n");
             break;
         case 10:
+            Gen->AddString("||The Next Morning\n");
             printf("||The Next Morning\n");
             switch (dementia)
             {
             case 0:
+                Gen->AddString("||The Detective waked up, took a nice shower and head over to work after having a healty breakfast.\n");
                 printf("||The Detective waked up, took a nice shower and head over to work after having a healty breakfast.\n");
                 break;
             case 1: 
+                Gen->AddString("||The Detective waked up, stumbled with the desk, took a nice shower and head over to work after having a healty breakfast.\n");
                 printf("||The Detective waked up, stumbled with the desk, took a nice shower and head over to work after having a healty breakfast.\n");
                 break;
             case 2: 
+                Gen->AddString("||The Detective waked up, stumbled with the desk, took a nice shower and head over to work after having having some cereal for breakfast.\n");
                 printf("||The Detective waked up,stumbled with the desk, took a nice shower and head over to work after having some cereal for breakfast.\n");
                 break;
             default:
+                Gen->AddString("||The Detective waked up, stumbled with the desk, took a shower that was burning hot and head over to work after having having some cereal for breakfast.\n");
                 printf("||The Detective waked up,stumbled with the desk, took a shower that was burning hot and head over to work after having some cereal for breakfast.\n");
                 break;
             }
 
            
+            Gen->AddString("||=======================================================||\n");
+            Gen->AddString("||The rest has lowered the level of alcohol sustancially.||\n");
+            Gen->AddString("||=======================================================||\n\n");
+            Gen->AddString("-------------------------------------------------------------------------------------\n\n");
             printf("||=======================================================||\n");
             printf("||The rest has lowered the level of alcohol sustancially.||\n");
             printf("||=======================================================||\n\n");
@@ -114,12 +136,20 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
             
             break;
         case 11:
+            Gen->AddString("||==================================================================||\n");
+            Gen->AddString("||   The Detective died due to inhumanly possible rate of alcohol   ||\n");
+            Gen->AddString("|| He drove his car into the nearest tree at a velocity of "+ std::to_string((rand() % 250)) + " km/h ||\n");
+            Gen->AddString("||==================================================================||\n");
             printf("||==================================================================||\n");
             printf("||   The Detective died due to inhumanly possible rate of alcohol   ||\n");
             printf("|| He drove his car into the nearest tree at a velocity of %d km/h ||\n", (rand() % 250));
             printf("||==================================================================||\n");
             break;
         case 12:
+            Gen->AddString("||============||\n");
+            Gen->AddString("||END OF ROUND||\n");
+            Gen->AddString("||============||\n");
+            Gen->AddString("-------------------------------------------------------------------------------------\n");
             printf("||============||\n");
             printf("||END OF ROUND||\n");
             printf("||============||\n");
@@ -135,8 +165,10 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
             for (int i = 1; i < numofword; i++) {
                 int randomword = rand() % RandomLowIQWords.size();
                 printf("%s ", RandomLowIQWords[randomword].c_str());
+                Gen->AddString(RandomLowIQWords[randomword].c_str());
             }
             printf("Humpty Dumpty\n");
+            Gen->AddString("Humpty Dumpty\n");
             ReadBook("./data/Books/Humpty.txt");
 
             //Imprimir Quote
@@ -144,8 +176,10 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
             for (int i = 1; i < numofword; i++) {
                 int randomword = rand() % RandomLowIQWords.size();
                 printf("%s ", RandomLowIQWords[randomword].c_str());
+                Gen->AddString(RandomLowIQWords[randomword].c_str());
             }
             printf("\n");
+            Gen->AddString("\n");
 
         }
         else {
@@ -153,6 +187,7 @@ void C_Detective::Talk(int ID_Talk, int extra_info)
             for (int i = 1; i < numofword; i++) {
                 int randomword = rand() % RandomLowIQWords.size();
                 printf("%s ", RandomLowIQWords[randomword].c_str());
+                Gen->AddString(RandomLowIQWords[randomword].c_str());
             }
         }
     }
@@ -271,9 +306,12 @@ void C_Detective::UpdateDementia()
             if (it->second.cat == Category::Suspicious) {
                 int suspectID = it->second.ID;
                 if (suspicionCount.find(suspectID) != suspicionCount.end()) {
-                    suspicionCount[suspectID] = std::max(0, suspicionCount[suspectID] - 1);
+                    //suspicionCount[suspectID] = std::max(0, suspicionCount[suspectID] - 1);
+                    suspicionCount[suspectID] = std::max(0,1);
                     printf("||[DEMENTIA] Forgot contradiction about suspect %d. Suspicion dropped to %d\n",
                         suspectID, suspicionCount[suspectID]);
+                    Gen->AddString("||[DEMENTIA] Forgot contradiction about suspect " + std::to_string(suspectID) + ". Suspicion dropped to " + std::to_string(suspicionCount[suspectID]) + "\n");
+
                 }
             }
 
@@ -322,19 +360,23 @@ void C_Detective::AnalyzeAlibis(int idA, int idB)
         if (answerCurrent == idA - 101 && answerPrevious == idB - 101) {
 
             printf("||[ALIBI CONFIRMED] Suspect %d and %d cover each other.\n", idA, idB);
+            Gen->AddString("||[ALIBI CONFIRMED] Suspect " + std::to_string(idA) + " and " + std::to_string(idB) +" cover each other.\n");
             memPrev.cat = Category::Safe;
             memCurr.cat = Category::Safe;
         }
         else {
+            Gen->AddString("||[ALIBI FAILED] Contradiction found between " + std::to_string(idA) + " and " + std::to_string(idB) + ".\n");
             printf("||[ALIBI FAILED] Contradiction found between %d and %d.\n", idA, idB);
 
             memPrev.cat = Category::Suspicious;
             memCurr.cat = Category::Suspicious;
 
             suspicionCount[idA]++;
+            Gen->AddString("||[SUSPICION] Suspect " + std::to_string(idA) + " has " + std::to_string(idB) + " contradictions\n");
             printf("||[SUSPICION] Suspect %d has %d contradictions\n", idA, suspicionCount[idA]);
 
             if (suspicionCount[idA] >= AccuseThreshold) {
+                Gen->AddString("||CULPABLE: " + std::to_string(idA) + "\n");
                 printf("||CULPABLE: %d\n", idA);
                 FoundCulprit = true;
                 Culprit = idA;
@@ -357,12 +399,15 @@ void C_Detective::AnalyzeSawTwice(int suspectID)
 
     if (memory.find(accusedID) == memory.end()) return;
 
+    Gen->AddString("||[SAW TWICE] Suspect " + std::to_string(accusedID) + " was spotted in multiple locations by " + std::to_string(suspectID) + "\n");
     printf("||[SAW TWICE] Suspect %d was spotted in multiple locations by %d\n", accusedID, suspectID);
 
     suspicionCount[accusedID]++;
+    Gen->AddString("||[SUSPICION] Suspect " + std::to_string(accusedID) + " has " + std::to_string(suspicionCount[accusedID]) + " contradictions\n");
     printf("||[SUSPICION] Suspect %d has %d contradictions\n", accusedID, suspicionCount[accusedID]);
 
     if (suspicionCount[accusedID] >= AccuseThreshold) {
+        Gen->AddString("||CULPABLE: " + std::to_string(accusedID) + "\n");
         printf("||CULPABLE: %d\n", accusedID);
         FoundCulprit = true;
         Culprit = accusedID;
