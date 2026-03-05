@@ -47,7 +47,7 @@ int main() {
     auto currentTime = std::chrono::high_resolution_clock::now();
 
 	game->InitializeGame(); //
-    while (!glfwWindowShouldClose(window) && !game->Thorne->FoundCulprit && !game->Thorne->dead) {
+    while (!glfwWindowShouldClose(window) && !game->Thorne->FoundCulprit) {
 
         auto newTime = std::chrono::high_resolution_clock::now();
         float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count(); //DeltaTime

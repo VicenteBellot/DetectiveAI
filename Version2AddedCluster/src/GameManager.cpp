@@ -11,6 +11,7 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "imgui/stb_image.h"
+#include <glm/glm.hpp>
 
 
 C_GameManager::~C_GameManager()
@@ -27,25 +28,44 @@ void C_GameManager::MainLoop(float deltaTime)
     const int FONT_XLARGE = 3;
 
     ImFont* activeFont;
-    int displacement = 4;
+    int displacement = Thorne->IQ > Thorne->MinDumbIQ ? 0 : 8;
     if (m_LastWindowW < 800 || m_LastWindowH < 800)  activeFont = Fonts[FONT_SMALL + displacement];
     else if (m_LastWindowW < 1280 || m_LastWindowH < 1200) activeFont = Fonts[FONT_MEDIUM + displacement];
     else if (m_LastWindowW < 1600 || m_LastWindowH < 1600) activeFont = Fonts[FONT_LARGE + displacement];
     else                               activeFont = Fonts[FONT_XLARGE + displacement];
 
     ImGui::PushFont(activeFont);
-    //---------------------------------------------
-    DrawSpriteWindow();
-    DrawInterface(deltaTime);
+
+    if (Thorne->dead) {
+        ImGui::PopFont();
+
+        displacement = Thorne->IQ > Thorne->MinDumbIQ ? 4 : 12;
+        if (m_LastWindowW < 800 || m_LastWindowH < 800)  activeFont = Fonts[FONT_SMALL + displacement];
+        else if (m_LastWindowW < 1280 || m_LastWindowH < 1200) activeFont = Fonts[FONT_MEDIUM + displacement];
+        else if (m_LastWindowW < 1600 || m_LastWindowH < 1600) activeFont = Fonts[FONT_LARGE + displacement];
+        else                               activeFont = Fonts[FONT_XLARGE + displacement];
+
+        ImGui::PushFont(activeFont);
+
+        DeathImage();
+
+        ImGui::PopFont();
+        return;
+    }
     if (rounds >= maxroundsPerDay) {
-        EndOfDayCycle();
-        rounds = 0;
+        EndOfDayImage();
         BeerPos.clear();
+    }
+    else {
+        DrawSpriteWindow();
     }
     if (Thorne->GramoPorLitro > MaxComaEtilico) {
         Thorne->dead = true;
         Thorne->Talk(11);
     }
+    
+    //---------------------------------------------
+    DrawInterface(deltaTime);
     ImGui::PopFont();
 }
 
@@ -185,6 +205,97 @@ void C_GameManager::EndOfDayCycle()
     Thorne->GenerateSuspectOrder(suspects);
 }
 
+void C_GameManager::EndOfDayImage()
+{
+    ImGuiIO& io = ImGui::GetIO();
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
+    ImGui::SetNextWindowPos(ImVec2(0, 0));
+    ImGui::SetNextWindowSize(io.DisplaySize);
+    ImGui::Begin("Background", nullptr,
+        ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize |
+        ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoBringToFrontOnFocus);
+
+
+    ImVec2 startPos = ImGui::GetCursorScreenPos();
+
+    ImVec4 dayColor = ImVec4(1.0f, 1.0f, 1.0f, 1.0f);       // white tint
+    ImVec4 nightColor = ImVec4(0.1f, 0.15f, 0.3f, 1.0f);       // dark blue
+
+    float delta = ImGui::GetIO().DeltaTime * Speed;
+    m_DayNightTimer += delta;
+
+    float cycle = m_DayNightTimer / secsOfNight; 
+
+    float t = 0.0f;
+    if (cycle <= 1.0f)
+    {
+        t = cycle; 
+    }
+    else if (cycle <= 2.0f)
+    {
+        t = 2.0f - cycle; 
+
+        if (!m_EndOfDayCycleFired)
+        {
+            EndOfDayCycle();
+            m_EndOfDayCycleFired = true;
+        }
+    }
+    else
+    {
+        rounds = 0;
+        m_DayNightTimer = 0.0f;
+        m_EndOfDayCycleFired = false;
+        t = 0.0f;
+    }
+
+    t = glm::clamp(t, 0.0f, 1.0f);
+
+    ImVec4 tint = ImVec4(
+        dayColor.x + t * (nightColor.x - dayColor.x),
+        dayColor.y + t * (nightColor.y - dayColor.y),
+        dayColor.z + t * (nightColor.z - dayColor.z),
+        1.0f
+    );
+
+    ImGui::SetCursorScreenPos(startPos);
+    ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[7], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0),tint,ImVec4(0,0,0,0));
+
+   
+    ImGui::End();
+    ImGui::PopStyleVar(2);
+}
+
+void C_GameManager::DeathImage()
+{
+    ImGuiIO& io = ImGui::GetIO();
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
+    ImGui::SetNextWindowPos(ImVec2(0, 0));
+    ImGui::SetNextWindowSize(io.DisplaySize);
+    ImGui::Begin("Background", nullptr,
+        ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize |
+        ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoBringToFrontOnFocus);
+
+
+    ImVec2 startPos = ImGui::GetCursorScreenPos();
+    ImGui::SetCursorScreenPos(startPos);
+    ImGui::Image((ImTextureID)(intptr_t)m_TextureIDs[8], io.DisplaySize, ImVec2(0, 1), ImVec2(1, 0));
+
+    ImDrawList* drawList = ImGui::GetWindowDrawList();
+    const char* text = "GAME OVER";
+    ImVec2 textSize = ImGui::CalcTextSize(text);
+    ImVec2 pos = ImVec2(
+        (io.DisplaySize.x - textSize.x) * 0.5f,
+        (io.DisplaySize.y - textSize.y) * 0.5f
+    );
+    drawList->AddText(pos, IM_COL32(255, 255, 255, 255), text);
+
+    ImGui::End();
+    ImGui::PopStyleVar(2);
+}
+
 void C_GameManager::LoadScenarioFromCSV(std::string filePath)
 {
     std::ifstream file(filePath);
@@ -216,7 +327,7 @@ void C_GameManager::LoadAlibisFromCSV(std::string filePath) {
 
     while (std::getline(file, line)) {
         std::stringstream ss(line);
-        std::string pID, hr, loc, arrivedpartner, stayedwith, vouch, sawleaving, leftwith;
+        std::string pID, hr, loc, arrivedpartner, stayedwith, vouch, sawleaving, leftwith, sawArrive, sawTwice;
 
         std::getline(ss, pID, ',');
         std::getline(ss, loc, ',');
@@ -226,7 +337,9 @@ void C_GameManager::LoadAlibisFromCSV(std::string filePath) {
         std::getline(ss, sawleaving, ',');
         std::getline(ss, leftwith, ',');
         std::getline(ss, hr);
+        
 
+       
         Statement s;
         s.location = loc;
         s.arriveWithID = std::stoi(arrivedpartner);
@@ -276,10 +389,30 @@ void C_GameManager::LoadFonts()
     Fonts.push_back(fontLarge);
     Fonts.push_back(fontMax);
 
+    fontSmall = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 39.0f);
+    fontMedium = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 54.0f);
+    fontLarge = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 72.0f);
+    fontMax = io.Fonts->AddFontFromFileTTF("./data/Fonts/Normal.ttf", 120.0f);
+
+    Fonts.push_back(fontSmall);
+    Fonts.push_back(fontMedium);
+    Fonts.push_back(fontLarge);
+    Fonts.push_back(fontMax);
+
     ImFont* MinefontSmall = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 10.0f);
     ImFont* MinefontMedium = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 13.0f);
     ImFont* MinefontLarge = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 16.0f);
     ImFont* MinefontMax = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 23.0f);
+
+    Fonts.push_back(MinefontSmall);
+    Fonts.push_back(MinefontMedium);
+    Fonts.push_back(MinefontLarge);
+    Fonts.push_back(MinefontMax);
+
+    MinefontSmall = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 30.0f);
+    MinefontMedium = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 39.0f);
+    MinefontLarge = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 48.0f);
+    MinefontMax = io.Fonts->AddFontFromFileTTF("./data/Fonts/Mine.ttf", 69.0f);
 
     Fonts.push_back(MinefontSmall);
     Fonts.push_back(MinefontMedium);
@@ -324,7 +457,6 @@ void C_GameManager::LoadImages(std::string folderPath)
                 m_TextureIDs.push_back(textureID);
 
                 stbi_image_free(data);
-                std::cout << "Successfully loaded: " << path << " (ID: " << textureID << ")" << std::endl;
             }
         }
     }
@@ -570,7 +702,7 @@ void C_GameManager::InitializeGame()
 {
     srand(static_cast<unsigned int>(time(NULL)));
     C_BasePawn::CharacterOrigin CharacterOrigin = C_BasePawn::GenerateRandomOrigin(true);
-    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,30.0f,0);
+    Thorne = new C_Detective(CharacterOrigin.country, CharacterOrigin.cluster, true, true,120.0f,0);
     LoadScenarioFromCSV("./data/Gala/Questions.csv");
     LoadRoomsFromCSV("./data/Gala/Locations.csv");
     LoadLowIQWords("./data/Words.txt");

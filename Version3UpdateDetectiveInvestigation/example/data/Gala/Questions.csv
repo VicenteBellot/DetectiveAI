@@ -1,0 +1,9 @@
+QuestionText,Logic Category
+"Did you arrive alone or with someone?",Alibi
+"Did you stay in that room alone, or were there others?",Alibi
+"Who can vouch for your presence there?",Ask For
+"Did you see anyone leaving the area as you arrived?",Alibi
+"Did you leave the room alone or with someone?",Ask For
+"How much time did you stay there?",Timeline
+"Did you see anyone else arrive?",Ask For
+"Did you see anyone twice?",Ask For

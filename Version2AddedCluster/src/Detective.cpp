@@ -259,6 +259,17 @@ void C_Detective::UpdateDementia()
     GramoPorLitro -= rand() % 100 < GoodSleepChance ? 0.15f * HoursofSleep : 0.12f * HoursofSleep;
     if (GramoPorLitro < 0.0f) GramoPorLitro = 0.0f;
     BeersDrank = 0;
+
+    // se olvida de una pregunta 
+    if (dementia > 2 && !memory.empty()) {
+        auto it = memory.begin();
+        std::advance(it, rand() % memory.size());
+        if (!it->second.timeline.empty()) {
+            auto entry = it->second.timeline.begin();
+            std::advance(entry, rand() % it->second.timeline.size());
+            it->second.timeline.erase(entry);
+        }
+    }
 }
 
 
@@ -347,6 +358,10 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
             CanIgnore = true;
         }
     }
+
+    InterrogationStyle style = DecideStyle(*sus);
+    if (style == Aggressive) frustration += 0.1f; // aggressive backfires over time
+    if (style == Casual)     IgnoreChance -= 10;
 
     if (CanIgnore) {
         WillIgnore = rand() % 100 > IgnoreChance ? false : true;

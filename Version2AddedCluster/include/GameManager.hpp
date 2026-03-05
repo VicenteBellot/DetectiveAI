@@ -33,7 +33,10 @@ public:
     float MaxComaEtilico = 6.26f;
 
     int rounds = 0;
-    int maxroundsPerDay = 2;
+    int maxroundsPerDay = 1;
+    float secsOfNight = 10.0f;  //Time that takes to reach night
+    float  m_DayNightTimer = 0.0f;
+    bool   m_EndOfDayCycleFired = false;
 
     void MainLoop(float deltaTime);
 
@@ -46,6 +49,8 @@ public:
     std::vector<T_Pos> BeerPos;
 
     void EndOfDayCycle();
+    void EndOfDayImage();
+    void DeathImage();
 
     float Speed = 1.0f;
 
