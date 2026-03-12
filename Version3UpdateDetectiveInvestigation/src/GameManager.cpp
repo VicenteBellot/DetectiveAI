@@ -18,6 +18,57 @@ C_GameManager::~C_GameManager()
 {
 }
 
+void C_GameManager::GenerateStoryFuture()
+{
+    if (GeneratingStory) return;
+    storyFuture = JB.EnqueueTask([&]() -> std::string {
+        printf("\nstarted");
+        std::string returnval = Thorne->Gen->GenerateStory();
+        printf("\nended");
+        GeneratedStory = true;
+        return returnval;
+        });
+    GeneratingStory = true;
+}
+
+void C_GameManager::GenerateAudioFuture()
+{
+    if (GeneratingVoice || !SavedStory)return;
+
+    JB.Enqueue([]() {
+        std::cerr << "Starting narration...\n";
+        int result = system(
+            "C:\\piper\\piper\\piper.exe "
+            "--model C:\\piper\\models\\en_GB-alan-medium.onnx "
+            "--output_file ./data/narration.wav "
+            "< ./data/Story.txt"
+        );
+        std::cerr << "Piper exited with code: " << result << "\n";
+
+        if (result != 0) {
+            std::cerr << "Piper failed, is it installed at C:\\piper?\n";
+        }
+        else {
+            std::cerr << "Narration saved to ./data/narration.wav\n";
+            system("start ./data/narration.wav");
+        }
+        });
+    GeneratingVoice = true;
+}
+
+void C_GameManager::SaveStory()
+{
+    if (!GeneratedStory) return;
+    if (SavedStory) return;
+    std::string story = storyFuture.get();
+    FILE* OutputStory = fopen("./data/Story.txt", "w");
+    if (OutputStory) {
+        fputs(story.c_str(), OutputStory);
+        fclose(OutputStory);
+    }
+    SavedStory = true;
+}
+
 void C_GameManager::MainLoop(float deltaTime)
 {
     //---------------------------------------------
@@ -36,7 +87,7 @@ void C_GameManager::MainLoop(float deltaTime)
 
     ImGui::PushFont(activeFont);
 
-    if (Thorne->dead) {
+    if (Thorne->dead && !SavedStory) {
         ImGui::PopFont();
 
         displacement = Thorne->IQ > Thorne->MinDumbIQ ? 4 : 12;
@@ -50,10 +101,15 @@ void C_GameManager::MainLoop(float deltaTime)
         DeathImage();
 
         ImGui::PopFont();
-
-        EndOfGameByAlcohol = true;
+        GenerateStoryFuture();
+        SaveStory();
         return;
     }
+    else if (Thorne->dead && !SavedStory && ) {
+        GenerateAudioFuture();
+    }
+
+
     if (rounds >= maxroundsPerDay) {
         EndOfDayImage();
         BeerPos.clear();

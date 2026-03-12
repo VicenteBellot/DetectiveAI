@@ -7,6 +7,7 @@
 
 #include "Detective.hpp"
 #include "StoryGenerator.hpp"
+#include "Jobsystem.hpp"
 #include "imgui/imgui.h"
 
 struct T_Pos {
@@ -21,6 +22,8 @@ public:
 
     int m_LastWindowW = 1500;
     int m_LastWindowH = 850;
+
+    Jobsystem JB;
 
     
 
@@ -41,6 +44,18 @@ public:
     float  m_DayNightTimer = 0.0f;
     bool   m_EndOfDayCycleFired = false;
     bool   EndOfGameByAlcohol = false;
+
+    bool GeneratingStory = false;
+    bool GeneratedStory = false;
+    bool SavedStory = false;
+    bool GeneratingVoice = false;
+    bool GeneratedVoice = false;
+
+    std::future<std::string> storyFuture;
+    void GenerateStoryFuture();
+    void SaveStory();
+
+    void GenerateAudioFuture();
 
     void MainLoop(float deltaTime);
 
