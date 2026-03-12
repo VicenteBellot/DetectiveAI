@@ -40,6 +40,7 @@ public:
     float secsOfNight = 10.0f;  //Time that takes to reach night
     float  m_DayNightTimer = 0.0f;
     bool   m_EndOfDayCycleFired = false;
+    bool   EndOfGameByAlcohol = false;
 
     void MainLoop(float deltaTime);
 

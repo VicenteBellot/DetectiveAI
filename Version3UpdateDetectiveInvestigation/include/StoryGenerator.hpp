@@ -25,10 +25,10 @@ public:
 
 	void AddString(std::string stringtoadd);
 
-	//std::string GenerateStory();
+	std::string GenerateStory();
 
 private:
-	//std::string sendToLlama(const std::string& fileContent);
+	std::string sendToLlama(const std::string& fileContent);
 
 };
 

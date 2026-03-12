@@ -306,8 +306,7 @@ void C_Detective::UpdateDementia()
             if (it->second.cat == Category::Suspicious) {
                 int suspectID = it->second.ID;
                 if (suspicionCount.find(suspectID) != suspicionCount.end()) {
-                    //suspicionCount[suspectID] = std::max(0, suspicionCount[suspectID] - 1);
-                    suspicionCount[suspectID] = std::max(0,1);
+                    suspicionCount[suspectID] = (std::max)(0, suspicionCount[suspectID] - 1);
                     printf("||[DEMENTIA] Forgot contradiction about suspect %d. Suspicion dropped to %d\n",
                         suspectID, suspicionCount[suspectID]);
                     Gen->AddString("||[DEMENTIA] Forgot contradiction about suspect " + std::to_string(suspectID) + ". Suspicion dropped to " + std::to_string(suspicionCount[suspectID]) + "\n");
@@ -497,7 +496,7 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
         if (rand() % 100 < DrinkingChance) {
             DementiaChance -= 1;
             BeersDrank++;
-            GramoPorLitro += 0.15f;
+            GramoPorLitro += 1.15f;
             UpdateBias();
         }
 

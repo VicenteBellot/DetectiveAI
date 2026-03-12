@@ -4,6 +4,7 @@
 
 C_StoryGen::C_StoryGen(std::string filepathLog)
 {
+    m_filepathLog = filepathLog;
     LogFile = fopen(filepathLog.c_str(), "w");
     if (LogFile == NULL) {
         perror("fopen failed");  // prints the exact OS error reason
@@ -22,7 +23,7 @@ void C_StoryGen::AddString(std::string stringtoadd)
         fflush(LogFile); 
     }
 }
-/*
+
 
 std::string C_StoryGen::GenerateStory()
 {
@@ -55,7 +56,7 @@ std::string C_StoryGen::sendToLlama(const std::string& fileContent)
             {"messages", json::array({
                 {
                     {"role", "user"},
-                    {"content", "Based on this investigation log, generate a story:\n\n" + fileContent}
+                    {"content", "Based on this investigation log, generate a story, over 100 words, just the story, the main character is called Thorne. Make it extent as a novel in the style of Agatha Christie, describe everything as per the log, if the detective dies, go into detail, as well as with the questions or the actitude of our detective please:\n\n" + fileContent}
                 }
             })},
             {"stream", false}
@@ -84,4 +85,3 @@ std::string C_StoryGen::sendToLlama(const std::string& fileContent)
     auto jsonResp = json::parse(response);
     return jsonResp["message"]["content"];
 }
-*/

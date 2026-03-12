@@ -50,6 +50,8 @@ void C_GameManager::MainLoop(float deltaTime)
         DeathImage();
 
         ImGui::PopFont();
+
+        EndOfGameByAlcohol = true;
         return;
     }
     if (rounds >= maxroundsPerDay) {

@@ -12,7 +12,7 @@
 #include "Detective.hpp"
 #include "GameManager.hpp"
 #include "StoryGenerator.hpp"
-    
+#include "Jobsystem.hpp"
 
 #include <stdio.h>
 #include <chrono>
@@ -33,6 +33,7 @@ int main() {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
+    Jobsystem JB{};
 
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 130");
@@ -48,7 +49,7 @@ int main() {
     auto currentTime = std::chrono::high_resolution_clock::now();
 
 	game->InitializeGame(); //
-    while (!glfwWindowShouldClose(window) && !game->Thorne->FoundCulprit) {
+    while (!glfwWindowShouldClose(window) && !game->Thorne->FoundCulprit && !game->EndOfGameByAlcohol) {
 
         auto newTime = std::chrono::high_resolution_clock::now();
         float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count(); //DeltaTime
@@ -73,12 +74,42 @@ int main() {
         glfwSwapBuffers(window);
     }
 
-    /*FILE* OutputStory;
-    OutputStory = fopen("./data/Story.txt", "w");
-    std::string story = game->Thorne->Gen->GenerateStory();
+    auto storyFuture = JB.EnqueueTask([&]() -> std::string {
+        return game->Thorne->Gen->GenerateStory();
+        });
+
+    std::string story = storyFuture.get();
+
+    std::cerr << "Story length: " << story.size() << "\n";
+    std::cerr << "Story preview: " << story.substr(0, 100) << "\n";
+
+    // Write story to file
+    FILE* OutputStory = fopen("./data/Story.txt", "w");
     if (OutputStory) {
         fputs(story.c_str(), OutputStory);
-    }*/
+        fclose(OutputStory);
+    }
+
+    // Narrate asynchronously so it doesn't freeze the game
+    JB.Enqueue([]() {
+        std::cerr << "Starting narration...\n";
+        int result = system(
+            "C:\\piper\\piper\\piper.exe "
+            "--model C:\\piper\\models\\en_US-lessac-medium.onnx "
+            "--output_file ./data/narration.wav "
+            "< ./data/Story.txt"
+        );
+        std::cerr << "Piper exited with code: " << result << "\n";
+
+        if (result != 0) {
+            std::cerr << "Piper failed, is it installed at C:\\piper?\n";
+        }
+        else {
+            std::cerr << "Narration saved to ./data/narration.wav\n";
+            system("start ./data/narration.wav");
+            printf("speaking");
+        }
+        });
 
 
     printf("------------------------\nINGAME TABLE\n");
@@ -100,6 +131,7 @@ int main() {
     }
     printf("------------------------\nEND QUESTION TABLE\n\n");
 
+    JB.WaitAll();
 
 
     ImGui_ImplOpenGL3_Shutdown();
