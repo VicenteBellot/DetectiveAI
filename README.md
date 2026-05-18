@@ -9,6 +9,8 @@ Todo el contenido que se genera durante la ejecución del programa se guardará 
 "build\MainDetective\Debug\data"
 Si todo funcionó como debe, seran los archivos "Story.txt" y "narration.wav"
 
+Es posible que el ordenador no pueda acceder a llama3 por cualquier problema de conexión, si esto pasa se puede modifical el StoryGenerator.cpp linea 55 de {"model", "llama3"} a {"model", "gpt-oss:20b"} y para la instalación en el bat OllamaInstall.bat linea 6 de "ollama pull llama3" a "ollama pull gpt-oss:20b". 
+
 Gracias
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,5 +23,7 @@ This proyect uses external AI to generate the history and an audio file that bas
 All the content that is generated during the execution of the program will be saved in the next route:
 "build\MainDetective\Debug\data"
 If everything worked as planed, the files are "Story.txt" and "narration.wav"
+
+The computer may not be able to access llama3 due to a connection problem. If this happens, you can modify the StoryGenerator.cpp file, line 55, from {"model", "llama3"} to {"model", "gpt-oss:20b"}, and for the installation, in the OllamaInstall.bat file, line 6, from "ollama pull llama3" to "ollama pull gpt-oss:20b".
 
 Thanks
