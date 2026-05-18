@@ -35,7 +35,7 @@ void C_GameManager::GenerateAudioFuture()
 {
     if (GeneratingVoice || !SavedStory)return;
 
-    JB.Enqueue([]() {
+    JB.Enqueue([this]() {  
         std::cerr << "Starting narration...\n";
         int result = system(
             "C:\\piper\\piper\\piper.exe "
@@ -43,16 +43,14 @@ void C_GameManager::GenerateAudioFuture()
             "--output_file ./data/narration.wav "
             "< ./data/Story.txt"
         );
-        std::cerr << "Piper exited with code: " << result << "\n";
-
         if (result != 0) {
             std::cerr << "Piper failed, is it installed at C:\\piper?\n";
-        }
-        else {
+        } else {
             std::cerr << "Narration saved to ./data/narration.wav\n";
             system("start ./data/narration.wav");
         }
-        });
+        GeneratedVoice = true;  // signal completion
+    });
     GeneratingVoice = true;
 }
 
@@ -104,9 +102,17 @@ void C_GameManager::MainLoop(float deltaTime)
         GenerateStoryFuture();
         SaveStory();
         return;
-    }
-    else if (Thorne->dead && !SavedStory && ) {
+	}
+	else if (Thorne->FoundCulprit && !SavedStory) {
+		ImGui::PopFont();
+        GenerateStoryFuture();
+		SaveStory();
+		return;
+	}
+    if (SavedStory) {
+        ImGui::PopFont();
         GenerateAudioFuture();
+        return;
     }
 
 

@@ -496,7 +496,7 @@ void C_Detective::Interrogate(std::shared_ptr<C_Suspect> sus, int Question, Cate
         if (rand() % 100 < DrinkingChance) {
             DementiaChance -= 1;
             BeersDrank++;
-            GramoPorLitro += 1.15f;
+            GramoPorLitro += 0.15f;
             UpdateBias();
         }
 

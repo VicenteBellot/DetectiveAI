@@ -5,7 +5,7 @@
 C_StoryGen::C_StoryGen(std::string filepathLog)
 {
     m_filepathLog = filepathLog;
-    LogFile = fopen(filepathLog.c_str(), "w");
+    LogFile = fopen(filepathLog.c_str(), "w+");
     if (LogFile == NULL) {
         perror("fopen failed");  // prints the exact OS error reason
         fprintf(stderr, "Path was: '%s'\n", filepathLog.c_str());
@@ -71,6 +71,9 @@ std::string C_StoryGen::sendToLlama(const std::string& fileContent)
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
+
+        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 120L);        // total max seconds
+        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 10L);
 
         CURLcode res = curl_easy_perform(curl);
         if (res != CURLE_OK) {
